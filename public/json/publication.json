@@ -1,0 +1,92 @@
+[
+    {
+        "title": "Aligning Large Language Models via Fine-grained Supervision",
+        "category": "SysAI",
+        "conference": "Proceedings of the Annual Meeting Of The Association For Computational Linguistics (ACL)",
+        "date": "2025-03-10",
+        "highlight": "Oral",
+        "code": "https://github.com/example/repo",
+        "video": "https://www.youtube.com/watch?v=example"
+    },
+    {
+        "title": "Aligning Large Language Models via Fine-grained Supervision",
+        "category": "SysAI",
+        "conference": "Proceedings of the Annual Meeting Of The Association For Computational Linguistics (ACL)",
+        "date": "2024-03-08",
+        "highlight": "Spotlight",
+        "code": "https://github.com/example/repo",
+        "video": null
+    },
+    {
+        "title": "AscleAI: A LLM-based clinical note management system",
+        "category": "MedAI",
+        "conference": "Proceedings of the Conference on Human Factors in Computing Systems (CHI)",
+        "date": "2024-05-12",
+        "highlight": null,
+        "code": "https://github.com/example/core-repo",
+        "video": "https://www.youtube.com/watch?v=medicalai"
+    },
+    {
+        "title": "Weakly supervised referring image segmentation",
+        "category": "CoreAI",
+        "conference": "Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)",
+        "date": "2023-10-22",
+        "highlight": null,
+        "code": null,
+        "video": "https://www.youtube.com/watch?v=corevision"
+    },
+    {
+        "title": "Optimized AI Systems",
+        "category": "SysAI",
+        "conference": "Proceedings of the Conference on Neural Information Processing Systems (NeurIPS)",
+        "date": "2023-12-01",
+        "highlight": "Best Paper",
+        "code": "https://github.com/example/ai-systems",
+        "video": "https://www.youtube.com/watch?v=aisystems"
+    },
+    {
+        "title": "Advances in AI Healthcare",
+        "category": "MedAI",
+        "conference": "Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)",
+        "date": "2022-06-15",
+        "highlight": null,
+        "code": null,
+        "video": null
+    },
+    {
+        "title": "Self-Supervised Learning for Autonomous Agents",
+        "category": "CoreAI",
+        "conference": "Proceedings of the International Conference on Machine Learning (ICML)",
+        "date": "2022-07-08",
+        "highlight": null,
+        "code": "https://github.com/example/self-supervised",
+        "video": null
+    },
+    {
+        "title": "Graph Neural Networks for Drug Discovery",
+        "category": "MedAI",
+        "conference": "Proceedings of the AAAI Conference on Artificial Intelligence (AAAI)",
+        "date": "2021-09-30",
+        "highlight": "Oral",
+        "code": "https://github.com/example/gnn-drug",
+        "video": "https://www.youtube.com/watch?v=gnndrug"
+    },
+    {
+        "title": "Federated Learning for Edge AI",
+        "category": "SysAI",
+        "conference": "Proceedings of the Conference on Neural Information Processing Systems (NeurIPS)",
+        "date": "2021-12-15",
+        "highlight": null,
+        "code": null,
+        "video": "https://www.youtube.com/watch?v=federatedai"
+    },
+    {
+        "title": "Efficient Transformer Models for NLP",
+        "category": "CoreAI",
+        "conference": "Proceedings of the International Conference on Learning Representations (ICLR)",
+        "date": "2020-04-25",
+        "highlight": "Best Paper",
+        "code": "https://github.com/example/efficient-transformer",
+        "video": null
+    }
+]
