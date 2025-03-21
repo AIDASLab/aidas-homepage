@@ -28,7 +28,7 @@ export default async function SeminarPage() {
 
         return (
             <Layout>
-                <div className="min-h-screen flex flex-col items-center bg-gray-100 pt-20 sm:pt-40 md:pt-60 lg:pt-[15vh]">
+                <div className="min-h-screen flex flex-col items-center pt-20 sm:pt-40 md:pt-60 lg:pt-[15vh]">
                     {/* Page Title */}
                     <h1 className="text-4xl font-bold text-center text-gray-800 mb-6">Seminars</h1>
 

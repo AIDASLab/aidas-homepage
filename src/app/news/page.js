@@ -27,7 +27,7 @@ export default async function NewsPage() {
 
         return (
             <Layout>
-                <div className="min-h-screen flex flex-col items-center bg-gray-100 py-16">
+                <div className="min-h-screen flex flex-col items-center py-16">
                     {/* Page Title */}
                     <h1 className="text-4xl font-bold text-center text-gray-800 mb-10 mt-16">Latest News</h1>
 
