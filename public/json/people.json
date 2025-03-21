@@ -1,139 +1,234 @@
 [
-    
-    {
-      "name": "Chunhyang Seong",
-      "role": "PhD",
-      "image": "/people/Lenna.png",
-      "research": [
-        "Computer Vision",
-        "Object Detection"
-      ],
-      "education": [
-        "uneducated"
-      ]
-    },
-    {
-      "name": "Chunhyang Seong",
-      "role": "PhD",
-      "image": "/people/Lenna.png",
-      "research": [
-        "Computer Vision",
-        "Object Detection"
-      ],
-      "education": [
-        "uneducated"
-      ]
-    },
+  {
+    "name": "Sunghwan Steve Cho",
+    "role": "PhD",
+    "image": "/people/sunghwan_steve_cho.jpg",
+    "education": [
+      "B.S in Computer Science, Virginia Tech, U.S, 2017-2022",
+      "M.S in Computer Science, Purdue University, U.S, 2022-2024"
+    ],
+    "research": ["Large Language Model"],
+    "experience": [],
+    "email": "",
+    "homepage": "",
+    "linkedin": "https://www.linkedin.com/in/steve-cho-b4aa5815a/"
+  },
+  {
+    "name": "Sieun Hyeon",
+    "role": "MP",
+    "image": "/people/sieun_hyeon.jpg",
+    "education": [
+      "B.S. in Electrical and Electronic Engineering, Yonsei University, S. Korea, 2021-2024"
+    ],
+    "research": ["LLM application", "Multimodal LLM"],
+    "experience": [],
+    "email": "",
+    "homepage": "",
+    "linkedin": "https://www.linkedin.com/in/hyeonsieun/"
+  },
+  {
+    "name": "Mintaek Lim",
+    "role": "MP",
+    "image": "/people/mintaek_lim.jpg",
+    "education": [
+      "B.S. in School of Electrical Engineering and Computer Science, GIST, S. Korea, 2018-2024"
+    ],
+    "research": ["Vector DB", "LLM driven Big data system"],
+    "experience": [],
+    "email": "",
+    "homepage": "https://mintaeklim.notion.site/Hi-this-is-Mintaek-Lim-e2942cf5dff34df38fd513fd32e7acc8?pvs=74",
+    "linkedin": "www.linkedin.com/in/mintaeklim-247521325"
+  },
+  {
+    "name": "Woohyeon Park",
+    "role": "MP",
+    "image": "/people/default.jpeg",
+    "education": [
+      "B.S. in Mechanical Engineering & B.S. in Software Convergence, Sungkyunkwan University, S. Korea, 2016-2023"
+    ],
+    "research": ["Vision-Language Model"],
+    "experience": ["Machine-Vision Team, LG Energy Solution, 2023-2025"],
+    "email": "",
+    "homepage": "",
+    "linkedin": ""
+  },
+  {
+    "name": "Jaeik Kim",
+    "role": "MP",
+    "image": "/people/jaeik_kim.png",
+    "education": [
+      "B.S in Mathematics & B.S in Applied Artificial Intelligence, Sungkyunkwan University, S. Korea, 2021-2025"
+    ],
+    "research": ["Model Merging", "Efficient LLM"],
+    "experience": [],
+    "email": "",
+    "homepage": "",
+    "linkedin": "https://www.linkedin.com/in/jaeik-kim-571200282/"
+  },
+  {
+    "name": "Yejoon Lee",
+    "role": "MP",
+    "image": "/people/yejoon_lee.jpg",
+    "education": [
+      "B.A. in Economics & B.S. in Artificial Intelligence, Seoul National University, S. Korea, 2021-2025"
+    ],
+    "research": ["Language models", "ML for healthcare"],
+    "experience": [],
+    "email": "",
+    "homepage": "https://yejoon-lee.github.io/",
+    "linkedin": "https://www.linkedin.com/in/leeyejoon/"
+  },
+  {
+    "name": "Jinhyeok Kim",
+    "role": "MP",
+    "image": "/people/jinhyeok_kim.jpg",
+    "education": [
+      "B.S. in Electrical and Electronic Engineering, Yonsei University, S. Korea, 2019-2025"
+    ],
+    "research": ["Machine learning accelerator"],
+    "experience": [],
+    "email": "",
+    "homepage": "https://sites.google.com/view/jinhyeokkim/home",
+    "linkedin": "https://www.linkedin.com/in/jhyeokkim/"
+  },
+  {
+    "name": "Geon Choi",
+    "role": "MP",
+    "image": "/people/geon_choi.jpg",
+    "education": [
+      "B.S. in Computer Science and Engineering, Sogang University, S. Korea, 2018-2025"
+    ],
+    "research": ["Vector DB"],
+    "experience": [],
+    "email": "",
+    "homepage": "",
+    "linkedin": "https://www.linkedin.com/in/gun-c-8b92b3212"
+  },
+  {
+    "name": "Woojin Kim",
+    "role": "MP",
+    "image": "/people/woojin_kim.png",
+    "education": [
+      "B.S. in Electrical and Computer Engineering, Seoul National University, S. Korea, 2019-2025"
+    ],
+    "research": ["Controllable text generation", "Diffusion language model"],
+    "experience": [],
+    "email": "",
+    "homepage": "",
+    "linkedin": "https://www.linkedin.com/in/우진-김-426796304/"
+  },
 
-    {
-      "name": "Chunhyang Seong",
-      "role": "PhD",
-      "image": "/people/Lenna.png",
-      "education": [
-        "uneducated"
-      ],
-      "research": [
-        "Computer Vision",
-        "Object Detection"
-      ],
-      "experience": [
-        "no experience"
-      ]
-    },
-
-    {
-      "name": "Chunhyang Seong",
-      "role": "PhD",
-      "image": "/people/Lenna.png",
-      "education": [
-        "uneducated"
-      ],
-      "research": [
-        "Computer Vision",
-        "Object Detection"
-      ],
-      "experience": [
-        "no experience"
-      ]
-    },
-    {
-      "name": "Chunhyang Seong",
-      "role": "PhD",
-      "image": "/people/Lenna.png",
-      "education": [
-        "uneducated"
-      ],
-      "research": [
-        "Computer Vision",
-        "Object Detection"
-      ],
-      "experience": [
-        "no experience"
-      ]
-    },
-    {
-      "name": "Chunhyang Seong",
-      "role": "PhD",
-      "image": "/people/Lenna.png",
-      "education": [
-        "uneducated"
-      ],
-      "research": [
-        "Computer Vision",
-        "Object Detection"
-      ],
-      "experience": [
-        "no experience"
-      ]
-    },
-    {
-      "name": "Chunhyang Seong",
-      "role": "PhD",
-      "image": "/people/Lenna.png",
-      "education": [
-        "uneducated"
-      ],
-      "research": [
-        "Computer Vision",
-        "Object Detection"
-      ],
-      "experience": [
-        "no experience"
-      ]
-    },
+  {
+    "name": "Hanjun Lee",
+    "role": "MS",
+    "image": "/people/hanjun_lee.jpg",
+    "education": [
+      "B.S in Computer Science, Pusan National University, S.Korea, 2011-2017"
+    ],
+    "research": ["LLM Agent", "Planning in Mobile Environment"],
+    "experience": ["Language AI Team, Mobile eXperience (MX), Samsung Electronics. 2017-present"],
+    "email": "",
+    "homepage": "",
+    "linkedin": "https://www.linkedin.com/in/hanjun-lee-1690a01a0/"
+  },
 
 
-    {
-      "name": "Chunhyang Seong",
-      "role": "MP",
-      "image": "/people/Lenna.png",
-      "education": [
-        "uneducated"
-      ]
-    },
-    {
-      "name": "Chunhyang Seong",
-      "role": "MS",
-      "image": "/people/Lenna.png",
-      "education": [
-        "uneducated"
-      ]
-    },
-    {
-      "name": "Chunhyang Seong",
-      "role": "UG",
-      "image": "/people/Lenna.png",
-      "education": [
-        "uneducated"
-      ]
-    },
-    {
-      "name": "Chunhyang Seong",
-      "role": "Staff",
-      "image": "/people/Lenna.png",
-      "education": [
-        "uneducated"
-      ]
-    }
+  {
+    "name": "Hoeun Lee",
+    "role": "UG",
+    "image": "/people/hoeun_lee.png",
+    "education": [
+      "B.S. in Computer Science and Engineering, Konkuk University, S. Korea, 2020-2025"
+    ],
+    "research": ["AI4DB", "AI4System", "Robotics", "LLM Alignment"],
+    "experience": [],
+    "email": "",
+    "homepage": "https://sites.google.com/view/hoeunlee",
+    "linkedin": "https://www.linkedin.com/in/leehe228/"
+  },
+  {
+    "name": "Dogeun Kim",
+    "role": "UG",
+    "image": "/people/dogeun_kim.jpg",
+    "education": [
+      "B.S in Naval Architecture and Ocean Engineering, Seoul National University, S. Korea, 2018-2025"
+    ],
+    "research": ["CXL", "LakeHouse"],
+    "experience": [],
+    "email": "",
+    "homepage": "",
+    "linkedin": "https://www.linkedin.com/in/dogeun-kim-b58180311/"
+  },
+  {
+    "name": "Hyeonggeun Kim",
+    "role": "UG",
+    "image": "/people/hyeonggeun_kim.jpg",
+    "education": [
+      "B.S in Materials Science & Engineering, Seoul National University, S.Korea, 2018-2025",
+      "I.P in System Semiconductor Engineering for A.I, Seoul National University, S.Korea, 2018-2025"
+    ],
+    "research": ["Vision-Language Action", "Robotics"],
+    "experience": [],
+    "email": "khenrydragon@snu.ac.kr",
+    "homepage": "",
+    "linkedin": ""
+  },
+  {
+    "name": "Jusang Oh",
+    "role": "UG",
+    "image": "/people/jusang_oh.jpg",
+    "education": [
+      "B.S. in Electrical and Computer Engineering, Seoul National University, S. Korea, 2019-2025"
+    ],
+    "research": ["Multimodal LLM"],
+    "experience": [],
+    "email": "dhwntkd412@snu.ac.kr",
+    "homepage": "",
+    "linkedin": "https://www.linkedin.com/in/주상-오-a59180220/"
+  },
+  {
+    "name": "Yunseok Han",
+    "role": "UG",
+    "image": "/people/yunseok_han.jpg",
+    "education": [
+      "B.S in Biosystems Engineering & Interdisciplinary Major in Artificial Intelligence, Seoul National University, S. Korea, 2019-2025"
+    ],
+    "research": ["Explainable AI", "Medical AI", "Large Language Model"],
+    "experience": [],
+    "email": "qicher@snu.ac.kr",
+    "homepage": "",
+    "linkedin": ""
+  },
+  {
+    "name": "Jihwan Hong",
+    "role": "UG",
+    "image": "/people/jihwan_hong.jpg",
+    "education": [
+      "B.S. in Computer Science and Engineering, Korea University, S. Korea, 2019-2025"
+    ],
+    "research": ["Video Understanding"],
+    "experience": [],
+    "email": "",
+    "homepage": "https://csjihwanh.com",
+    "linkedin": "https://www.linkedin.com/in/jihwan-hong-17b1bb293/"
+  },
+  {
+    "name": "Juneau Jung",
+    "role": "UG",
+    "image": "/people/juneau_jung.jpeg",
+    "education": [
+      "B.S. in Electrical and Computer Engineering, Seoul National University, S.Korea, 2018-2024"
+    ],
+    "research": ["Computer Vision"],
+    "experience": [],
+    "email": "sean2ie@snu.ac.kr",
+    "homepage": "https://zzuno.github.io/",
+    "linkedin": ""
+  },
+  {
+    "name": "Jungwon Choi",
+    "role": "Staff",
+    "image": "/people/jungwon_choi.jpg",
+    "email": "cks52@snu.ac.kr"
+  }
 ]
-  

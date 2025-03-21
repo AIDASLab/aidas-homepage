@@ -1,20 +1,23 @@
-import Head from 'next/head';
+import Link from 'next/link';
+import Image from 'next/image';
 import Layout from '../../components/layout';
+import { getNewsMetaList } from "../../components/get-news-meta";
 
 export default function Home() {
+
+  const newsList = getNewsMetaList();
+
   return (
     <Layout>
 
-        <video
-          className="absolute top-0 left-0 w-screen h-screen object-cover"
-          autoPlay
-          loop
-          muted
-          playsInline
-        >
-          <source src="/background/medical-robot-video-temp.webm" type="video/webm" />
-          Your browser does not support the video tag.
-        </video>
+      <Image
+            src="/background/random_background2.jpg"
+            alt="Background"
+            layout="fill" 
+            objectFit="cover" 
+            priority // for LCP
+          />
+
         {/* Hero Section with Background Image */}
         <header className="relative h-screen w-full flex items-center justify-center text-center">
 
@@ -22,15 +25,13 @@ export default function Home() {
           {/* Overlay for better text readability */}
           <div className="absolute inset-0  bg-opacity-0"></div>
 
-          {/* Content */}
-          <div className="absolute top-[45%] left-1/2 -translate-x-1/2 -translate-y-1/2 text-white text-center">
-            <h2 className="text-5xl sm:text-6xl font-black mb-6 drop-shadow-[0_4px_10px_rgba(0,0,0,0.8)]">
-              SNU AIDAS Lab
+          <div className="absolute top-[25%] left-1/2 -translate-x-1/2 -translate-y-1/2 text-white text-center">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-black mb-6 drop-shadow-[0_4px_10px_rgba(0,0,0,0.8)] whitespace-nowrap max-w-none">
+              AI, Big Data, and System Laboratory
             </h2>
-            <p className="text-xl sm:text-2xl max-w-2xl mx-auto font-semibold drop-shadow-[0_3px_8px_rgba(0,0,0,0.7)]">
-              We conduct pioneering research on AI (ML/DL/GenAI) technologies from fundamental algorithmic, big data-driven system, and healthcare application perspectives.
-            </p>
           </div>
+
+
 
         </header>
 
@@ -39,8 +40,10 @@ export default function Home() {
         {/* Research Areas Section */}
         <section className="relative z-10 px-6 md:px-20 lg:px-80 py-24 bg-white">
           <div className="max-w-6xl mx-auto text-center">
-            <h2 className="text-4xl font-extrabold mb-12">Research</h2>
-
+            <h2 className="text-4xl font-extrabold mb-6">Research</h2>
+            <p className='text-gray-700 mb-6'>
+            We conduct pioneering research on AI (ML/DL/GenAI) technologies from fundamental algorithmic, big data-driven system, and healthcare application perspectives. We are dedicated to advancing these fields through innovative approaches that push the boundaries of what’s possible.
+            </p>
             {/* CoreAI */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-16">
               {/* Image */}
@@ -86,6 +89,28 @@ export default function Home() {
               </div>
             </div>
 
+          </div>
+        </section>
+
+        { /* News Section */ }
+        <section className="relative z-10 px-6 md:px-20 lg:px-80 py-24 bg-white">
+          <div className="max-w-6xl mx-auto text-center">
+            <h2 className="text-4xl font-extrabold mb-6">News</h2>
+
+            {/* Read more link at top right */}
+            <div className="text-right mb-10">
+              <Link href="/news" className="text-blue-600 font-medium hover:underline">
+                Read more →
+              </Link>
+            </div>
+
+            <ul className="text-left space-y-2">
+              {newsList.slice(0, 10).map((item, idx) => (
+                <li key={idx} className="text-gray-800">
+                  <span className="font-medium">{item.date}</span> — {item.title}
+                </li>
+              ))}
+            </ul>
           </div>
         </section>
 

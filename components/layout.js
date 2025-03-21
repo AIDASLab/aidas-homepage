@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import Head from "next/head";
 import Link from "next/link";
+import Image from "next/image";
 
 const Layout = ({ children }) => {
   const [scrolled, setScrolled] = useState(false);
@@ -27,28 +28,26 @@ const Layout = ({ children }) => {
 
       {/* Navbar */}
       <nav
-        className={`fixed top-0 left-0 z-50 w-full flex flex-col items-center transition-all duration-300 ${scrolled ? "py-4 bg-[#101820]/95 shadow-lg" : "py-8 bg-[#101820]/80"
+        className={`fixed top-0 left-0 z-50 w-full flex flex-col items-center transition-all duration-300 ${scrolled ? "py-4 bg-[#001871]/70 shadow-lg" : "py-8 bg-[#001871]/0"
           }`}
       >
         <div className="flex justify-between items-center w-full px-6">
           {/* Left Side: Logo & Title */}
-          <div className="flex items-center space-x-2 sm:space-x-3 md:space-x-4">
+          <Link href="/" className="flex items-center space-x-2 sm:space-x-3 md:space-x-4 pl-6 cursor-pointer">
             <img
-              src="/logo/snu-white.png"
-              alt="Lab Logo"
-              className={`transition-all duration-300 ${scrolled ? "h-8 sm:h-12" : "h-12 sm:h-16 md:h-20"
-                }`}
+                src="/logo/sample-logo3.png"
+                alt="Lab Logo"
+                className={`transition-all duration-300 ${scrolled ? "h-8 sm:h-12" : "h-12 sm:h-16 md:h-20"}`}
             />
             <h1
-              className={`text-gray-100 font-bold transition-all duration-300 ${scrolled ? "text-2xl" : "text-3xl"
-                }`}
+                className={`font-bold transition-all duration-300 pl-2 ${scrolled ? "text-2xl text-white" : "text-3xl text-gray-800"}`}
             >
-              SNU AIDAS Lab
+                SNU AIDAS Lab
             </h1>
-          </div>
+        </Link>
 
           {/* Desktop Navigation */}
-          <ul className="hidden md:flex space-x-12 text-gray-100 text-lg font-semibold">
+          <ul className={`hidden md:flex space-x-12 text-gray-800 text-lg font-semibold pr-6 ${scrolled ? "text-2xl text-white" : "text-3xl text-gray-800"}`}>
             <li><Link href="/" className="hover:underline">Home</Link></li>
             <li><Link href="/publications" className="hover:underline">Publications</Link></li>
             <li><Link href="/people" className="hover:underline">People</Link></li>
@@ -87,7 +86,7 @@ const Layout = ({ children }) => {
       <div className="mt-20">{children}</div>
 
       {/* Footer */}
-<footer className="p-10 bg-[#101820] text-white">
+<footer className="p-10 bg-[#001871] text-white">
     <div className="container mx-auto flex flex-col md:flex-row items-center md:items-start justify-between">
         {/* Left Side: Logo */}
         <div className="flex items-center space-x-4 mb-6 md:mb-0">
@@ -116,7 +115,7 @@ const Layout = ({ children }) => {
     </div>
 
     {/* Bottom Copyright */}
-    <div className="text-center text-sm text-gray-300 mt-6 border-t border-gray-600 pt-4">
+    <div className="text-center text-sm text-white mt-6 border-t border-gray-600 pt-4">
         &copy; {new Date().getFullYear()} AIDAS Lab | All Rights Reserved
     </div>
 </footer>

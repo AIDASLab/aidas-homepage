@@ -5,15 +5,9 @@ import Layout from "../../../components/layout";
 export default function Join() {
     return (
         <Layout>
-            {/* Background Decoration */}
-            <img 
-                src="/background/landscape.jpg" 
-                alt="Decoration"
-                className="absolute top-0 left-0 w-full h-32 sm:h-48 md:h-56 lg:h-[25vh] object-cover"
-            />
 
             {/* Join Page Container */}
-            <div className="relative flex flex-col items-center justify-center min-h-screen p-8 pt-40 sm:pt-60 md:pt-80 lg:pt-[25vh]">
+            <div className="relative flex flex-col items-center justify-center min-h-screen p-8 pt-20 sm:pt-40 md:pt-60 lg:pt-[15vh]">
                 {/* Page Title */}
                 <h1 className="text-4xl font-bold text-center text-gray-800 mb-8">Join Our Lab</h1>
 

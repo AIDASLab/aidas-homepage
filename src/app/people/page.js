@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Image from "next/image";
 import Layout from "../../../components/layout";
 
 export default function People() {
@@ -32,26 +33,19 @@ export default function People() {
 
     return (
         <Layout>
-            <img 
-            src="/background/people.jpg" 
-            alt="Decoration"
-            className="absolute top-0 left-0 w-full h-32 sm:h-48 md:h-56 lg:h-[25vh] object-cover"
-            />
-
-
-            <div className="relative container mx-auto p-8 pt-40 sm:pt-60 md:pt-80 lg:pt-[25vh]">
+            <div className="relative container mx-auto p-8 pt-20 sm:pt-40 md:pt-60 lg:pt-[15vh]">
                 <h1 className="text-4xl text-center font-bold mb-6">People</h1>
                 <h2 className="text-3xl font-semibold mt-6 mb-6">Principal Investigator</h2>
 
                 {/* Principal Investigator Section */}
                 {professor && (
-                    <section className="w-full flex flex-col md:flex-row items-center justify-center bg-gray-100 py-16 px-8 rounded-lg shadow-md mb-10">
+                    <section className="w-full flex flex-col md:flex-row items-center justify-center py-16 px-8 rounded-lg mb-10">
                         {/* Left Side - Large Image */}
                         <div className="w-full md:w-1/3 flex justify-center">
                             <img
                                 src={professor.image}
                                 alt={professor.name}
-                                className="w-48 h-48 md:w-64 md:h-64 object-cover rounded-full shadow-lg"
+                                className="w-48 h-48 md:w-64 md:h-64 object-cover rounded-full "
                             />
                         </div>
 
@@ -87,14 +81,17 @@ export default function People() {
                         {/* List of people */}
                         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
                             {members.map((person, idx) => (
-                                <div key={idx} className="p-6 border border-gray-200 rounded-xl shadow-lg bg-#f0f0f0 hover:shadow-xl transition-shadow duration-300">
-                                <img
-                                        src={person.image}
-                                        alt={person.name}
-                                        className="w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 mx-auto rounded-full mb-4"
+                                <div key={idx} className="p-6 rounded-xl bg-#f0f0f0 duration-300">
+                                <Image
+                                    src={person.image}
+                                    alt={person.name}
+                                    width={112} // Controls the base width (28 * 4)
+                                    height={112} // Controls the base height (28 * 4)
+                                    className="w-24 h-24 sm:w-28 sm:h-32 md:w-36 md:h-40 mx-auto rounded-full object-cover"
+                                    priority
                                     />
-                                    <h3 className="text-xl font-semibold text-center">{person.name}</h3>
-                                    <h4 className="text-l text-left font-semibold ml-6 mt-2">Research Areas</h4>
+                                    <h3 className="text-2xl font-semibold text-center pt-6">{person.name}</h3>
+                                    <h4 className="text-xl text-left font-semibold ml-6 mt-6">Research Areas</h4>
                                     <div className="text-gray-600 text-left ml-6 mt-2">
                                         {person.research?.map((res, index) => (
                                             <p key={index}>{res}</p>

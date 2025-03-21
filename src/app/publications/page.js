@@ -32,14 +32,7 @@ export default function Publications() {
 
     return (
         <Layout>
-            {/* Background Decoration */}
-            <img 
-                src="/background/random_background2.jpg" 
-                alt="Decoration"
-                className="absolute top-0 left-0 w-full h-32 sm:h-48 md:h-56 lg:h-[25vh] object-cover"
-            />
-
-            <div className="relative flex justify-center p-8 pt-40 sm:pt-60 md:pt-80 lg:pt-[25vh]">
+            <div className="relative flex justify-center p-8 pt-20 sm:pt-40 md:pt-60 lg:pt-[15vh]">
                 <div className="w-full max-w-5xl">  {/* Wide & centered */}
                     <h1 className="text-4xl text-center font-bold mb-6">Publications</h1>
 

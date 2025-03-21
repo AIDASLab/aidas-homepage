@@ -28,12 +28,7 @@ export default async function SeminarPage() {
 
         return (
             <Layout>
-                <img 
-                    src="/background/random_background2.jpg" 
-                    alt="Decoration"
-                    className="absolute top-0 left-0 w-full h-32 sm:h-48 md:h-56 lg:h-[25vh] object-cover"
-                    />
-                <div className="min-h-screen flex flex-col items-center bg-gray-100 pt-40 sm:pt-60 md:pt-80 lg:pt-[25vh]">
+                <div className="min-h-screen flex flex-col items-center bg-gray-100 pt-20 sm:pt-40 md:pt-60 lg:pt-[15vh]">
                     {/* Page Title */}
                     <h1 className="text-4xl font-bold text-center text-gray-800 mb-6">Seminars</h1>
 
