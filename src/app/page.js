@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Layout from '../../components/layout';
 import { getNewsMetaList } from "../../components/get-news-meta";
 
-export default function Home() {
+export default async function Home() {
 
   const newsList = getNewsMetaList();
 
