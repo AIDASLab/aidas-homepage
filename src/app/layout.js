@@ -1,4 +1,5 @@
 import { Inter, Noto_Sans_KR } from 'next/font/google';
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import "./globals.css";
 
 const inter = Inter({
