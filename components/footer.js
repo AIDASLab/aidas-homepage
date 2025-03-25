@@ -1,13 +1,22 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Footer() {
     return (
         <footer className="p-10 bg-[#272945] text-white">
         <div className="container mx-auto flex flex-col md:flex-row items-center md:items-start justify-between">
             {/* Left Side: Logo */}
+
             <div className="flex items-center space-x-4 mb-6 md:mb-0">
-                <img src="/logo/snu-ece-white-ko.svg" alt="University Logo" className="h-12 md:h-16" />
+            <Image
+                src="/logo/snu-ece-white-ko.svg"
+                alt="University Logo"
+                width={200} 
+                height={64}
+                className="h-12 md:h-16"
+            />
             </div>
+
     
             {/* Centered Two-Column Section */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 text-sm text-gray-300 text-center md:text-left">
