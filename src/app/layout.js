@@ -34,6 +34,7 @@ export default function RootLayout({ children }) {
         className={`${inter.variable} ${noto.variable} font-sans`}
       >
         {children}
+        <SpeedInsights/>
       </body>
     </html>
   );
