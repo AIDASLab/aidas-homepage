@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Header() {
   const [atTop, setAtTop] = useState(true);
@@ -36,10 +37,16 @@ export default function Header() {
       {/* Top bar */}
       <div className={`fixed top-0 left-0 w-full h-6 bg-[#272945] z-[60] transition-transform duration-200 ${slideClass}`}>
         <div className="max-w-screen-xl mx-auto h-full flex items-center px-4 ml-8">
-          <img src="/logo/logo-text-white.png" alt="Mini Logo" className="h-2 sm:h-2.5 md:h-3 lg:h-3" />
+            <Image
+            src="/logo/logo-text-white.png"
+            alt="Mini Logo"
+            className="h-2 sm:h-2.5 md:h-3 lg:h-3"
+            width={250} 
+            height={16} 
+            priority 
+            />
         </div>
-      </div>
-
+        </div>
       {/* Header */}
       <header className={`fixed top-0 left-0 w-full z-50 bg-white transition-transform duration-100 ${slideClass}`}>
         <div className={`max-w-screen-xl mx-auto flex flex-col sm:flex-row items-center justify-between px-6 sm:px-10 transition-all duration-200 ${

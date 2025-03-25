@@ -42,12 +42,14 @@ export default function People() {
                     <section className="w-full flex flex-col md:flex-row items-center justify-center py-16 px-8 rounded-lg mb-10">
                         {/* Left Side - Large Image */}
                         <div className="w-full md:w-1/3 flex justify-center">
-                            <img
+                            <Image
                                 src={professor.image}
                                 alt={professor.name}
-                                className="w-48 h-48 md:w-64 md:h-64 object-cover rounded-full "
+                                width={256}
+                                height={256}
+                                className="w-48 h-48 md:w-64 md:h-64 object-cover rounded-full"
                             />
-                        </div>
+                            </div>
 
                         {/* Right Side - Career Information */}
                         <div className="w-full md:w-2/3 mt-6 md:mt-0 md:ml-12">
