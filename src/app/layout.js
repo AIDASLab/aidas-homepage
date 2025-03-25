@@ -1,26 +1,36 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter, Noto_Sans_KR } from 'next/font/google';
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
+const inter = Inter({
+  subsets: ['latin'],
+  variable: '--font-inter',
+  display: 'swap',
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+const noto = Noto_Sans_KR({
+  subsets: ['latin'],
+  weight: ['400', '500', '700'],
+  variable: '--font-noto',
+  display: 'swap',
 });
+
 
 export const metadata = {
-  title: "ADIAS Lab",
-  description: "SNU AIDAS Lab homepage",
+  title: "AIDAS Lab",
+  description: "SNU AIDAS Lab",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <link
+          href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css"
+          rel="stylesheet"
+        />
+      </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${inter.variable} ${noto.variable} font-sans`}
       >
         {children}
       </body>

@@ -5,7 +5,18 @@ export default {
     "./app/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        sans: [
+          'Pretendard',
+          'Inter',
+          '"Noto Sans KR"',
+          'system-ui',
+          'sans-serif',
+        ],
+      },
+    },
   },
   plugins: [],
 };
+
