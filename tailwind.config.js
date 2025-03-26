@@ -8,15 +8,22 @@ export default {
     extend: {
       fontFamily: {
         sans: [
-          'Pretendard',
           'Inter',
-          '"Noto Sans KR"',
-          'system-ui',
+          'Pretendard',
+          'Roboto',
+          'Segoe UI',
+          'Helvetica Neue',
+          'Arial',
           'sans-serif',
         ],
       },
+      colors: {
+        themegray: {
+          100: '#666666',
+          200: '#333333',
+        }
+      }
     },
   },
   plugins: [],
 };
-
