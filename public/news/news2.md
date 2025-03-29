@@ -1,6 +1,6 @@
 ---
 title: "Gildong Hong Graduated!"
-date: "March 15, 2025"
+date: "2025-03-25"
 ---
 
 # This article is written in Markdown

@@ -1,7 +1,9 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import Layout from '../../components/layout';
+import ResearchSection from '../../components/main-research-section';
 import PublicationsSection from '../../components/main-publications-section';
+import NewsSection from '../../components/main-news-section';
 
 export default function Home() {
 
@@ -30,10 +32,10 @@ export default function Home() {
         </section>
 
         <>
+          <ResearchSection />
           <PublicationsSection />
+          <NewsSection />
         </>
-        
-
 
 
     </Layout>

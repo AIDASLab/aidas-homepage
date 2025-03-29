@@ -6,6 +6,11 @@ export default {
   ],
   theme: {
     extend: {
+      colors: {
+        primary: '#333333',
+        point: '#666666',
+        snublue: '#272945',
+      },
       fontFamily: {
         sans: [
           'Inter',
@@ -17,12 +22,6 @@ export default {
           'sans-serif',
         ],
       },
-      colors: {
-        themegray: {
-          100: '#666666',
-          200: '#333333',
-        }
-      }
     },
   },
   plugins: [],

@@ -1,6 +1,7 @@
 ---
 title: "Our Papers Are Accepted to Random Conference!"
-date: "March 15, 2025"
+date: "2025-03-15"
+summary: "Lorem ipsum dolor sit amet"
 ---
 
 # This article is written in Markdown

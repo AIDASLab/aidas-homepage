@@ -7,14 +7,27 @@ export default function Footer() {
         <div className="container mx-auto flex flex-col md:flex-row items-center md:items-start justify-between">
             {/* Left Side: Logo */}
 
-            <div className="flex items-center space-x-4 mb-6 md:mb-0">
-            <Image
-                src="/logo/snu-ece-white-ko.svg"
-                alt="University Logo"
-                width={200} 
-                height={64}
-                className="h-12 md:h-16"
-            />
+            <div className="flex items-center justify-center space-x-8 mt-2 md:mt-4">
+            <Link href="https://ece.snu.ac.kr" target="_blank" rel="noopener noreferrer">
+
+                <Image
+                    src="/logo/snu-ece-white.png"
+                    alt="SNU ECE Logo"
+                    width={400}
+                    height={200}
+                    className="h-8 sm:h-10 md:h-12 lg:h-16 w-auto"
+                />
+                </Link>
+                <Link href="https://gsai.snu.ac.kr" target="_blank" rel="noopener noreferrer">
+
+                <Image
+                    src="/logo/snu-ipai-white.png"
+                    alt="SNU IPAI Logo"
+                    width={909}
+                    height={207}
+                    className="h-8 sm:h-10 md:h-12 lg:h-16 w-auto"
+                />
+                </Link>
             </div>
 
     
