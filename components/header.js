@@ -37,6 +37,8 @@ export default function Header() {
       {/* Top bar */}
       <div className={`fixed top-0 left-0 w-full h-6 bg-[#272945] z-[60] transition-transform duration-200 ${slideClass}`}>
         <div className="max-w-screen-xl mx-auto h-full flex items-center px-4 sm:ml-4 md:ml-6 lg:ml-8">
+        <Link href="https://www.snu.ac.kr" target="_blank" rel="noopener noreferrer">
+
         <Image
           src="/logo/logo-text-white.png"
           alt="Mini Logo"
@@ -45,6 +47,7 @@ export default function Header() {
           height={0}
           priority
         />
+        </Link>
 
         </div>
         </div>
@@ -57,7 +60,7 @@ export default function Header() {
           {/* AIDAS Title */}
 
           <Link href="/">
-          <div className={`${atTop ? 'text-5xl sm:text-6xl' : 'text-2xl sm:text-3xl'} font-extrabold transition-all duration-200 w-full sm:w-auto text-left mt-8`}>
+          <div className={`${atTop ? 'text-5xl sm:text-6xl' : 'text-2xl sm:text-3xl'} font-extrabold transition-all duration-200 w-full sm:w-auto text-left mt-6`}>
             AIDAS Lab
             {atTop && (
               <p className="mt-2 text-base sm:text-lg font-normal">
@@ -69,7 +72,7 @@ export default function Header() {
           {/* Navigation */}
           <ul className={`
             transition-all duration-500
-            ${atTop ? 'mt-20' : 'mt-2'}
+            ${atTop ? 'mt-20' : 'mt-6'}
             flex flex-wrap justify-center sm:justify-end
             gap-x-6 sm:gap-x-8
             text-md sm:text-lg md:text-xl
