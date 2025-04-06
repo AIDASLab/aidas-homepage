@@ -5,7 +5,7 @@ import Layout from "../../../../components/layout";
 import MarkdownRenderer from "../../../../components/markdown-renderer";
 
 export async function generateStaticParams() {
-    const categories = ["news", "seminar"]; // 두 개의 카테고리 사용
+    const categories = ["news", "seminar", "project"];
     const paths = [];
 
     for (const category of categories) {
@@ -30,9 +30,18 @@ export async function generateStaticParams() {
 
 export default async function ArticlePage({ params }) {
     const { category, slug } = await params;
+
+    const categoryMap = {
+        seminar: "public/seminar",
+        news: "public/news",
+        project: "public/project",
+      };
+      
+    const directory = categoryMap[category];
     
-    // category 
-    const directory = category === "seminar" ? "public/seminar" : "public/news";
+    if (!directory) {
+    throw new Error(`Invalid category: ${category}`);
+    }
     
     // only if the filetype is md 
     const filePath = path.join(process.cwd(), directory, `${slug}.md`);

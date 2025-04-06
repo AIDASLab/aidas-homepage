@@ -16,6 +16,10 @@
   --color-foreground: var(--foreground);
 }
 
+@theme {
+  --font-display: Inter, Pretendard, 'Roboto', 'Segoe UI', 'Helvetica Neue', 'Arial', sans-serif;  
+}
+
 body {
   background: var(--background);
   color: var(--foreground);

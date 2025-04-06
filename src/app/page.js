@@ -4,6 +4,7 @@ import Layout from '../../components/layout';
 import ResearchSection from '../../components/main-research-section';
 import PublicationsSection from '../../components/main-publications-section';
 import NewsSection from '../../components/main-news-section';
+import ProjectSection from '../../components/main-project.section';
 
 export default function Home() {
 
@@ -34,6 +35,7 @@ export default function Home() {
         <>
           <ResearchSection />
           <PublicationsSection />
+          <ProjectSection />
           <NewsSection />
         </>
 

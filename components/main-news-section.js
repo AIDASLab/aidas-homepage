@@ -55,7 +55,7 @@ export default async function NewsSection() {
               </div>
 
               {news.summary && (
-                <p className="text-l text-gray-700 mt-2 leading-relaxed">
+                <p className="text-sm text-gray-700 mt-2 leading-relaxed">
                   {news.summary}
                   <Link
                     href={`/news/${news.slug}`}

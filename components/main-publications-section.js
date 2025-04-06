@@ -35,11 +35,11 @@ export default function PublicationsSection() {
       {publications.map((pub, idx) => (
         <div key={idx}>
           <h3 className="text-xl font-semibold">{pub.title}</h3>
-          <p className="text-m text-[#666666] mt-1">
+          <p className="text-sm text-[#666666] mt-1">
             {Array.isArray(pub.authors) ? pub.authors.join(', ') : pub.authors} · {pub.venue} {pub.date.slice(0, 4)}
           </p>
           {pub.summary && (
-            <p className="text-m text-gray-700 mt-2 leading-relaxed">
+            <p className="text-sm text-gray-700 mt-2 leading-relaxed">
               {pub.summary.length > 300
                 ? `${pub.summary.slice(0, 300)}... `
                 : pub.summary}
