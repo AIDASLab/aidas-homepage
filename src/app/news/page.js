@@ -48,11 +48,11 @@ export default async function NewsPage() {
     } catch (error) {
         console.error("Error reading news directory:", error);
         return (
-            <Layout>
+            <PageLayout title="News">
                 <div className="min-h-screen flex items-center justify-center">
                     <p className="text-red-500 text-xl">Failed to load news articles.</p>
                 </div>
-            </Layout>
+            </PageLayout>
         );
     }
 }

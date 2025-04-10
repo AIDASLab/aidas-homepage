@@ -1,6 +1,5 @@
 import fs from "fs/promises";
 import path from "path";
-import Link from "next/link";
 import matter from "gray-matter";
 import PageLayout from "@/components/layout/page-layout";
 import SeminarEntry from "@/components/seminar/seminar-entry";
@@ -50,11 +49,11 @@ export default async function SeminarPage() {
     } catch (error) {
         console.error("Error reading seminar directory:", error);
         return (
-            <Layout>
+            <PageLayout title="Seminar">
                 <div className="min-h-screen flex items-center justify-center">
                     <p className="text-red-500 text-xl">Failed to load seminar articles.</p>
                 </div>
-            </Layout>
+            </PageLayout>
         );
     }
 }

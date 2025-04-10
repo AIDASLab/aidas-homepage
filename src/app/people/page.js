@@ -2,7 +2,6 @@
 
 import { useEffect, useState } from "react";
 import Image from "next/image";
-import Layout from "@/components/layout/layout";
 import PageLayout from "@/components/layout/page-layout";
 
 export default function People() {
