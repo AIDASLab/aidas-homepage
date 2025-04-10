@@ -2,6 +2,8 @@ import fs from "fs/promises";
 import path from "path";
 import matter from "gray-matter";
 import Link from "next/link";
+import ViewMoreButton from "@/components/common/view-more-button";
+import DateDisplay from "@/components/common/date-display";
 
 export default async function NewsSection() {
   const newsDirectory = path.join(process.cwd(), "public/news");
@@ -35,12 +37,7 @@ export default async function NewsSection() {
         {/* Title & View More */}
         <div className="md:pl-2 lg:-ml-6 xl:-ml-12">
           <h2 className="text-4xl font-bold whitespace-nowrap mb-4">News</h2>
-          <Link
-            href="/news"
-            className="inline-block px-4 py-2 border border-blue-500 text-blue-500 rounded-md hover:bg-blue-50 transition text-sm"
-          >
-            View more
-          </Link>
+          <ViewMoreButton href="/news"/>
         </div>
 
         {/* News List */}
@@ -48,10 +45,10 @@ export default async function NewsSection() {
           {sortedNews.map((news, idx) => (
             <div key={idx}>
               <div className="flex justify-between items-start">
-                <h3 className="text-xl font-semibold text-gray-900">
+                <h3 className="text-base font-semibold">
                   <Link href={`/news/${news.slug}`}>{news.title}</Link>
                 </h3>
-                <span className="text-l text-gray-500 whitespace-nowrap">{news.date}</span>
+                <DateDisplay date={news.date} className="text-sm text-[#666666]"/>
               </div>
 
               {news.summary && (

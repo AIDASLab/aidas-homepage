@@ -3,7 +3,9 @@ import path from "path";
 import Link from "next/link";
 import matter from "gray-matter";
 import Image from "next/image";
-import Layout from "../../../components/layout";
+import PageLayout from "@/components/layout/page-layout";
+import ProjectEntry from "@/components/project/project-entry";
+import CollaboratorSection from "@/components/project/collaborator-section";
 
 export default async function projectPage() {
   const projectDir = path.join(process.cwd(), "public/project");
@@ -29,43 +31,24 @@ export default async function projectPage() {
   );
 
   return (
-    <Layout>
-      <div className="min-h-screen py-16 px-4 max-w-6xl mx-auto mt-6">
-        <h1 className="text-4xl font-bold text-center text-gray-800 mb-12">
-          Project
-        </h1>
+    <PageLayout title="Project">
+      {/* Collaborator section */}
+       <CollaboratorSection />
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
-          {project.map((project) => (
-            <Link key={project.slug} href={`/project/${project.slug}`}>
-              <div className="border rounded-lg overflow-hidden shadow hover:shadow-lg transition bg-white">
-                {project.thumbnail && (
-                  <div className="relative w-full h-52">
-                    <Image
-                      src={`/${project.thumbnail}`}
-                      alt={project.title}
-                      fill
-                      className="object-cover"
-                    />
-                  </div>
-                )}
-                <div className="p-5">
-                  <h2 className="text-xl font-semibold text-gray-900 mb-2">
-                    {project.title}
-                  </h2>
-                  <p className="text-gray-500 text-sm mb-2">{project.date}</p>
-                  <p className="text-gray-700 text-sm line-clamp-3">
-                    {project.summary}
-                  </p>
-                  <p className="text-blue-600 hover:underline mt-3 inline-block">
-                    View Details →
-                  </p>
-                </div>
-              </div>
-            </Link>
-          ))}
-        </div>
-      </div>
-    </Layout>
+      {/* project section */}
+      <section className="grid grid-cols-1 sm:grid-cols-2 gap-8 mt-8 mb-8">
+        {project.map((project, idx) => (
+          <div key={idx}>
+            <ProjectEntry
+              title={project.title}
+              thumbnail={project.thumbnail}
+              date={project.date}
+              summary={project.summary}
+              slug={project.slug}
+            />
+          </div>
+        ))}
+      </section>
+    </PageLayout>
   );
 }

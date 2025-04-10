@@ -1,10 +1,10 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import Layout from '../../components/layout';
-import ResearchSection from '../../components/main-research-section';
-import PublicationsSection from '../../components/main-publications-section';
-import NewsSection from '../../components/main-news-section';
-import ProjectSection from '../../components/main-project.section';
+import Layout from '@/components/layout/layout';
+import ResearchSection from '@/components/main/main-research-section';
+import PublicationsSection from '@/components/main/main-publications-section';
+import NewsSection from '@/components/main/main-news-section';
+import ProjectSection from '@/components/main/main-project-section';
 
 export default function Home() {
 

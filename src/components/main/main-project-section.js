@@ -3,6 +3,8 @@ import path from "path";
 import matter from "gray-matter";
 import Link from "next/link";
 import Image from "next/image";
+import ViewMoreButton from "@/components/common/view-more-button";
+import DateDisplay from "@/components/common/date-display";
 
 export default async function ProjectSection() {
   const projectDirectory = path.join(process.cwd(), "public/project");
@@ -37,19 +39,14 @@ export default async function ProjectSection() {
         {/* Section Title & Button */}
         <div className="flex items-center justify-between mb-10">
           <h2 className="text-4xl font-bold">Projects</h2>
-          <Link
-            href="/project"
-            className="inline-block px-4 py-2 border border-blue-500 text-blue-500 rounded-md hover:bg-blue-50 transition text-sm"
-          >
-            View more
-          </Link>
+          <ViewMoreButton href="/project" />
         </div>
 
         {/* Project Cards */}
         <div className="grid gap-6 md:gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
           {sortedProjects.map((project) => (
             <Link key={project.slug} href={`/project/${project.slug}`}>
-              <div className="bg-white rounded-lg shadow hover:shadow-md transition overflow-hidden flex flex-col h-full cursor-pointer">
+              <div className="bg-white rounded-lg transition overflow-hidden flex flex-col h-full cursor-pointer">
                 {project.thumbnail && (
                   <div className="relative w-full h-48 sm:h-56 md:h-40 lg:h-48">
                     <Image
@@ -63,11 +60,11 @@ export default async function ProjectSection() {
                 )}
                 <div className="p-4 flex flex-col justify-between flex-grow">
                   <div>
-                    <h3 className="text-lg font-semibold text-gray-900 mb-1">
+                    <h3 className="text-lg font-semibold mb-1">
                       {project.title}
                     </h3>
-                    <p className="text-sm text-gray-500 mb-2">{project.date}</p>
-                    <p className="text-sm text-gray-700 line-clamp-3">
+                    <DateDisplay date={project.date} className="text-sm text-[#666666] mb-2"/>
+                    <p className="text-sm line-clamp-3">
                       {project.summary}
                     </p>
                   </div>

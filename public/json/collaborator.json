@@ -1,0 +1,52 @@
+[
+    {
+        "name": "Company1",
+        "image": "logo/snu-blue.png",
+        "link": "https://www.snu.ac.kr"
+    },
+    {
+        "name": "Company2",
+        "image": "logo/snu-blue.png",
+        "link": "https://www.snu.ac.kr"
+    },
+    {
+        "name": "Company3",
+        "image": "logo/snu-blue.png",
+        "link": "https://www.snu.ac.kr"
+    },
+    {
+        "name": "Company4",
+        "image": "logo/snu-blue.png",
+        "link": "https://www.snu.ac.kr"
+    },
+    {
+        "name": "Company5",
+        "image": "logo/snu-blue.png",
+        "link": "https://www.snu.ac.kr"
+    },
+    {
+        "name": "Company6",
+        "image": "logo/snu-blue.png",
+        "link": "https://www.snu.ac.kr"
+    },
+    {
+        "name": "Company7",
+        "image": "logo/snu-blue.png",
+        "link": "https://www.snu.ac.kr"
+    },
+    {
+        "name": "Company8",
+        "image": "logo/snu-blue.png",
+        "link": "https://www.snu.ac.kr"
+    },
+    {
+        "name": "Company9",
+        "image": "logo/snu-blue.png",
+        "link": "https://www.snu.ac.kr"
+    },
+    {
+        "name": "Company10",
+        "image": "logo/snu-blue.png",
+        "link": "https://www.snu.ac.kr"
+    }
+]

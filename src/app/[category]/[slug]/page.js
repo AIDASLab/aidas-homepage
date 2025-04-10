@@ -1,8 +1,8 @@
 import fs from "fs/promises";
 import path from "path";
 import matter from "gray-matter";
-import Layout from "../../../../components/layout";
-import MarkdownRenderer from "../../../../components/markdown-renderer";
+import Layout from "@/components/layout/layout";
+import MarkdownRenderer from "@/components/markdown-renderer";
 
 export async function generateStaticParams() {
     const categories = ["news", "seminar", "project"];

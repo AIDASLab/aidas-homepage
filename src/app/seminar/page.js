@@ -2,7 +2,8 @@ import fs from "fs/promises";
 import path from "path";
 import Link from "next/link";
 import matter from "gray-matter";
-import Layout from "../../../components/layout";
+import PageLayout from "@/components/layout/page-layout";
+import SeminarEntry from "@/components/seminar/seminar-entry";
 
 export default async function SeminarPage() {
 
@@ -21,40 +22,29 @@ export default async function SeminarPage() {
                 return {
                     title: data.title || filename.replace(".md", ""),
                     date: data.date || "No date available", // Handle missing date
+                    presenter: data.presenter || "",
                     slug: filename.replace(".md", ""),
                 };
             })
         );
 
         return (
-            <Layout>
-                <div className="min-h-screen flex flex-col items-center pt-20 sm:pt-40 md:pt-60 lg:pt-[15vh]">
-                    {/* Page Title */}
-                    <h1 className="text-4xl font-bold text-center text-gray-800 mb-6">Seminars</h1>
-
-                    {/* Seminar List Section */}
-                    <div className="w-full max-w-3xl bg-white shadow-lg rounded-lg p-8">
-                        <ul className="space-y-6">
-                            {seminarList.map((seminar) => (
-                                <li key={seminar.slug} className="p-6 border border-gray-200 rounded-lg shadow-md bg-gray-50 hover:bg-gray-100 transition-all">
-                                    <Link href={`/seminar/${seminar.slug}`}>
-                                        <div className="cursor-pointer">
-                                            {/* Title */}
-                                            <h2 className="text-2xl font-semibold text-gray-900 mb-2">{seminar.title}</h2>
-
-                                            {/* Date */}
-                                            <p className="text-gray-500 text-sm mb-2">{seminar.date}</p>
-
-                                            {/* Read More */}
-                                            <p className="text-blue-600 hover:underline font-medium">Read More →</p>
-                                        </div>
-                                    </Link>
-                                </li>
-                            ))}
-                        </ul>
+            <PageLayout title="Seminar">
+                {seminarList.map((seminar, idx) => (
+                    <div key={idx}>
+                        <SeminarEntry
+                            title={seminar.title}
+                            date={seminar.date}
+                            presenter={seminar.presenter}
+                            slug={seminar.slug}
+                        />
+                        {/* Divider */}
+                        {idx < seminarList.length - 1 && (
+                            <div className="mt-6 border-t border-gray-300" />
+                        )}
                     </div>
-                </div>
-            </Layout>
+                ))}
+            </PageLayout>
         );
 
     } catch (error) {

@@ -1,6 +1,6 @@
 ---
-title: "Deep Learning for Video Analysis"
-date: "2025-03-22"
+title: "Video Object Segmentation"
+date: "2025-03-25"
 presenter: "Gildong Hong"
 ---
 

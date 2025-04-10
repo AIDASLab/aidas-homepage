@@ -1,8 +1,8 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Layout from "../../../components/layout";
 import Link from "next/link";
+import PageLayout from "@/components/layout/page-layout";
 
 export default function Publications() {
     const [publications, setPublications] = useState([]);
@@ -11,78 +11,87 @@ export default function Publications() {
         fetch("/json/publication.json")
             .then((res) => res.json())
             .then((data) => {
-                // Sort by exact date (Newest first)
-                const sortedData = data.sort((a, b) => new Date(b.date) - new Date(a.date));
-                setPublications(sortedData);
+                const sorted = data.sort((a, b) => new Date(b.date) - new Date(a.date));
+                setPublications(sorted);
             })
             .catch((err) => console.error("Error loading publications:", err));
     }, []);
 
-    // Group publications by year (sorted in descending order)
-    const groupedPublications = publications.reduce((acc, paper) => {
-        const year = new Date(paper.date).getFullYear();
-        if (!acc[year]) acc[year] = [];
-        acc[year].push(paper);
+    const grouped = publications.reduce((acc, pub) => {
+        const year = new Date(pub.date).getFullYear();
+        acc[year] = acc[year] || [];
+        acc[year].push(pub);
         return acc;
     }, {});
 
-    // Sort the years so that the latest year appears first
-    const sortedYears = Object.keys(groupedPublications)
-        .sort((a, b) => Number(b) - Number(a));
+    const sortedYears = Object.keys(grouped).sort((a, b) => Number(b) - Number(a));
 
     return (
-        <Layout>
-            <div className="relative flex justify-center p-8 pt-20 sm:pt-40 md:pt-60 lg:pt-[15vh]">
-                <div className="w-full max-w-5xl">  {/* Wide & centered */}
-                    <h1 className="text-4xl text-center font-bold mb-6">Publications</h1>
+        <PageLayout title="Publications">
 
-                    {sortedYears.map((year) => (
-                        <div key={year} className="mb-12">
-                            {/* Year Header */}
-                            <h2 className="text-3xl font-bold mb-4">{year}</h2>
+            {sortedYears.map((year) => (
+                <div key={year} className="mb-16">
+                    <h2 className="text-2xl sm:text-3xl font-bold mb-6">{year}</h2>
 
-                            {/* List of Publications */}
-                            <div className="space-y-4">
-                                {groupedPublications[year]
-                                    .sort((a, b) => new Date(b.date) - new Date(a.date)) // Ensure newest within year
-                                    .map((paper, idx) => (
-                                        <div key={idx} className="p-6 px-8 w-full border border-gray-300 shadow-md bg-white rounded-lg">
-                                            {/* Title & Highlight */}
-                                            <div className="flex items-center">
-                                                <h3 className="text-lg font-semibold">{paper.title}</h3>
-                                                {paper.highlight && (
-                                                    <span className="ml-2 text-red-600 font-bold text-sm">[{paper.highlight}]</span>
-                                                )}
-                                            </div>
+                    <div className="space-y-10">
+                        {grouped[year].map((paper, idx) => {
+                            const extraLinks = Object.entries(paper)
+                                .filter(([key]) => !["title", "authors", "conference", "venue", "venue_full", "date", "highlight", "abstract"].includes(key))
+                                .map(([key, value]) =>
+                                    typeof value === "string" ? (
+                                        <Link
+                                            key={key}
+                                            href={value}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="hover:underline text-sm"
+                                        >
+                                            [{key}]
+                                        </Link>
+                                    ) : null
+                                );
 
-                                            {/* Category & Conference */}
-                                            <p className="text-gray-600 text-sm">
-                                                <span className="font-semibold">{paper.category}</span> | {paper.conference}
-                                            </p>
-
-                                            {/* Exact Date */}
-                                            <p className="text-gray-500 text-xs">{new Date(paper.date).toLocaleDateString()}</p>
-
-                                            {/* Links */}
-                                            <div className="mt-1 flex space-x-4">
-                                                {paper.code && (
-                                                    <Link href={paper.code} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline text-sm">
-                                                        Code
-                                                    </Link>
-                                                )}
-                                                {paper.video && (
-                                                    <Link href={paper.video} target="_blank" rel="noopener noreferrer" className="text-red-600 hover:underline text-sm">
-                                                        Video
-                                                    </Link>
-                                                )}
-                                            </div>
+                            return (
+                                <div key={idx}>
+                                    <div className="px-2 sm:px-4">
+                                        {/* Title & Highlight */}
+                                        <div className="flex flex-wrap items-center gap-2">
+                                            <h3 className="text-base sm:text-xl font-semibold">{paper.title}</h3>
+                                            {paper.highlight && (
+                                                <span className="text-[#666666] text-sm font-medium">[{paper.highlight}]</span>
+                                            )}
                                         </div>
-                                    ))}
-                            </div>
-                        </div>
-                    ))}
+
+                                        {/* Authors */}
+                                        {paper.authors && (
+                                            <p className="text-sm text-[#666666] mt-1">
+                                                {Array.isArray(paper.authors) ? paper.authors.join(", ") : paper.authors}
+                                            </p>
+                                        )}
+
+                                        {/* Venue + Year */}
+                                        <p className="text-sm text-[#666666] mt-1">
+                                            {paper.venue_full} ({paper.venue}), {new Date(paper.date).getFullYear()}
+                                        </p>
+
+                                        {/* Extra Links */}
+                                        {extraLinks.length > 0 && (
+                                            <div className="mt-2 flex flex-wrap gap-x-4 gap-y-1 text-sm text-[#666666]">
+                                                {extraLinks}
+                                            </div>
+                                        )}
+                                    </div>
+
+                                    {/* Divider */}
+                                    {idx < grouped[year].length - 1 && (
+                                        <div className="mt-6 border-t border-gray-300" />
+                                    )}
+                                </div>
+                            );
+                        })}
+                    </div>
                 </div>
-            </div>
-        </Layout>
+            ))}
+        </PageLayout>
     );
 }
