@@ -42,7 +42,7 @@
   {
     "name": "Woohyeon Park",
     "role": "MP",
-    "image": "/people/default.jpeg",
+    "image": "/people/woohyeon_park.jpg",
     "education": [
       "B.S. in Mechanical Engineering & B.S. in Software Convergence, Sungkyunkwan University, S. Korea, 2016-2023"
     ],
@@ -131,11 +131,9 @@
     "homepage": "",
     "linkedin": "https://www.linkedin.com/in/hanjun-lee-1690a01a0/"
   },
-
-
   {
     "name": "Hoeun Lee",
-    "role": "UG",
+    "role": "MP",
     "image": "/people/hoeun_lee.png",
     "education": [
       "B.S. in Computer Science and Engineering, Konkuk University, S. Korea, 2020-2025"
@@ -148,7 +146,7 @@
   },
   {
     "name": "Dogeun Kim",
-    "role": "UG",
+    "role": "MP",
     "image": "/people/dogeun_kim.jpg",
     "education": [
       "B.S in Naval Architecture and Ocean Engineering, Seoul National University, S. Korea, 2018-2025"
@@ -161,7 +159,7 @@
   },
   {
     "name": "Hyeonggeun Kim",
-    "role": "UG",
+    "role": "MS",
     "image": "/people/hyeonggeun_kim.jpg",
     "education": [
       "B.S in Materials Science & Engineering, Seoul National University, S.Korea, 2018-2025",
@@ -175,7 +173,7 @@
   },
   {
     "name": "Jusang Oh",
-    "role": "UG",
+    "role": "MS",
     "image": "/people/jusang_oh.jpg",
     "education": [
       "B.S. in Electrical and Computer Engineering, Seoul National University, S. Korea, 2019-2025"
@@ -188,7 +186,7 @@
   },
   {
     "name": "Yunseok Han",
-    "role": "UG",
+    "role": "MP",
     "image": "/people/yunseok_han.jpg",
     "education": [
       "B.S in Biosystems Engineering & Interdisciplinary Major in Artificial Intelligence, Seoul National University, S. Korea, 2019-2025"
@@ -201,7 +199,7 @@
   },
   {
     "name": "Jihwan Hong",
-    "role": "UG",
+    "role": "MP",
     "image": "/people/jihwan_hong.jpg",
     "education": [
       "B.S. in Computer Science and Engineering, Korea University, S. Korea, 2019-2025"
@@ -211,19 +209,6 @@
     "email": "",
     "homepage": "https://csjihwanh.com",
     "linkedin": "https://www.linkedin.com/in/jihwan-hong-17b1bb293/"
-  },
-  {
-    "name": "Juneau Jung",
-    "role": "UG",
-    "image": "/people/juneau_jung.jpeg",
-    "education": [
-      "B.S. in Electrical and Computer Engineering, Seoul National University, S.Korea, 2018-2024"
-    ],
-    "research": ["Computer Vision"],
-    "experience": [],
-    "email": "sean2ie@snu.ac.kr",
-    "homepage": "https://zzuno.github.io/",
-    "linkedin": ""
   },
   {
     "name": "Jungwon Choi",
