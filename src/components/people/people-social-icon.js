@@ -3,7 +3,7 @@
 import React from 'react';
 import Link from 'next/link';
 
-// map your property name → FontAwesome icon classes
+// FontAwesome icon classes
 const ICON_CLASS = {
   email:    'fas fa-envelope fa-md',
   homepage: 'fas fa-home fa-md',

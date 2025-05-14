@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import PageLayout from "@/components/layout/page-layout";
 import PeopleInfoSection from "@/components/people/people-info-section";
-import PeopleSocialIcon from "@/components/people/people-social-icon";
+import SocialIcon from "@/components/common/social-icon";
 
 export default function People() {
     const [professor, setProfessor] = useState(null);
@@ -51,10 +51,10 @@ export default function People() {
                         />
 
                         {/* Social Icons */}
-                        <div className="flex w-48 md:w-64 justify-center space-x-6 mt-10 text-gray-600">
-                            <PeopleSocialIcon property="homepage" href={professor.homepage} />
-                            <PeopleSocialIcon property="email"    href={professor.email} />
-                            <PeopleSocialIcon property="linkedin" href={professor.linkedin} />
+                        <div className="flex w-48 md:w-64 justify-center space-x-6 mt-10 text-gray-600 hover:text-gray-800">
+                            <SocialIcon property="homepage" href={professor.homepage} />
+                            <SocialIcon property="email"    href={professor.email} />
+                            <SocialIcon property="linkedin" href={professor.linkedin} />
                         </div>
                     </div>
 
@@ -102,10 +102,10 @@ export default function People() {
                                 />
                                 <h3 className="text-2xl font-semibold text-center pt-6">{person.name}</h3>
                                 
-                                <div className="flex justify-center space-x-6 mt-4 text-gray-600">
-                                    <PeopleSocialIcon property="homepage" href={person.homepage} />
-                                    <PeopleSocialIcon property="email"    href={person.email} />
-                                    <PeopleSocialIcon property="linkedin" href={person.linkedin} />
+                                <div className="flex justify-center space-x-6 mt-4 text-gray-600 hover:text-gray-800">
+                                    <SocialIcon property="homepage" href={person.homepage} />
+                                    <SocialIcon property="email"    href={person.email} />
+                                    <SocialIcon property="linkedin" href={person.linkedin} />
                                 </div>
 
                                 <>
