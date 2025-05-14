@@ -12,7 +12,7 @@ export default function ProjectEntry({ title, thumbnail, date, summary, slug }) 
               src={`/${thumbnail}`}
               alt={title}
               fill
-              className="object-cover"
+              className="object-contain"
             />
           </div>
         )}

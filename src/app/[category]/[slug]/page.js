@@ -4,30 +4,8 @@ import matter from "gray-matter";
 import MarkdownRenderer from "@/components/markdown-renderer";
 import PageLayout from "@/components/layout/page-layout";
 import DateDisplay from "@/components/common/date-display";
-
-export async function generateStaticParams() {
-    const categories = ["news", "seminar", "project"];
-    const paths = [];
-
-    for (const category of categories) {
-        const directory = path.join(process.cwd(), `public/${category}`);
-        try {
-            const files = await fs.readdir(directory);
-
-            const categoryPaths = files.map((filename) => ({
-                category,
-                slug: filename.replace(".md", ""),
-            }));
-
-            paths.push(...categoryPaths);
-        } catch (error) {
-            console.error(`Error reading ${category} directory:`, error);
-        }
-    }
-
-    return paths;
-}
-
+import ProjectCollaborator from "@/components/project/project-collaborator";
+import ProjectThumbnail from "@/components/project/project-thumbnail";
 
 export default async function ArticlePage({ params }) {
     const { category, slug } = await params;
@@ -41,7 +19,7 @@ export default async function ArticlePage({ params }) {
     const directory = categoryMap[category];
     
     if (!directory) {
-    throw new Error(`Invalid category: ${category}`);
+        throw new Error(`Invalid category: ${category}`);
     }
     
     // only if the filetype is md 
@@ -56,7 +34,16 @@ export default async function ArticlePage({ params }) {
                 <div className="flex justify-end mb-4">
                     <DateDisplay date={data.date} className="text-sm text-[#666666]" />
                 </div>
+
+                {/* render thumbnail when the category is project */}
+                {category == "project" && <ProjectThumbnail src={data.thumbnail}/>}
+
+                {/* render the main content */}
                 <MarkdownRenderer content={content}/>
+
+                {/* render collaborators when the category is project */}
+                {category == "project" && <ProjectCollaborator src={data.collaborator}/>}
+
             </PageLayout>
         );
 

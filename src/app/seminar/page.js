@@ -6,7 +6,14 @@ import SeminarEntry from "@/components/seminar/seminar-entry";
 
 export default async function SeminarPage() {
 
+
+    return (<PageLayout title= "Seminar">
+        <p>invalid access</p>
+    </PageLayout>
+    );
+
     const seminarDirectory = path.join(process.cwd(), "public/seminar");
+
 
     try {
         const files = await fs.readdir(seminarDirectory);

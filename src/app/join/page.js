@@ -1,6 +1,5 @@
 "use client";
 
-import Layout from "@/components/layout/layout";
 import PageLayout from "@/components/layout/page-layout";
 import Image from "next/image";
 
@@ -11,7 +10,7 @@ export default function Join() {
 
       <section>
         {/* Highlighted Section */}
-        <div className="bg-[#eef3f9] px-6 py-14 md:px-16 md:py-20 lg:px-24 flex flex-col md:flex-row gap-12 lg:gap-20 items-center rounded-xl shadow-sm">
+        <div className="bg-[#eef3f9] px-6 py-14 md:px-16 md:py-20 lg:px-24 flex flex-col md:flex-row gap-12 lg:gap-20 items-center rounded-xl">
           {/* Left: Text */}
           <div className="md:w-1/2">
             <h2 className="text-l sm:text-xl lg:text-2xl font-semibold mb-6 text-primary">

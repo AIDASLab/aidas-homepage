@@ -1,8 +1,8 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import Link from 'next/link';
 import ViewMoreButton from '../common/view-more-button';
+import ReadMore from '../common/read-more';
 
 export default function PublicationsSection() {
   const [publications, setPublications] = useState([]);
@@ -39,7 +39,7 @@ export default function PublicationsSection() {
                     ? `${pub.abstract.slice(0, 300)}... `
                     : pub.abstract}
                   {pub.abstract.length > 300 && (
-                    <span className="text-blue-600 hover:underline cursor-pointer">Read more</span>
+                    <ReadMore href="/publications" />
                   )}
                 </p>
               )}

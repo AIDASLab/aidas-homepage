@@ -11,9 +11,27 @@ export default function Header() {
   const [scrollY, setScrollY] = useState(0);
   const pathname = usePathname();
 
-  // Normalize pathname to remove trailing slash (if not just '/')
-  const normalizedPathname =
-    pathname !== '/' && pathname.endsWith('/') ? pathname.slice(0, -1) : pathname;
+
+  // Menu items array
+  const menuItems = [
+    { name: 'Publications', href: '/publications' },
+    { name: 'People', href: '/people' },
+    { name: 'News', href: '/news' },
+    //{ name: 'Seminar', href: '/seminar' },
+    { name: 'Project', href: '/project' },
+    { name: 'Contact', href: '/contact' },
+    { name: 'Join', href: '/join' },
+  ];
+
+  const normalizedPathname = (() => {
+    const path = pathname.replace(/\/$/, ''); // strip trailing slash
+    for (const { href } of menuItems) {
+      if (path === href || path.startsWith(href + '/')) {
+        return href;
+      }
+    }
+    return path || '/';
+  })();
 
   // Scroll behavior
   useEffect(() => {
@@ -30,16 +48,6 @@ export default function Header() {
 
   const slideClass = hideAll ? '-translate-y-full' : 'translate-y-0';
 
-  // Menu items array
-  const menuItems = [
-    { name: 'Publications', href: '/publications' },
-    { name: 'People', href: '/people' },
-    { name: 'News', href: '/news' },
-    { name: 'Seminar', href: '/seminar' },
-    { name: 'Project', href: '/project' },
-    { name: 'Contact', href: '/contact' },
-    { name: 'Join', href: '/join' },
-  ];
 
   return (
     <>
@@ -72,18 +80,16 @@ export default function Header() {
           {/* Title */}
           <Link href="/">
             <div
-              className={`${
-                atTop ? 'text-5xl sm:text-6xl' : 'text-2xl sm:text-3xl'
-              } font-extrabold transition-all duration-200 w-full sm:w-auto text-left mt-6`}
+              className="w-full sm:w-auto mt-6 ml-[-100px]"
             >
-              AIDAS Lab
-              {atTop && (
-                <p className="mt-2 text-base sm:text-lg font-normal">
-                  <span className="font-bold">AI</span>, big{' '}
-                  <span className="font-bold">DA</span>ta, and{' '}
-                  <span className="font-bold">S</span>ystem
-                </p>
-              )}
+              <Image
+                src="/logo/aidas-logo-long.png"
+                alt="AIDAS Lab Logo"
+                width={atTop ? 350 : 200}
+                height={0} 
+                className="transition-all duration-200 h-auto"
+                priority
+              />
             </div>
           </Link>
           {/* Navigation */}

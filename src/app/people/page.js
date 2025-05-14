@@ -3,6 +3,8 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import PageLayout from "@/components/layout/page-layout";
+import PeopleInfoSection from "@/components/people/people-info-section";
+import PeopleSocialIcon from "@/components/people/people-social-icon";
 
 export default function People() {
     const [professor, setProfessor] = useState(null);
@@ -39,7 +41,7 @@ export default function People() {
             {professor && (
                 <section className="w-full flex flex-col md:flex-row items-center justify-center py-16 px-8 rounded-lg mb-10">
                     {/* Left Side - Large Image */}
-                    <div className="w-full md:w-1/3 flex justify-center">
+                    <div className="w-full md:w-1/3 flex-col items-center">
                         <Image
                             src={professor.image}
                             alt={professor.name}
@@ -47,6 +49,13 @@ export default function People() {
                             height={256}
                             className="w-48 h-48 md:w-64 md:h-64 object-cover rounded-full"
                         />
+
+                        {/* Social Icons */}
+                        <div className="flex w-48 md:w-64 justify-center space-x-6 mt-10 text-gray-600">
+                            <PeopleSocialIcon property="homepage" href={professor.homepage} />
+                            <PeopleSocialIcon property="email"    href={professor.email} />
+                            <PeopleSocialIcon property="linkedin" href={professor.linkedin} />
+                        </div>
                     </div>
 
                     {/* Right Side - Career Information */}
@@ -72,6 +81,7 @@ export default function People() {
             {/* Other People (Grouped by Role) */}
             {Object.entries(groupedPeople).map(([section, members], index) => (
                 <div key={section} className="mb-10">
+                
                     {/* Divider (skip for the first section) */}
                     {index !== 0 && <hr className="border-t border-gray-300 my-8" />}
 
@@ -79,7 +89,7 @@ export default function People() {
                     <h2 className="text-3xl font-semibold mb-8">{section}</h2>
 
                     {/* List of people */}
-                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-6">
                         {members.map((person, idx) => (
                             <div key={idx} className="p-6 rounded-xl bg-#f0f0f0 duration-300">
                                 <Image
@@ -87,16 +97,35 @@ export default function People() {
                                     alt={person.name}
                                     width={112} // Controls the base width (28 * 4)
                                     height={112} // Controls the base height (28 * 4)
-                                    className="w-24 h-24 sm:w-28 sm:h-32 md:w-36 md:h-40 mx-auto rounded-full object-cover"
+                                    className="w-28 h-28 sm:w-32 sm:h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 mx-auto rounded-full object-cover"
                                     priority
                                 />
                                 <h3 className="text-2xl font-semibold text-center pt-6">{person.name}</h3>
-                                <h4 className="text-xl text-left font-semibold ml-6 mt-6">Research Areas</h4>
-                                <div className="text-gray-600 text-left ml-6 mt-2">
-                                    {person.research?.map((res, index) => (
-                                        <p key={index}>{res}</p>
-                                    ))}
+                                
+                                <div className="flex justify-center space-x-6 mt-4 text-gray-600">
+                                    <PeopleSocialIcon property="homepage" href={person.homepage} />
+                                    <PeopleSocialIcon property="email"    href={person.email} />
+                                    <PeopleSocialIcon property="linkedin" href={person.linkedin} />
                                 </div>
+
+                                <>
+                                    <PeopleInfoSection 
+                                        person={person}
+                                        property="research"
+                                        title="Research Areas"
+                                    /> 
+                                    <PeopleInfoSection 
+                                        person={person}
+                                        property="education"
+                                        title="Education"
+                                    /> 
+                                    <PeopleInfoSection 
+                                        person={person}
+                                        property="experience"
+                                        title="Experience"
+                                    /> 
+                                </>
+
                             </div>
                         ))}
                     </div>

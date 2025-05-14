@@ -1,52 +1,27 @@
 [
     {
-        "name": "Company1",
-        "image": "logo/snu-blue.png",
-        "link": "https://www.snu.ac.kr"
+        "name": "서울대학교병원",
+        "image": "collaborators/snuh.jpg",
+        "link": "https://www.snuh.org"
     },
     {
-        "name": "Company2",
-        "image": "logo/snu-blue.png",
-        "link": "https://www.snu.ac.kr"
+        "name": "한국지능정보사회진흥원",
+        "image": "collaborators/nia.png",
+        "link": "https://www.nia.or.kr/site/nia_kor/main.do"
     },
     {
-        "name": "Company3",
-        "image": "logo/snu-blue.png",
-        "link": "https://www.snu.ac.kr"
+        "name": "정보통신기획평가원",
+        "image": "collaborators/iitp.png",
+        "link": "https://www.iitp.kr"
     },
     {
-        "name": "Company4",
-        "image": "logo/snu-blue.png",
-        "link": "https://www.snu.ac.kr"
+        "name": "한국연구재단",
+        "image": "collaborators/nrf.png",
+        "link": "https://www.nrf.re.kr/"
     },
     {
-        "name": "Company5",
-        "image": "logo/snu-blue.png",
-        "link": "https://www.snu.ac.kr"
-    },
-    {
-        "name": "Company6",
-        "image": "logo/snu-blue.png",
-        "link": "https://www.snu.ac.kr"
-    },
-    {
-        "name": "Company7",
-        "image": "logo/snu-blue.png",
-        "link": "https://www.snu.ac.kr"
-    },
-    {
-        "name": "Company8",
-        "image": "logo/snu-blue.png",
-        "link": "https://www.snu.ac.kr"
-    },
-    {
-        "name": "Company9",
-        "image": "logo/snu-blue.png",
-        "link": "https://www.snu.ac.kr"
-    },
-    {
-        "name": "Company10",
-        "image": "logo/snu-blue.png",
-        "link": "https://www.snu.ac.kr"
+        "name": "dummy",
+        "image": "background/snu-night.jpg",
+        "link": "https://www.snu.ac.kr/"
     }
 ]

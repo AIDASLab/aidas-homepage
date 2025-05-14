@@ -31,6 +31,8 @@ const researchItems = [
 
 
 export default function ResearchSection() {
+  const autoSlideInterval = 10000 // 10s 
+
   // Start with pageIndex = 1 because index 0 will be a clone.
   const [pageIndex, setPageIndex] = useState(1);
   const [isInstant, setIsInstant] = useState(false);
@@ -95,7 +97,7 @@ export default function ResearchSection() {
     if (isDragging) return;
     const interval = setInterval(() => {
       changePage(pageIndex + 1);
-    }, 5000);
+    }, autoSlideInterval);
     return () => clearInterval(interval);
   }, [isDragging, pageIndex]);
 

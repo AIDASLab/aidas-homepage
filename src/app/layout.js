@@ -1,4 +1,5 @@
 import { SpeedInsights } from "@vercel/speed-insights/next"
+import '@fortawesome/fontawesome-free/css/all.min.css'
 import "./globals.css";
 
 export const metadata = {

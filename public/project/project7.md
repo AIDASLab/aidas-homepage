@@ -3,24 +3,10 @@ title: "자율적 의사결정이 가능한 인간지향적 체화형 AI 에이�
 date: "2025-04-01"
 summary: "2025.04 – 2029.12 | 정보통신기획평가원 정보통신·방송 기술개발사업"
 thumbnail: "project/figure/project7.png"
+collaborator: ["정보통신기획평가원"]
 ---
-<div style="text-align: center;">
-  <img src="/project/figure/project7.png" style="width: 700px; max-width: 100%; height: auto; display: block; margin: 0 auto;">
-</div>
-
 ### 2025.04 – 2029.12 | 정보통신기획평가원 정보통신·방송 기술개발사업
 - 환경 적응, 직관적 상호작용, 자율적 문제 해결이 가능한 인간지향적 체화형 인공지능 에이전트 개발
 - 연속학습, 멀티모달 인지, 인과추론, 강화학습 기반 행동 계획 등 8개의 세부 기술을 통합 연구
 - 현실 환경에서 안전성과 신뢰성을 보장하고, 도메인 특화 응용(제조, 의료, 농업 등)에 확장 가능
 - 범용 인공지능(AGI) 실현을 위한 핵심 기반 기술로 활용하여 차세대 AI 시스템의 발전을 도모
-
-### Collaborating organizations
-<table>
-  <tr>
-    <td><img src="/background/snu-night.jpg" width="200"/></td>
-    <td><img src="/background/snu-night.jpg" width="200"/></td>
-    <td><img src="/background/snu-night.jpg" width="200"/></td>
-    <td><img src="/background/snu-night.jpg" width="200"/></td>
-  </tr>
-</table>
-

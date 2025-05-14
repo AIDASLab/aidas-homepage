@@ -4,6 +4,7 @@ import matter from "gray-matter";
 import Link from "next/link";
 import ViewMoreButton from "@/components/common/view-more-button";
 import DateDisplay from "@/components/common/date-display";
+import ReadMore from "../common/read-more";
 
 export default async function NewsSection() {
   const newsDirectory = path.join(process.cwd(), "public/news");
@@ -54,12 +55,7 @@ export default async function NewsSection() {
               {news.summary && (
                 <p className="text-sm text-gray-700 mt-2 leading-relaxed">
                   {news.summary}
-                  <Link
-                    href={`/news/${news.slug}`}
-                    className="text-blue-600 hover:underline ml-1"
-                  >
-                    Read more
-                  </Link>
+                  <ReadMore href={`/news/${news.slug}`}/>
                 </p>
               )}
 

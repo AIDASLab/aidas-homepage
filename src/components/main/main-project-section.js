@@ -5,6 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import ViewMoreButton from "@/components/common/view-more-button";
 import DateDisplay from "@/components/common/date-display";
+import ReadMore from "../common/read-more";
 
 export default async function ProjectSection() {
   const projectDirectory = path.join(process.cwd(), "public/project");
@@ -48,12 +49,12 @@ export default async function ProjectSection() {
             <Link key={project.slug} href={`/project/${project.slug}`}>
               <div className="bg-white rounded-lg transition overflow-hidden flex flex-col h-full cursor-pointer">
                 {project.thumbnail && (
-                  <div className="relative w-full h-48 sm:h-56 md:h-40 lg:h-48">
+                  <div className="relative w-full h-48 sm:h-54 md:h-60 lg:h-64">
                     <Image
                       src={`/${project.thumbnail}`}
                       alt={project.title}
                       fill
-                      className="object-cover"
+                      className="object-contain"
                       sizes="(max-width: 768px) 100vw, 33vw"
                     />
                   </div>
@@ -68,9 +69,7 @@ export default async function ProjectSection() {
                       {project.summary}
                     </p>
                   </div>
-                  <p className="text-blue-600 hover:underline font-medium mt-3 text-sm">
-                    View Details →
-                  </p>
+                  <ReadMore />
                 </div>
               </div>
             </Link>
