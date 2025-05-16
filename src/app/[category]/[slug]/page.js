@@ -7,6 +7,26 @@ import DateDisplay from "@/components/common/date-display";
 import ProjectCollaborator from "@/components/project/project-collaborator";
 import ProjectThumbnail from "@/components/project/project-thumbnail";
 
+export async function generateStaticParams() { // To generate Static Routing 
+    const categories = ['news', 'project', 'seminar'];
+    const params = [];
+  
+    for (const category of categories) {
+      const dir = path.join(process.cwd(), 'public', category);
+      const files = await fs.readdir(dir);
+  
+      const slugs = files
+        .filter(f => f.endsWith('.md'))
+        .map(f => f.replace('.md', ''));
+  
+      slugs.forEach(slug => {
+        params.push({ category, slug });
+      });
+    }
+  
+    return params;
+  }
+
 export default async function ArticlePage({ params }) {
     const { category, slug } = await params;
 
