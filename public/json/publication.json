@@ -1,5 +1,14 @@
 [
   {
+    "title": "SECOND: Mitigating Perceptual Hallucination in Vision-Language Models via Selective and Contrastive Decoding",
+    "venue": "ICML",
+    "venue_full": "The International Conference on Machine Learning",
+    "date": "2025-07-01",
+    "authors": ["Woohyeon Park", "Woojin Kim", "Jaeik Kim", "Jaeyoung Do"],
+    "abstract": "Despite significant advancements in Vision-Language Models (VLMs), the performance of existing VLMs remains hindered by object hallucination, a critical challenge to achieving accurate visual understanding. To address this issue, we propose SECOND: Selective and Contrastive Decoding, a novel approach that enables VLMs to effectively leverage multi-scale visual information with an object-centric manner, closely aligning with human visual perception. SECOND progressively selects and integrates multi-scale visual information, facilitating a more precise interpretation of images. By contrasting these visual information iteratively, SECOND significantly reduces perceptual hallucinations and outperforms a wide range of benchmarks. Our theoretical analysis and experiments highlight the largely unexplored potential of multi-scale application in VLMs, showing that prioritizing and contrasting across scales outperforms existing methods.",
+    "paper": "https://arxiv.org/abs/2506.08391"
+  },
+  {
     "title": "MathReader: Text-to-Speech for Mathematical Documents",
     "venue": "ICASSP",
     "venue_full": "IEEE International Conference on Acoustics, Speech, and Signal Processing",

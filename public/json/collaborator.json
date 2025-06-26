@@ -1,23 +1,28 @@
 [
     {
-        "name": "서울대학교병원",
+        "name": "SNUH",
         "image": "collaborators/snuh.jpg",
         "link": "https://www.snuh.org"
     },
     {
-        "name": "한국지능정보사회진흥원",
+        "name": "NIA",
         "image": "collaborators/nia.png",
         "link": "https://www.nia.or.kr/site/nia_kor/main.do"
     },
     {
-        "name": "정보통신기획평가원",
+        "name": "IITP",
         "image": "collaborators/iitp.png",
         "link": "https://www.iitp.kr"
     },
     {
-        "name": "한국연구재단",
+        "name": "NRF",
         "image": "collaborators/nrf.png",
         "link": "https://www.nrf.re.kr/"
+    },
+    {
+        "name": "Dnotitia",
+        "image": "collaborators/dnotitia.jpg",
+        "link": "https://dnotitia.com/"
     },
     {
         "name": "dummy",
