@@ -25,6 +25,11 @@ export default async function NewsPage() {
                 };
             })
         );
+        
+        // sort newsList by date 
+        newsList.sort((a, b) => {
+            return new Date(b.date).getTime() - new Date(a.date).getTime();
+        });
 
         return (
             <PageLayout title="News">

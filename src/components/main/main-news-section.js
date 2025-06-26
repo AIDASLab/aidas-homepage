@@ -20,7 +20,7 @@ export default async function NewsSection() {
         title: data.title || filename.replace(".md", ""),
         date: data.date || "Unknown date",
         slug: filename.replace(".md", ""),
-        summary: data.summary || null,
+        summary: data.summary || "",
       };
     })
   );
@@ -54,8 +54,12 @@ export default async function NewsSection() {
 
               {news.summary && (
                 <p className="text-sm text-gray-700 mt-2 leading-relaxed">
-                  {news.summary}
-                  <ReadMore href={`/news/${news.slug}`}/>
+                  {news.summary.length > 300
+                    ? `${news.summary.slice(0, 300)}... `
+                    : news.summary}
+                  {news.summary.length > 300 && (
+                    <ReadMore href={`/news/${news.slug}`} />
+                  )}
                 </p>
               )}
 
