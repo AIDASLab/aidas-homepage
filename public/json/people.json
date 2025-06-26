@@ -59,7 +59,7 @@
     "education": [
       "B.S in Mathematics & B.S in Applied Artificial Intelligence, Sungkyunkwan University, S. Korea, 2021-2025"
     ],
-    "research": ["Model Merging", "Efficient LLM"],
+    "research": ["AI Personalization", "Model Merging", "Vision-Language Model"],
     "experience": [],
     "email": "jake630@snu.ac.kr",
     "homepage": "",
@@ -151,7 +151,7 @@
     "education": [
       "B.S in Naval Architecture and Ocean Engineering, Seoul National University, S. Korea, 2018-2025"
     ],
-    "research": ["CXL", "LakeHouse"],
+    "research": ["CXL", "LLM Inference⋅Train"],
     "experience": [],
     "email": "kdg6245@snu.ac.kr",
     "homepage": "",
