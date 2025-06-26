@@ -47,11 +47,11 @@ export default function People() {
                             alt={professor.name}
                             width={256}
                             height={256}
-                            className="w-48 h-48 md:w-64 md:h-64 object-cover rounded-full"
+                            className="w-48 h-48 md:w-64 md:h-64 object-cover rounded-full mx-auto"
                         />
 
                         {/* Social Icons */}
-                        <div className="flex w-48 md:w-64 justify-center space-x-6 mt-10 text-gray-600 hover:text-gray-800">
+                        <div className="flex w-48 md:w-64 justify-center space-x-6 mt-10 text-gray-600 hover:text-gray-800 mx-auto">
                             <SocialIcon property="homepage" href={professor.homepage} />
                             <SocialIcon property="email"    href={professor.email} />
                             <SocialIcon property="linkedin" href={professor.linkedin} />
