@@ -59,7 +59,7 @@
     "education": [
       "B.S in Mathematics & B.S in Applied Artificial Intelligence, Sungkyunkwan University, S. Korea, 2021-2025"
     ],
-    "research": ["AI Personalization", "Model Merging", "Vision-Language Model"],
+    "research": ["AI Personalization", "Model Merging", "Multimodal Model"],
     "experience": [],
     "email": "jake630@snu.ac.kr",
     "homepage": "",
@@ -72,7 +72,7 @@
     "education": [
       "B.A. in Economics & B.S. in Artificial Intelligence, Seoul National University, S. Korea, 2021-2025"
     ],
-    "research": ["Language models", "ML for healthcare"],
+    "research": ["Language Model"],
     "experience": [],
     "email": "leeyejoon@snu.ac.kr",
     "homepage": "https://yejoon-lee.github.io/",
@@ -111,7 +111,7 @@
     "education": [
       "B.S. in Electrical and Computer Engineering, Seoul National University, S. Korea, 2019-2025"
     ],
-    "research": ["Controllable text generation", "Diffusion language model"],
+    "research": ["LLM Value Alignment", "Diffusion Language Model"],
     "experience": [],
     "email": "wjk9904@snu.ac.kr",
     "homepage": "",
@@ -140,7 +140,7 @@
     ],
     "research": ["AI4DB", "AI4System", "Robotics", "LLM Alignment"],
     "experience": [],
-    "email": "hoeunlee228@gmail.com",
+    "email": "hoeunlee@snu.ac.kr",
     "homepage": "https://sites.google.com/view/hoeunlee",
     "linkedin": "https://www.linkedin.com/in/leehe228/"
   },
@@ -165,7 +165,7 @@
       "B.S in Materials Science & Engineering, Seoul National University, S.Korea, 2018-2025",
       "I.P in System Semiconductor Engineering for A.I, Seoul National University, S.Korea, 2018-2025"
     ],
-    "research": ["Vision-Language Action", "Robotics"],
+    "research": ["Robotics", "Artificial Intelligence"],
     "experience": [],
     "email": "khenrydragon@snu.ac.kr",
     "homepage": "",
@@ -191,7 +191,7 @@
     "education": [
       "B.S in Biosystems Engineering & Interdisciplinary Major in Artificial Intelligence, Seoul National University, S. Korea, 2019-2025"
     ],
-    "research": ["Explainable AI", "Medical AI", "Large Language Model"],
+    "research": ["Explainable AI", "Large Language Model"],
     "experience": [],
     "email": "qicher@snu.ac.kr",
     "homepage": "",
@@ -206,7 +206,7 @@
     ],
     "research": ["Video Understanding"],
     "experience": [],
-    "email": "csjihwanh@gmail.com",
+    "email": "csjihwanh@snu.ac.kr",
     "homepage": "https://csjihwanh.com",
     "linkedin": "https://www.linkedin.com/in/jihwan-hong-17b1bb293/"
   },
