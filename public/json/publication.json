@@ -1,10 +1,18 @@
 [
   {
+    "title": "Turbocharging Vector Databases using Modern SSDs",
+    "venue": "VLDB",
+    "venue_full": "Proceedings of the 51st International Conference on Very Large Data Bases",
+    "date": "2025-08-01",
+    "authors": ["Joobo Shim*", "Jaewon Oh", "Hongchan Roh", "Jaeyoung Do^", "Sang-Won Lee"],
+    "abstract": "Efficient and scalable vector search is critical for modern AI applications, particularly in retrieval-augmented generation (RAG) and large-scale semantic search. However, disk-based vector databases often suffer from significant I/O bottlenecks due to suboptimal cache hit ratios and inefficient use of modern SSD architectures. In this work, we introduce a suite of optimizations to enhance the performance of disk-resident Approximate Nearest Neighbor (ANN) indices, specifically focusing on hierarchical graph-based indexing such as HNSW. Our approach leverages three key strategies: (1) Parallel I/O leveraging io_uring to exploit SSD concurrency and reduce retrieval latency, (2) Spatially-aware insertion reordering to improve cache efficiency by dynamically adjusting insert execution order based on locality, and (3) Locality-preserving colocation to restructure index layouts and minimize costly random disk accesses. We implement these techniques within pgvector, a PostgreSQL extension for vector search, and conduct extensive evaluations using real-world datasets. Our optimizations yield up to 11.1× improvement in query throughput, a 3.23× increase in cache hit ratio, and a 98.4% reduction in index build time. Moreover, our findings underscore the importance of SSD-aware indexing strategies for scalable vector retrieval. By integrating hardware-aware I/O optimizations with intelligent data placement techniques, this work paves the way for more efficient, high-performance disk-based vector search engines that could fully leverage modern SSD’s high parallelism."
+  },
+  {
     "title": "SECOND: Mitigating Perceptual Hallucination in Vision-Language Models via Selective and Contrastive Decoding",
     "venue": "ICML",
     "venue_full": "The International Conference on Machine Learning",
     "date": "2025-07-01",
-    "authors": ["Woohyeon Park", "Woojin Kim", "Jaeik Kim", "Jaeyoung Do"],
+    "authors": ["Woohyeon Park*", "Woojin Kim", "Jaeik Kim", "Jaeyoung Do^"],
     "abstract": "Despite significant advancements in Vision-Language Models (VLMs), the performance of existing VLMs remains hindered by object hallucination, a critical challenge to achieving accurate visual understanding. To address this issue, we propose SECOND: Selective and Contrastive Decoding, a novel approach that enables VLMs to effectively leverage multi-scale visual information with an object-centric manner, closely aligning with human visual perception. SECOND progressively selects and integrates multi-scale visual information, facilitating a more precise interpretation of images. By contrasting these visual information iteratively, SECOND significantly reduces perceptual hallucinations and outperforms a wide range of benchmarks. Our theoretical analysis and experiments highlight the largely unexplored potential of multi-scale application in VLMs, showing that prioritizing and contrasting across scales outperforms existing methods.",
     "paper": "https://arxiv.org/abs/2506.08391"
   },
@@ -13,7 +21,7 @@
     "venue": "ICASSP",
     "venue_full": "IEEE International Conference on Acoustics, Speech, and Signal Processing",
     "date": "2025-04-01",
-    "authors": ["Sieun Hyeon", "Kyudan Jung", "Nam-Joon Kim", "Hyun Gon Ryu", "Jaeyoung Do"],
+    "authors": ["Sieun Hyeon*", "Kyudan Jung", "Nam-Joon Kim", "Hyun Gon Ryu", "Jaeyoung Do^"],
     "abstract": "TTS (Text-to-Speech) document reader from Microsoft, Adobe, Apple, and OpenAI have been serviced worldwide. They provide relatively good TTS results for general plain text, but sometimes skip contents or provide unsatisfactory results for mathematical expressions. This is because most modern academic papers are written in LaTeX, and when LaTeX formulas are compiled, they are rendered as distinctive text forms within the document. However, traditional TTS document readers output only the text as it is recognized, without considering the mathematical meaning of the formulas. To address this issue, we propose MathReader, which effectively integrates OCR, a fine-tuned T5 model, and TTS. MathReader demonstrated a lower Word Error Rate (WER) than existing TTS document readers, such as Microsoft Edge and Adobe Acrobat, when processing documents containing mathematical formulas. MathReader reduced the WER from 0.510 to 0.281 compared to Microsoft Edge, and from 0.617 to 0.281 compared to Adobe Acrobat. This will significantly contribute to alleviating the inconvenience faced by users who want to listen to documents, especially those who are visually impaired.",
     "code": "https://github.com/hyeonsieun/MathReader",
     "paper": "https://arxiv.org/abs/2501.07088",
@@ -24,7 +32,7 @@
     "venue": "AAAI",
     "venue_full": "Proceedings of the 39th Annual AAAI Conference on Artificial Intelligence",
     "date": "2025-02-01",
-    "authors": ["Sieun Hyeon", "Kyudan Jung", "Jaehee Won", "Nam-Joon Kim", "Hyun Gon Ryu", "Hyuk-Jae Lee", "Jaeyoung Do"],
+    "authors": ["Sieun Hyeon*", "Kyudan Jung*", "Jaehee Won", "Nam-Joon Kim", "Hyun Gon Ryu", "Hyuk-Jae Lee", "Jaeyoung Do^"],
     "abstract": "In various academic and professional settings, such as mathematics lectures or research presentations, it is often necessary to convey mathematical expressions orally. However, reading mathematical expressions aloud without accompanying visuals can significantly hinder comprehension, especially for those who are hearing-impaired or rely on subtitles due to language barriers. For instance, when a presenter reads Euler's Formula, current Automatic Speech Recognition (ASR) models often produce a verbose and error-prone textual description (e.g., e to the power of i x equals cosine of x plus i side of x), instead of the concise LATEX format (i.e., eix=cos(x)+isin(x)), which hampers clear understanding and communication. To address this issue, we introduce MathSpeech, a novel pipeline that integrates ASR models with small Language Models (sLMs) to correct errors in mathematical expressions and accurately convert spoken expressions into structured LATEX representations. Evaluated on a new dataset derived from lecture recordings, MathSpeech demonstrates LATEX generation capabilities comparable to leading commercial Large Language Models (LLMs), while leveraging fine-tuned small language models of only 120M parameters. Specifically, in terms of CER, BLEU, and ROUGE scores for LATEX translation, MathSpeech demonstrated significantly superior capabilities compared to GPT-4o. We observed a decrease in CER from 0.390 to 0.298, and higher ROUGE/BLEU scores compared to GPT-4o.",
     "code": "https://github.com/hyeonsieun/MathSpeech",
     "paper": "https://arxiv.org/abs/2412.15655"
