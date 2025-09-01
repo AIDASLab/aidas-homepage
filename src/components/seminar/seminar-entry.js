@@ -1,20 +1,24 @@
 import Link from "next/link";
-import DateDisplay from "@/components/common/date-display";
+import DateDisplay from "../common/date-display";
+import Image from "next/image";
 
-export default function SeminarEntry({ title, date, presenter, slug }) {
+export default function SeminarEntry({ title, date, slug, thumbnail, summary }) {
   return (
-    <div className="px-2 sm:px-4 my-6">
-      {/* Title */}
-      <Link href={`/seminar/${slug}`} className="hover:underline">
-        <h3 className="text-base sm:text-xl font-semibold">{title}</h3>
+      <Link href={`/seminar/${slug}`}>
+        <div className="overflow-hidden transition">
+          {thumbnail && (
+            <div className="relative w-full h-60">
+              <Image src={`/${thumbnail}`} alt={title} fill className="object-contain" />
+            </div>
+          )}
+          <div className="p-5">
+            <h2 className="text-xl font-semibold mb-2 hover:underline">{title}</h2>
+            <DateDisplay date={date} className="text-sm mb-2 text-[#666666]"/>
+            {summary && (
+              <p className="text-sm line-clamp-3">{summary}</p>
+            )}
+          </div>
+        </div>
       </Link>
-
-      {/* Presenter & Date */}
-      <div className="mt-2 text-sm text-[#666666]">
-        {presenter && <span>{presenter}</span>}
-        {presenter && date && <span className="mx-1">|</span>}
-        {date && <DateDisplay date={date} className="inline" />}
-      </div>
-    </div>
   );
 }

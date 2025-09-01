@@ -6,61 +6,45 @@ import SeminarEntry from "@/components/seminar/seminar-entry";
 
 export default async function SeminarPage() {
 
+    const seminarDir = path.join(process.cwd(), "public/seminar");
+    const files = await fs.readdir(seminarDir);
 
-    return (<PageLayout title= "Seminar">
-        <p>invalid access</p>
-    </PageLayout>
-    );
-
-    const seminarDirectory = path.join(process.cwd(), "public/seminar");
-
-
-    try {
-        const files = await fs.readdir(seminarDirectory);
-
-        // Extract title & date from each markdown file
-        const seminarList = await Promise.all(
-            files.map(async (filename) => {
-                const filePath = path.join(seminarDirectory, filename);
+    const seminars = (
+        await Promise.all(
+            files
+            .filter((f) => f.endsWith(".md"))
+            .map(async (filename) => {
+                const filePath = path.join(seminarDir, filename);
                 const fileContent = await fs.readFile(filePath, "utf-8");
-                const { data } = matter(fileContent); // Extract metadata
-
+                const { data } = matter(fileContent);
+                
                 return {
-                    title: data.title || filename.replace(".md", ""),
-                    date: data.date || "No date available", // Handle missing date
-                    presenter: data.presenter || "",
+                    title: data.title || filename,
+                    date: data.date || "",
+                    summary: data.summary || "",
+                    thumbnail: data.thumbnail || null,
                     slug: filename.replace(".md", ""),
                 };
             })
-        );
+        )
+    ).sort((a, b) => new Date(b.date) - new Date(a.date));
 
-        return (
-            <PageLayout title="Seminar">
-                {seminarList.map((seminar, idx) => (
+    return (
+        <PageLayout title="Seminar">
+            {/* Seminar section */}
+            <section className="grid grid-cols-1 sm:grid-cols-2 gap-8 mt-8 mb-8">
+                {seminars.map((seminar, idx) => (
                     <div key={idx}>
                         <SeminarEntry
                             title={seminar.title}
                             date={seminar.date}
-                            presenter={seminar.presenter}
+                            summary={seminar.summary}
+                            thumbnail={seminar.thumbnail}
                             slug={seminar.slug}
                         />
-                        {/* Divider */}
-                        {idx < seminarList.length - 1 && (
-                            <div className="mt-6 border-t border-gray-300" />
-                        )}
                     </div>
                 ))}
-            </PageLayout>
-        );
-
-    } catch (error) {
-        console.error("Error reading seminar directory:", error);
-        return (
-            <PageLayout title="Seminar">
-                <div className="min-h-screen flex items-center justify-center">
-                    <p className="text-red-500 text-xl">Failed to load seminar articles.</p>
-                </div>
-            </PageLayout>
-        );
-    }
+            </section>
+        </PageLayout>
+    );
 }

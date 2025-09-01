@@ -211,6 +211,16 @@
     "linkedin": "https://www.linkedin.com/in/jihwan-hong-17b1bb293/"
   },
   {
+    "name": "Minwoo Kim",
+    "role": "UG",
+    "image": "/people/minwoo_kim.png",
+    "education": [
+      "B.S. in Electrical and Computer Engineering, Seoul National University, S. Korea, 2020-Present"
+    ],
+    "research": ["Machine Learning for DB","Efficient LLM"],
+    "experience": []
+  },
+  {
     "name": "Jungwon Choi",
     "role": "Staff",
     "image": "/people/jungwon_choi.jpg",

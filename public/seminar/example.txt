@@ -1,11 +1,3 @@
----
-title: "Deep Learning for Video Analysis"
-date: "2025-03-22"
-presenter: "Gildong Hong"
----
-
-# This article is written in Markdown
-
 
 ## Speaker
 - Gildong Hong (SNU AIDAS Lab)
