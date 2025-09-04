@@ -3,7 +3,6 @@ title: "Diffusion Seminar"
 date: "2025-07-25"
 summary: "07/2025 – 09/2025 | Summer 2025 Diffusion Tutorial"
 thumbnail: "seminar/thumbnails/diffusion_seminar.png"
-collaborator: ["NIA"]
 ---
 
 # Curriculum
@@ -120,6 +119,22 @@ Presenter: Woojin Kim
 &nbsp; 
 
 ## Week 6: Various Diffusion Space
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe 
+    src="https://www.youtube.com/embed/IQJ89b_Isjc?si=YP6Kca8ZBokgREGG"
+    style="position: absolute; top:0; left:0; width:100%; height:100%;"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowfullscreen>
+  </iframe>
+</div>
+
+In this seminar, we will explore the various diffusion spaces used in diffusion models. Building on the pixel-space diffusion we have discussed so far, we will extend our focus to diffusion in latent space and discrete space, examining their characteristics.
+
+Presenter: Jihwan Hong
+
+&nbsp;
 
 ## Week 7: Technical components
 
