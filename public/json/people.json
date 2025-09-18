@@ -221,6 +221,17 @@
     "experience": []
   },
   {
+    "name": "Yongha Lee",
+    "role": "UG",
+    "image": "/people/yongha_lee.png",
+    "education": [
+      "B.S. in Biological Sciences & Interdisciplinary Major in Artificial Intelligence, Seoul National University, S. Korea, 2019-Present"
+    ],
+    "research": ["Large Language Model","LLM Reasoning/Alignment", "Multimodal LLM"],
+    "email": "finde159@snu.ac.kr",
+    "experience": []
+  },
+  {
     "name": "Jungwon Choi",
     "role": "Staff",
     "image": "/people/jungwon_choi.jpg",
