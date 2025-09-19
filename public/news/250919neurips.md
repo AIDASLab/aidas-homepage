@@ -10,7 +10,7 @@ We are pleased to share that three papers from our lab have been accepted to the
 
 - **Don’t Let It Fade: Preserving Edits in Diffusion Language Models via Token Timestep Allocation** — Woojin Kim, Jaeyoung Do*
 
-- **Exploring and Leveraging Class Vectors** — Jaeik Kim, Jaeyoung Do*
+- **Exploring and Leveraging Class Vectors for Classifier Editing** — Jaeik Kim, Jaeyoung Do*
 
 - **MMPB: It’s Time for Multi-Modal Personalization** — Jaeik Kim, Woojin Kim, Woohyeon Park, Jaeyoung Do*
 
