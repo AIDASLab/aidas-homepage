@@ -8,7 +8,7 @@ summary: "3 papers got accepted to NeurIPS 2025!"
 
 We are pleased to share that three papers from our lab have been accepted to the 39th Annual Conference on Neural Information Processing Systems (NeurIPS 2025):
 
-- **Don’t Let It Fade** — Woojin Kim, Jaeyoung Do*
+- **Don’t Let It Fade: Preserving Edits in Diffusion Language Models via Token Timestep Allocation** — Woojin Kim, Jaeyoung Do*
 
 - **Exploring and Leveraging Class Vectors** — Jaeik Kim, Jaeyoung Do*
 
