@@ -31,7 +31,7 @@ thumbnail: "seminar/thumbnails/diffusion_seminar.png"
 # Contents
 ## Week 1: Introduction to Diffusion Model
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 800px; margin: 0 auto;"> 
   <iframe 
     src="https://www.youtube.com/embed/dQs8gQJ5rxI?si=_gdCF5Q2nLw"
     style="position: absolute; top:0; left:0; width:100%; height:100%;"
@@ -48,7 +48,7 @@ Presenter: Woojin Kim
 &nbsp;
 
 ##	Week 2: Generative Modeling I 
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 800px; margin: 0 auto;"> 
   <iframe 
     src="https://www.youtube.com/embed/Hg7gXjfUGmI?si=EUiEFaxSYZhGJE-n"
     style="position: absolute; top:0; left:0; width:100%; height:100%;"
@@ -66,7 +66,7 @@ Presenter: Jihwan Hong
 
 ## Week 3: Generative Modeling Ⅱ
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 800px; margin: 0 auto;"> 
   <iframe 
     src="https://www.youtube.com/embed/YbvVJAxMHTE?si=ZQwShvbTnGcK6Yzq"
     style="position: absolute; top:0; left:0; width:100%; height:100%;"
@@ -84,7 +84,7 @@ Presenter: Jaeik Kim
 
 ## Week 4: Denoising Diffusion Probabilistic Model
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 800px; margin: 0 auto;"> 
   <iframe 
     src="https://www.youtube.com/embed/FjMy7-fWbaM?si=7cXeXqPS5mzPqiJX"
     style="position: absolute; top:0; left:0; width:100%; height:100%;"
@@ -102,7 +102,7 @@ Presenter: Yejoon Lee
 
 ## Week 5: DDIM and Score-based Modeling
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 800px; margin: 0 auto;"> 
   <iframe 
     src="https://www.youtube.com/embed/m0uslveHG3I?si=1oFaYSs1tEIU1R2X"
     style="position: absolute; top:0; left:0; width:100%; height:100%;"
@@ -120,7 +120,7 @@ Presenter: Woojin Kim
 
 ## Week 6: Various Diffusion Space
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 800px; margin: 0 auto;"> 
   <iframe 
     src="https://www.youtube.com/embed/IQJ89b_Isjc?si=YP6Kca8ZBokgREGG"
     style="position: absolute; top:0; left:0; width:100%; height:100%;"
@@ -138,10 +138,56 @@ Presenter: Jihwan Hong
 
 ## Week 7: Technical components
 
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 800px; margin: 0 auto;">
+  <iframe 
+    src="https://www.youtube.com/embed/hFn3XsWJtIM?si=hK2BrvthmU1j8Pz6"
+    style="position: absolute; top:0; left:0; width:100%; height:100%;"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowfullscreen>
+  </iframe>
+</div>
+
+
+This seminar explored key advancements in diffusion models, focusing on conditioning mechanisms and diffusion distillation techniques. We began by reviewing the mathematical background of diffusion processes and the role of conditioning, emphasizing how class and other auxiliary information can be incorporated into the denoising network to guide generation. We then examined diffusion distillation methods aimed at accelerating sampling without compromising image quality. We also discussed consistency distillation, derived from the Consistency Models framework, which enforces a self-consistency property and a boundary condition along probability flow ODE trajectories.
+
+Presenter: Jaeik Kim
+
+&nbsp;
+
 ## Week 8: Diffusion Language Models I
+
+*[The video will be released Soon.]*
+
+Presenter: Woojin Kim
+
+&nbsp;
 
 ## Week 9: Diffusion Language Models Ⅱ
 
+
+*[The video will be released Soon.]*
+
+Presenter: Woojin Kim
+
+&nbsp;
+
 ## Week 10: Diffusion Language Models Ⅲ
 
+
+*[The video will be released Soon.]*
+
+Presenter: Yejoon Lee
+
+&nbsp;
+
 ## Week 11: Flow Matching & Token Ordering
+
+
+*[The video will be released on Oct 14.]*
+
+This presentation introduces the concept of token ordering in large language models (LLMs), examining whether the conventional left-to-right autoregressive generation is truly optimal for diverse downstream tasks. The historical development of left-to-right ordering, from early NLP research to modern transformers, is outlined, followed by discussion of seminal works such as Sigma GPT and Any-Order GPT, which explore arbitrary permutations and demonstrate both the challenges and potential advantages of moving beyond identity ordering. Theoretical connections to combinatorial optimization and group theory are highlighted, along with findings showing that any-order autoregression is more difficult to train yet can outperform left-to-right ordering under curriculum learning or task-specific structures. Future directions are suggested, including balancing efficiency and expressivity, meta-learning order strategies, advancing KV caching for encoder-based masked diffusion models, and extending token ordering research to modalities beyond text.
+
+Presenter: Jaeik Kim
+
+&nbsp;
