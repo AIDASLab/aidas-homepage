@@ -4,7 +4,7 @@
     "venue": "NeurIPS",
     "venue_full": "39th Annual Conference on Neural Information Processing Systems",
     "date": "2025-09-19",
-    "authors": ["Woojin Kim", "Jaeyoung Do^"],
+    "authors": ["Woojin Kim*", "Jaeyoung Do^"],
     "abstract": "Classifier guidance is a widely adopted technique in diffusion language models, used to steer generation toward desired attributes. However, such guidance often introduces instability during the generation process, where token-level updates fluctuate across timesteps. We identify and formally characterize this phenomenon as update-forgetting. This instability disrupts the refinement process by overwriting semantic edits, ultimately degrading fluency and coherence, which is particularly problematic in tasks like controllable text generation. To address this, we propose TTA-Diffusion, a novel inference-time approach that dynamically allocates timesteps per token based on refinement needs. Unlike conventional diffusion models that apply uniform updates, TTA-Diffusion employs structured timestep allocation, preserving stable tokens while allowing uncertain tokens to undergo progressive adjustment. Experimental results across diverse tasks demonstrate that TTA-Diffusion significantly outperforms both diffusion-based and auto-regressive baselines in fluency and control accuracy while improving computational efficiency by reducing the number of required timesteps. On the sentiment control task, TTA-Diffusion achieves over 20% higher accuracy and nearly half the perplexity of prior diffusion models, using less than one-fifth the denoising steps. This work highlights the importance of mitigating fluctuations in token updates and promoting a balanced refinement process, thereby enhancing stability and controllability in controllable language modeling."
   },
   {
@@ -12,7 +12,7 @@
     "venue": "NeurIPS",
     "venue_full": "39th Annual Conference on Neural Information Processing Systems",
     "date": "2025-09-19",
-    "authors": ["Jaeik Kim", "Jaeyoung Do^"],
+    "authors": ["Jaeik Kim*", "Jaeyoung Do^"],
     "abstract": "Image classifiers play a critical role in detecting diseases in medical imaging and identifying anomalies in manufacturing processes. However, their predefined behaviors after extensive training make post hoc model editing difficult, especially when it comes to forgetting specific classes or adapting to distribution shifts. Existing classifier editing methods either focus narrowly on correcting errors or incur extensive retraining costs, creating a bottleneck for flexible editing. Moreover, such editing has seen limited investigation in image classification. To overcome these challenges, we introduce class vectors, which capture class-specific representation adjustments during fine-tuning. Whereas task vectors encode task-level changes in weight space, class vectors disentangle each class’s adaptation in the latent space. We show that class vectors capture each class’s semantic shift and that classifier editing can be achieved either by steering latent features along these vectors or by mapping them into weight space to update the decision boundaries. We also demonstrate that the inherent linearity and orthogonality of class vectors support efficient, flexible, and high-level concept editing via simple class arithmetic. Finally, we validate their utility in applications such as unlearning, environmental adaptation, adversarial defense, and adversarial trigger optimization."
   },
   {
@@ -20,7 +20,7 @@
     "venue": "NeurIPS",
     "venue_full": "39th Annual Conference on Neural Information Processing Systems",
     "date": "2025-09-19",
-    "authors": ["Jaeik Kim", "Woojin Kim", "Woohyeon Park", "Jaeyoung Do^"],
+    "authors": ["Jaeik Kim*", "Woojin Kim", "Woohyeon Park", "Jaeyoung Do^"],
     "abstract": "Visual personalization is essential in user-facing AI systems such as smart homes and healthcare, where aligning model behavior with user-centric concepts is critical. However, recent large Vision Language Models (VLMs), despite their broad applicability, remain underexplored in their ability to adapt to individual users. In this paper, we introduce MMPB, the first extensive benchmark for evaluating VLMs on personalization. MMPB comprises 10k image-query pairs and includes 111 personalizable concepts across four categories: humans, animals, objects, and characters, with the human category enriched with preference-grounded queries. We structure personalization into three main task types, each highlighting a different key property of VLMs. Using 23 widely used VLMs including both open- and closed-source models, we evaluate personalization performance via a three-stage protocol: concept injection, multi-turn dialogue, and personalized querying. Our findings indicate that most VLMs (including some closed-source models) struggle with personalization, particularly in maintaining consistency over dialogue, handling user preferences, and adapting to visual cues. Our analysis reveals that the challenges in VLM personalization (such as refusal behaviors and long-context forgetting) highlight substantial room for improvement. By identifying these limitations and offering a scalable benchmark, MMPB offers valuable insights and a solid foundation for future research toward truly personalized multi-modal AI."
   },
   {
