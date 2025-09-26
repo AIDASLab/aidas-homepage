@@ -38,7 +38,10 @@
     "date": "2025-07-01",
     "authors": ["Woohyeon Park*", "Woojin Kim", "Jaeik Kim", "Jaeyoung Do^"],
     "abstract": "Despite significant advancements in Vision-Language Models (VLMs), the performance of existing VLMs remains hindered by object hallucination, a critical challenge to achieving accurate visual understanding. To address this issue, we propose SECOND: Selective and Contrastive Decoding, a novel approach that enables VLMs to effectively leverage multi-scale visual information with an object-centric manner, closely aligning with human visual perception. SECOND progressively selects and integrates multi-scale visual information, facilitating a more precise interpretation of images. By contrasting these visual information iteratively, SECOND significantly reduces perceptual hallucinations and outperforms a wide range of benchmarks. Our theoretical analysis and experiments highlight the largely unexplored potential of multi-scale application in VLMs, showing that prioritizing and contrasting across scales outperforms existing methods.",
-    "paper": "https://arxiv.org/abs/2506.08391"
+    "page": "https://aidaslab.github.io/SECOND/",
+    "paper": "https://icml.cc/virtual/2025/poster/45215",
+    "arXiv": "https://arxiv.org/abs/2506.08391",
+    "code": "https://github.com/AIDASLab/SECOND"
   },
   {
     "title": "MathReader: Text-to-Speech for Mathematical Documents",
@@ -47,8 +50,9 @@
     "date": "2025-04-01",
     "authors": ["Sieun Hyeon*", "Kyudan Jung", "Nam-Joon Kim", "Hyun Gon Ryu", "Jaeyoung Do^"],
     "abstract": "TTS (Text-to-Speech) document reader from Microsoft, Adobe, Apple, and OpenAI have been serviced worldwide. They provide relatively good TTS results for general plain text, but sometimes skip contents or provide unsatisfactory results for mathematical expressions. This is because most modern academic papers are written in LaTeX, and when LaTeX formulas are compiled, they are rendered as distinctive text forms within the document. However, traditional TTS document readers output only the text as it is recognized, without considering the mathematical meaning of the formulas. To address this issue, we propose MathReader, which effectively integrates OCR, a fine-tuned T5 model, and TTS. MathReader demonstrated a lower Word Error Rate (WER) than existing TTS document readers, such as Microsoft Edge and Adobe Acrobat, when processing documents containing mathematical formulas. MathReader reduced the WER from 0.510 to 0.281 compared to Microsoft Edge, and from 0.617 to 0.281 compared to Adobe Acrobat. This will significantly contribute to alleviating the inconvenience faced by users who want to listen to documents, especially those who are visually impaired.",
+    "page": "https://aidaslab.github.io/MathReader/",
+    "arXiv": "https://arxiv.org/abs/2501.07088",
     "code": "https://github.com/hyeonsieun/MathReader",
-    "paper": "https://arxiv.org/abs/2501.07088",
     "demo": "https://hyeonsieun.github.io/MathReader_demo/"
   },
   {
@@ -58,8 +62,9 @@
     "date": "2025-02-01",
     "authors": ["Sieun Hyeon*", "Kyudan Jung*", "Jaehee Won", "Nam-Joon Kim", "Hyun Gon Ryu", "Hyuk-Jae Lee", "Jaeyoung Do^"],
     "abstract": "In various academic and professional settings, such as mathematics lectures or research presentations, it is often necessary to convey mathematical expressions orally. However, reading mathematical expressions aloud without accompanying visuals can significantly hinder comprehension, especially for those who are hearing-impaired or rely on subtitles due to language barriers. For instance, when a presenter reads Euler's Formula, current Automatic Speech Recognition (ASR) models often produce a verbose and error-prone textual description (e.g., e to the power of i x equals cosine of x plus i side of x), instead of the concise LATEX format (i.e., eix=cos(x)+isin(x)), which hampers clear understanding and communication. To address this issue, we introduce MathSpeech, a novel pipeline that integrates ASR models with small Language Models (sLMs) to correct errors in mathematical expressions and accurately convert spoken expressions into structured LATEX representations. Evaluated on a new dataset derived from lecture recordings, MathSpeech demonstrates LATEX generation capabilities comparable to leading commercial Large Language Models (LLMs), while leveraging fine-tuned small language models of only 120M parameters. Specifically, in terms of CER, BLEU, and ROUGE scores for LATEX translation, MathSpeech demonstrated significantly superior capabilities compared to GPT-4o. We observed a decrease in CER from 0.390 to 0.298, and higher ROUGE/BLEU scores compared to GPT-4o.",
-    "code": "https://github.com/hyeonsieun/MathSpeech",
-    "paper": "https://arxiv.org/abs/2412.15655"
+    "page": "https://aidaslab.github.io/MathSpeech/",
+    "arXiv": "https://arxiv.org/abs/2412.15655",
+    "code": "https://github.com/hyeonsieun/MathSpeech"
   },
   {
     "title": "Aligning Large Language Models via Fine-grained Supervision",
@@ -68,7 +73,7 @@
     "date": "2024-08-01",
     "authors": ["Dehong Xu", "Liang Qiu", "Minseok Kim", "Faisal Ladhak", "Jaeyoung Do"],
     "abstract": "Pre-trained large-scale language models (LLMs) excel at producing coherent articles, yet their outputs may be untruthful, toxic, or fail to align with user expectations. Current approaches focus on using reinforcement learning with human feedback (RLHF) to improve model alignment, which works by transforming coarse human preferences of LLM outputs into a feedback signal that guides the model learning process. However, because this approach operates on sequence-level feedback, it lacks the precision to identify the exact parts of the output affecting user preferences. To address this gap, we propose a method to enhance LLM alignment through fine-grained token-level supervision. Specifically, we ask annotators to minimally edit less preferred responses within the standard reward modeling dataset to make them more favorable, ensuring changes are made only where necessary while retaining most of the original content. The refined dataset is used to train a token-level reward model, which is then used for training our fine-grained Proximal Policy Optimization (PPO) model. Our experiment results demonstrate that this approach can achieve up to an absolute improvement of 5.1% in LLM performance, in terms of win rate against the reference model, compared with the traditional PPO model.",
-    "paper": "https://arxiv.org/abs/2406.02756"
+    "arXiv": "https://arxiv.org/abs/2406.02756"
   },
   {
     "title": "AscleAI: A LLM-based clinical note management system for enhancing clinician productivity",
