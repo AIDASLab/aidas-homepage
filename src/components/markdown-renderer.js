@@ -8,7 +8,7 @@ function Anchor({ node, ...props }) {
   return <a {...props} className="text-blue-700 hover:text-blue-800 underline" />;
 }
 
-export default function MarkdownRenderer({ content }: { content: string }) {
+export default function MarkdownRenderer({ content }) {
   return (
     <div className="markdown prose lg:prose-xl mx-auto mb-10">
       <ReactMarkdown
