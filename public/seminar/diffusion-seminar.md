@@ -157,7 +157,17 @@ Presenter: Jaeik Kim
 
 ## Week 8: Diffusion Language Models I
 
-*[The video will be released Soon.]*
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 800px; margin: 0 auto;">
+  <iframe 
+    src="https://www.youtube.com/embed/UUm-oXy8vHs?si=5t2V6SlT1QdKarlt"
+    style="position: absolute; top:0; left:0; width:100%; height:100%;"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowfullscreen>
+  </iframe>
+</div>
+
+This seminar video is the eighth week's session of the Diffusion Seminar series. In this session, we introduce the basics of diffusion language models, discuss how diffusion has been adapted from the image to the text domain with discrete token spaces, and cover continuous diffusion language model formulations.
 
 Presenter: Woojin Kim
 
@@ -166,7 +176,17 @@ Presenter: Woojin Kim
 ## Week 9: Diffusion Language Models Ⅱ
 
 
-*[The video will be released Soon.]*
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 800px; margin: 0 auto;">
+  <iframe 
+    src="https://www.youtube.com/embed/Ygi4IPFYK6k?si=PtEzxe6g-5f5S04Q"
+    style="position: absolute; top:0; left:0; width:100%; height:100%;"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowfullscreen>
+  </iframe>
+</div>
+
+This seminar video is the ninth week's session of the Diffusion Seminar series. In this session, we focus on discrete diffusion language models, explore their continuous-time extensions, and present masked diffusion objectives as a bridge to established NLP training paradigms.
 
 Presenter: Woojin Kim
 
@@ -184,10 +204,20 @@ Presenter: Yejoon Lee
 ## Week 11: Flow Matching & Token Ordering
 
 
-*[The video will be released on Oct 14.]*
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 800px; margin: 0 auto;">
+  <iframe 
+    src="https://www.youtube.com/embed/4he1JoFYTQU?si=DjpVpO_341B-wbrg"
+    style="position: absolute; top:0; left:0; width:100%; height:100%;"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowfullscreen>
+  </iframe>
+</div>
 
 This presentation introduces the concept of token ordering in large language models (LLMs), examining whether the conventional left-to-right autoregressive generation is truly optimal for diverse downstream tasks. The historical development of left-to-right ordering, from early NLP research to modern transformers, is outlined, followed by discussion of seminal works such as Sigma GPT and Any-Order GPT, which explore arbitrary permutations and demonstrate both the challenges and potential advantages of moving beyond identity ordering. Theoretical connections to combinatorial optimization and group theory are highlighted, along with findings showing that any-order autoregression is more difficult to train yet can outperform left-to-right ordering under curriculum learning or task-specific structures. Future directions are suggested, including balancing efficiency and expressivity, meta-learning order strategies, advancing KV caching for encoder-based masked diffusion models, and extending token ordering research to modalities beyond text.
 
 Presenter: Jaeik Kim
 
 &nbsp;
+
+

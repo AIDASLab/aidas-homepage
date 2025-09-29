@@ -68,7 +68,15 @@ Presenter: Sieun Hyeon
 
 ## Week 4: Domain-Specific Agent − Coding and Robotics
 
-*[The video will be released on Oct 2.]*
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 800px; margin: 0 auto;"> 
+  <iframe 
+    src="https://www.youtube.com/embed/rGgqzKFxi3U?si=yNdNlf_I6pzXyE2B"
+    style="position: absolute; top:0; left:0; width:100%; height:100%;"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowfullscreen>
+  </iframe>
+</div>
 
 This seminar is the fourth week's session of the AI Agent Seminar series, focusing on the evolution and analysis of reasoning in large language models (LLMs). We cover the progression from chain-of-thought prompting and self-consistency to advanced frameworks such as Tree of Thought, ReAct, HuggingGPT, and Plan-and-Act, alongside the paradigm of test-time scaling that underpins recent reasoning models like OpenAI’s o1 and DeepSeek’s large-scale open-source systems. We further examine reinforcement learning with verifiable rewards (RLVR) as a standard training recipe for reasoning models, the challenges of overthinking and the taxonomy of efficient reasoning approaches, as well as scaling laws that highlight predictable improvements with increased test-time compute. Finally, we discuss mechanistic interpretability—analyzing hidden states, neurons, and circuits—to investigate whether model outputs genuinely reflect internal computation and to identify pathways for refining and aligning LLM reasoning.
 
@@ -77,7 +85,15 @@ Presenter: Yunseok Han
 
 ## Week 5: Domain-Specific Agent − DeepResearch Analysis
 
-*[The video will be released on Oct 8.]*
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 800px; margin: 0 auto;"> 
+  <iframe 
+    src="https://www.youtube.com/embed/7PyPAJJ4iZ8?si=KQwGh1CnEvpytOWN"
+    style="position: absolute; top:0; left:0; width:100%; height:100%;"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowfullscreen>
+  </iframe>
+</div>
 
 This seminar explores the evolution of information-seeking paradigms in the era of large language model (LLM) agents, focusing on the emerging concept of Agentic Deep Research. We connect two recent advances: the conceptual framework of reasoning-driven search, as proposed in From Web Search towards Agentic Deep Research: Incentivizing Search with Reasoning Agent, and the practical reinforcement learning framework introduced in DeepResearcher: Scaling Deep Research via Reinforcement Learning in Real-world Environments. Together, these works illustrate how LLM-based agents can move beyond static retrieval or prompt-engineered behaviors, toward autonomous systems capable of iterative reasoning, dynamic web search, and adaptive problem-solving in noisy real-world environments. The seminar highlights methodological trajectories, RL-based training strategies, and benchmark evaluations, while also discussing challenges such as scalability, transparency, and domain specialization. By examining these complementary contributions, we aim to showcase Deep Research as a concrete and promising direction in advancing agentic LLM systems.
 
