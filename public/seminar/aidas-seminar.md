@@ -12,8 +12,8 @@ thumbnail: "seminar/thumbnails/aidas_seminar.png"
 |----|--------|-----|---------|
 |**Sep 26**|Robotics|LLaDA-VLA: Vision-Language Diffusion Action Models|Hoeun Lee|
 ||LLMs|LLM Privacy Survey|Geun Choi|
-|**Sep 19**|LLMs|Mixture of Lookup Experts|Sieun Hyeon|
-||LLMs|Self-Questioning Language Models|Yejoon Lee|
+|**Sep 19**|LLMs|[Mixture of Lookup Experts](https://youtu.be/vwOh7ET6oqw?si=B56gx3LvIIQbzC4z)|Sieun Hyeon|
+||LLMs|[Self-Questioning Language Models](https://youtu.be/WDfvbILy2-I?si=47c3FJ6ySmJVsUxv)|Yejoon Lee|
 |**Sep 12**|LLMs|[RoFormer: Enhanced Transformer with Rotary Position Embedding](https://youtu.be/5l9quUaJw7g)|Dogeun Kim|
 ||Robotics|Latent Diffusion Planning for Imitation Learning|Hyeonggeun Kim|
 |**Aug 22**|LLMs|[Advancing Mobile GUI Agents: A Verifier-Driven Approach to Practical Deployment](https://youtu.be/Ce2VGxMOUNY)|Hanjun Lee|
@@ -24,8 +24,3 @@ thumbnail: "seminar/thumbnails/aidas_seminar.png"
 ||LLMs|[Mixture-of-Recursions: Learning Dynamic Recursive Depths for Adaptive Token-Level Computation](https://www.youtube.com/watch?v=KlA7JIAONO0)|Jusang Oh|
 |**Jul 18**|Databases|[On the Rankability of Visual Embeddings](https://www.youtube.com/watch?v=aKIzYYBRGj0)|Mintaek Lim|
 ||LLMs|[KV-efficient language models: MLA and sliding window attention](https://www.youtube.com/watch?v=t2VYbYKHsdQ)|Yejoon Lee|
-
-
-
-
-<!-- Finished Recording: Aug 22 Hanjun Lee, Sep 12 Dogeun Kim -> uploading little delayed because of the NAS issue -->
