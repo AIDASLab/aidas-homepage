@@ -6,18 +6,18 @@ thumbnail: "seminar/thumbnails/agents_seminar.png"
 ---
 
 # Curriculum
-### 1. Agent e2e workflow (e.g., Planning, reasoning, memory, etc)
-### 2. Single-, Multi-Agent Approaches
-### 3. Memory, Tool-calling
-- RAG , RL for Tool-calling 
-### 4. Planning, Reasoning
-- ReAct , Reflection 
-### 5. Domain-specific agent
-- Industry
-- Mobile
-### 6. Domain-specific agent
-- Robot
-- Coding
+1. Agent e2e workflow (e.g., Planning, reasoning, memory, etc)
+2. Single-, Multi-Agent Approaches
+3. Memory, Tool-calling
+   - RAG , RL for Tool-calling 
+4. Planning, Reasoning
+   - ReAct , Reflection 
+5. Domain-specific agent
+   - Industry
+   - Mobile
+6. Domain-specific agent
+   - Robot
+   - Coding
 
 &nbsp;
 &nbsp;
@@ -117,6 +117,16 @@ Presenter: Hanjun Lee
 
 ## Week 6: Domain-Specific Agent − Coding and Robotics
 
-*[The video will be released Soon.]*
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 800px; margin: 0 auto;"> 
+  <iframe 
+    src="https://www.youtube.com/embed/rimKTGp2DiI?si=u19dwtmn3JSX3-Ms"
+    style="position: absolute; top:0; left:0; width:100%; height:100%;"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowfullscreen>
+  </iframe>
+</div>
+
+This talk explores domain-specific AI agents across two arenas—repo-level coding and robotics—and argues that tool design + orchestration strategy is the key to real-world performance. On the coding side, we use CODEAGENT and its CODEAGENTBENCH to show how agents equipped with practical tools (web/doc search, symbol navigation, formatting, in-repo execution) outperform snippet-only approaches. On the robotics side, we map the same principles to embodied settings. Across both domains, the takeaway is consistent: realistic evaluation plus the right tools and clear agent schemas turn LLMs from text generators into reliable problem-solvers for complex, real systems.
 
 Presenter: Hyeonggeun Kim
