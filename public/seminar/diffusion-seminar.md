@@ -195,7 +195,17 @@ Presenter: Woojin Kim
 ## Week 10: Diffusion Language Models Ⅲ
 
 
-*[The video will be released Soon.]*
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 800px; margin: 0 auto;">
+  <iframe 
+    src="https://www.youtube.com/embed/QTw704X3liM?si=DpbpBUToeiDCF-Sw"
+    style="position: absolute; top:0; left:0; width:100%; height:100%;"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowfullscreen>
+  </iframe>
+</div>
+
+This talk covers three flavors of diffusion language model(DLM) sampling. It reviews the basics of DLM, and the semi-AR sampling variants used in LLaDA and fast-dLLM. It further introduces the block diffusion, the hybrid form of diffusion LM and autoregressive LM.
 
 Presenter: Yejoon Lee
 
