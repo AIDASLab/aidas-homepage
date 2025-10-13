@@ -10,6 +10,10 @@ thumbnail: "seminar/thumbnails/aidas_seminar.png"
 
 |Date|Category|Topic|Presenter|
 |----|--------|-----|---------|
+|**Oct 17**|Generative Models|Video models are zero-shot learners and reasoners|Jihwan Hong|
+||LLMs|Persona Vectors: Monitoring and Controlling Character Traits in Language Models|Woojin Kim|
+|**Oct 10**|LLMs|Training and Inference on Any-Order Autoregressive Models the Right Way|Yunseok Han|
+||LLMs|[Dynamic Planning for LLM-based Graphical User Interface Automation](https://youtu.be/QMjsZ73GBoc?si=dhaQVruEEVkzdGU8)|Hanjun Lee|
 |**Sep 26**|Robotics|LLaDA-VLA: Vision-Language Diffusion Action Models|Hoeun Lee|
 ||LLMs|LLM Privacy Survey|Geun Choi|
 |**Sep 19**|LLMs|[Mixture of Lookup Experts](https://youtu.be/vwOh7ET6oqw?si=B56gx3LvIIQbzC4z)|Sieun Hyeon|
@@ -24,3 +28,5 @@ thumbnail: "seminar/thumbnails/aidas_seminar.png"
 ||LLMs|[Mixture-of-Recursions: Learning Dynamic Recursive Depths for Adaptive Token-Level Computation](https://www.youtube.com/watch?v=KlA7JIAONO0)|Jusang Oh|
 |**Jul 18**|Databases|[On the Rankability of Visual Embeddings](https://www.youtube.com/watch?v=aKIzYYBRGj0)|Mintaek Lim|
 ||LLMs|[KV-efficient language models: MLA and sliding window attention](https://www.youtube.com/watch?v=t2VYbYKHsdQ)|Yejoon Lee|
+
+
