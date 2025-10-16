@@ -7,23 +7,18 @@ thumbnail: "seminar/thumbnails/diffusion_seminar.png"
 
 # Curriculum
 
-## 1. Diffusion Theory
-1. Generative Modeling (What is generative model?)
-2. Stochastic differential equation
-3. Score matching (+flow matching)
-4. Diffusion formulation
-
-## 2. Diffusion techniques
-1. Sampling (DDPM, DDIM..)
-2. Conditioning, Guidance
-3. Noise scheduling
-4. Efficiency (distill, consistency..)
-
-## 3. Diffusion language model
-1. Continuous diffusion (Embedding, Latent)
-2. Discrete diffusion (mdlm, score matching)
-3. AR VS. NAR
-4. Scaling
+1. [Introduction To Diffusion Model](#week-1-introduction-to-diffusion-model)
+2. [Generative Modeling I](#week-2-generative-modeling-i)
+3. [Generative Modeling Ⅱ](#week-3-generative-modeling-ⅱ)
+4. [Denoising Diffusion Probabilistic Model](#week-4-denoising-diffusion-probabilistic-model)
+5. [DDIM and Score-based Modeling](#week-5-ddim-and-score-based-modeling)
+6. [Various Diffusion Space](#week-6-various-diffusion-space)
+7. [Technical components](#week-7-technical-components)
+8. [Diffusion Language Models I](#week-8-diffusion-language-models-i)
+9. [Diffusion Language Models Ⅱ](#week-9-diffusion-language-models-ⅱ)
+10. [Diffusion Language Models Ⅲ](#week-10-diffusion-language-models-ⅲ)
+11. [Flow Matching & Token Ordering](#week-11-flow-matching--token-ordering)
+12. [Invited Talk – Foundations of Diffusion Language Models](#week-12-invited-talk--foundations-of-diffusion-language-models)
 
 &nbsp;
 &nbsp;
@@ -230,4 +225,20 @@ Presenter: Jaeik Kim
 
 &nbsp;
 
+## Week 12: Invited Talk – Foundations of Diffusion Language Models
 
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 800px; margin: 0 auto;">
+  <iframe 
+    src="https://www.youtube.com/embed/X_kczHxISc0?si=Hk6Dq0PIRPrE25u-"
+    style="position: absolute; top:0; left:0; width:100%; height:100%;"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowfullscreen>
+  </iframe>
+</div>
+
+This presentation introduces the concept of token ordering in large language models (LLMs), examining whether the conventional left-to-right autoregressive generation is truly optimal for diverse downstream tasks. The historical development of left-to-right ordering, from early NLP research to modern transformers, is outlined, followed by discussion of seminal works such as Sigma GPT and Any-Order GPT, which explore arbitrary permutations and demonstrate both the challenges and potential advantages of moving beyond identity ordering. Theoretical connections to combinatorial optimization and group theory are highlighted, along with findings showing that any-order autoregression is more difficult to train yet can outperform left-to-right ordering under curriculum learning or task-specific structures. Future directions are suggested, including balancing efficiency and expressivity, meta-learning order strategies, advancing KV caching for encoder-based masked diffusion models, and extending token ordering research to modalities beyond text.
+
+Presenter: [Dr. Subham Sahoo](https://s-sahoo.com/)
+
+&nbsp;
