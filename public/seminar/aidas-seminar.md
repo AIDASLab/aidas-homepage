@@ -12,10 +12,10 @@ thumbnail: "seminar/thumbnails/aidas_seminar.png"
 |----|--------|-----|---------|
 |**Oct 17**|Generative Models|Video models are zero-shot learners and reasoners|Jihwan Hong|
 ||LLMs|Persona Vectors: Monitoring and Controlling Character Traits in Language Models|Woojin Kim|
-|**Oct 10**|LLMs|Training and Inference on Any-Order Autoregressive Models the Right Way|Yunseok Han|
+|**Oct 10**|LLMs|[Training and Inference on Any-Order Autoregressive Models the Right Way](https://youtu.be/HGUeMv7VVNE)|Yunseok Han|
 ||LLMs|[Dynamic Planning for LLM-based Graphical User Interface Automation](https://youtu.be/QMjsZ73GBoc?si=dhaQVruEEVkzdGU8)|Hanjun Lee|
-|**Sep 26**|Robotics|LLaDA-VLA: Vision-Language Diffusion Action Models|Hoeun Lee|
-||LLMs|LLM Privacy Survey|Geun Choi|
+|**Sep 26**|Robotics|[LLaDA-VLA: Vision-Language Diffusion Action Models](https://youtu.be/FVA3vbpteao)|Hoeun Lee|
+||LLMs|[LLM Privacy Survey](https://www.youtube.com/watch?v=E0S3MVh0ghw)|Geun Choi|
 |**Sep 19**|LLMs|[Mixture of Lookup Experts](https://youtu.be/vwOh7ET6oqw?si=B56gx3LvIIQbzC4z)|Sieun Hyeon|
 ||LLMs|[Self-Questioning Language Models](https://youtu.be/WDfvbILy2-I?si=47c3FJ6ySmJVsUxv)|Yejoon Lee|
 |**Sep 12**|LLMs|[RoFormer: Enhanced Transformer with Rotary Position Embedding](https://youtu.be/5l9quUaJw7g)|Dogeun Kim|
