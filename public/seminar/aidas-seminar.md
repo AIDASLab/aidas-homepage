@@ -10,15 +10,17 @@ thumbnail: "seminar/thumbnails/aidas_seminar.png"
 
 |Date|Category|Topic|Presenter|
 |----|--------|-----|---------|
+|**Nov 28**|LLMs|MoBE: Mixture-of-Basis-Experts for Compressing MoE-based LLMs|Sieun Hyeon|
+||Robotics|TBD|Hyeonggeun Kim|
 |**Nov 21**|Reinforcement Learning|Mastering the game of Go with deep neural networks and tree search|Woohyeon Kim|
-|**Nov 14**|LLMs|ThinkMorph: Emergent Properties in Multimodal Interleaved Chain-of-Thought Reasoning|Yongha Lee|
-||Representation Learning|A Survey on Knowledge Graphs: Representation, Acquisition, and Applications|Minwoo Kim|
+|**Nov 14**|LLMs|[ThinkMorph: Emergent Properties in Multimodal Interleaved Chain-of-Thought Reasoning](https://youtu.be/28qsnscO0Mk)|Yongha Lee|
+||Representation Learning|[A Survey on Knowledge Graphs: Representation, Acquisition, and Applications](https://youtu.be/pZTLkm9Eg6Y)|Minwoo Kim|
 |**Nov 7**|LLMs|SparseD: Sparse Attention for Diffusion Language Models|Jinhyeok Kim|
-|**Oct 31**|Representation Learning|Concerto: Joint 2D-3D Self-Supervised Learning Emerges Spatial Representations|Jusang Oh|
-||LLMs|Emergent Introspective Awareness in Large Language Models|Steve Cho|
-|**Oct 24**|Vector DB|On the Theoretical Limitations of Embedding-Based Retrieval|Mintaek Lim|
-||Multimodal LLMs|DeepSeek-OCR|Jaeik Kim|
-|**Oct 17**|Generative Models|Video models are zero-shot learners and reasoners|Jihwan Hong|
+|**Oct 31**|Representation Learning|[Concerto: Joint 2D-3D Self-Supervised Learning Emerges Spatial Representations](https://youtu.be/EcLrzBV2A3I)|Jusang Oh|
+||LLMs|[Emergent Introspective Awareness in Large Language Models](https://youtu.be/0DTlY0UFXsY)|Steve Cho|
+|**Oct 24**|Vector DB|[On the Theoretical Limitations of Embedding-Based Retrieval](https://youtu.be/I7xagaD1pt0?si=mvDvHnDUvIREs7AG)|Mintaek Lim|
+||Multimodal LLMs|[DeepSeek-OCR: Contexts Optical Compression](https://youtu.be/QUkNdfPA3C0)|Jaeik Kim|
+|**Oct 17**|Generative Models|[Video models are zero-shot learners and reasoners](https://youtu.be/2yDxmBOwfP4)|Jihwan Hong|
 ||LLMs|[Persona Vectors: Monitoring and Controlling Character Traits in Language Models](https://youtu.be/z6A0BLJS8UU)|Woojin Kim|
 |**Oct 10**|LLMs|[Training and Inference on Any-Order Autoregressive Models the Right Way](https://youtu.be/HGUeMv7VVNE)|Yunseok Han|
 ||LLMs|[Dynamic Planning for LLM-based Graphical User Interface Automation](https://youtu.be/QMjsZ73GBoc?si=dhaQVruEEVkzdGU8)|Hanjun Lee|
