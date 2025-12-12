@@ -10,9 +10,12 @@ thumbnail: "seminar/thumbnails/aidas_seminar.png"
 
 |Date|Category|Topic|Presenter|
 |----|--------|-----|---------|
+|**Dec 12**|Reinforcement Learning|Reward Reasoning Models|Hoeun Lee|
+|||TBD|Geon Choi|
+||LLMs|[HiFC: High-efficiency Flash-based KV Cache Swapping for Scaling LLM Inference](https://youtu.be/wJnABzHG-Sc)|Dogeun Kim|
 |**Dec 5**|LLMs|Prismatic Synthesis: Gradient-based Data Diversification Boosts Generalization in LLM Reasoning|Yejoon Lee|
 ||LLMs|[HiFC: High-efficiency Flash-based KV Cache Swapping for Scaling LLM Inference](https://youtu.be/wJnABzHG-Sc)|Dogeun Kim|
-|**Nov 28**|LLMs|MoBE: Mixture-of-Basis-Experts for Compressing MoE-based LLMs|Sieun Hyeon|
+|**Nov 28**|LLMs|[MoBE: Mixture-of-Basis-Experts for Compressing MoE-based LLMs](https://youtu.be/1uO2fM51IFk)|Sieun Hyeon|
 ||Robotics|TBD|Hyeonggeun Kim|
 |**Nov 21**|Reinforcement Learning|Mastering the game of Go with deep neural networks and tree search|Woohyeon Park|
 |**Nov 14**|LLMs|[ThinkMorph: Emergent Properties in Multimodal Interleaved Chain-of-Thought Reasoning](https://youtu.be/28qsnscO0Mk)|Yongha Lee|
