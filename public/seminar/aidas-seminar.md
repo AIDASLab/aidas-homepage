@@ -5,19 +5,19 @@ summary: "AIDAS Seminar"
 thumbnail: "seminar/thumbnails/aidas_seminar.png"
 ---
 
-
 # Contents
-
 |Date|Category|Topic|Presenter|
 |----|--------|-----|---------|
+|**Dec 19**|LLMs|Numerical mismatch in LLM RL|Yunseok Han|
+||LLMs|TiDAR: Think in Diffusion, Talk in Autoregression|Hanjun Lee|
 |**Dec 12**|Reinforcement Learning|Reward Reasoning Models|Hoeun Lee|
-|||TBD|Geon Choi|
+||LLMs|LightRAG: Simple and Fast Retrieval-Augmented Generation|Geon Choi|
 ||LLMs|[HiFC: High-efficiency Flash-based KV Cache Swapping for Scaling LLM Inference](https://youtu.be/wJnABzHG-Sc)|Dogeun Kim|
-|**Dec 5**|LLMs|Prismatic Synthesis: Gradient-based Data Diversification Boosts Generalization in LLM Reasoning|Yejoon Lee|
+|**Dec 5**|LLMs|[Prismatic Synthesis: Gradient-based Data Diversification Boosts Generalization in LLM Reasoning](https://youtu.be/liyZDEnlp5M)|Yejoon Lee|
 ||LLMs|[HiFC: High-efficiency Flash-based KV Cache Swapping for Scaling LLM Inference](https://youtu.be/wJnABzHG-Sc)|Dogeun Kim|
 |**Nov 28**|LLMs|[MoBE: Mixture-of-Basis-Experts for Compressing MoE-based LLMs](https://youtu.be/1uO2fM51IFk)|Sieun Hyeon|
-||Robotics|TBD|Hyeonggeun Kim|
-|**Nov 21**|Reinforcement Learning|Mastering the game of Go with deep neural networks and tree search|Woohyeon Park|
+||Robotics|Robot Learning: A Tutorial|Hyeonggeun Kim|
+|**Nov 21**|Reinforcement Learning|[Mastering the game of Go with deep neural networks and tree search](https://youtu.be/IV4_gNvDMdY)|Woohyeon Park|
 |**Nov 14**|LLMs|[ThinkMorph: Emergent Properties in Multimodal Interleaved Chain-of-Thought Reasoning](https://youtu.be/28qsnscO0Mk)|Yongha Lee|
 ||Representation Learning|[A Survey on Knowledge Graphs: Representation, Acquisition, and Applications](https://youtu.be/pZTLkm9Eg6Y)|Minwoo Kim|
 |**Nov 7**|LLMs|[SparseD: Sparse Attention for Diffusion Language Models](https://youtu.be/lgI89eAFjLc)|Jinhyeok Kim|
