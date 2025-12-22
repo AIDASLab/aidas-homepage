@@ -9,9 +9,9 @@ thumbnail: "seminar/thumbnails/aidas_seminar.png"
 |Date|Category|Topic|Presenter|
 |----|--------|-----|---------|
 |**Dec 19**|LLMs|Numerical mismatch in LLM RL|Yunseok Han|
-||LLMs|TiDAR: Think in Diffusion, Talk in Autoregression|Hanjun Lee|
-|**Dec 12**|Reinforcement Learning|Reward Reasoning Models|Hoeun Lee|
-||LLMs|LightRAG: Simple and Fast Retrieval-Augmented Generation|Geon Choi|
+||LLMs|[TiDAR: Think in Diffusion, Talk in Autoregression](https://youtu.be/0vKHhMbAR6A)|Hanjun Lee|
+|**Dec 12**|Reinforcement Learning|[Reward Reasoning Models](https://youtu.be/Q20uG0Xsn18)|Hoeun Lee|
+||LLMs|[LightRAG: Simple and Fast Retrieval-Augmented Generation](https://youtu.be/9eJVZ05LcR0)|Geon Choi|
 ||LLMs|[HiFC: High-efficiency Flash-based KV Cache Swapping for Scaling LLM Inference](https://youtu.be/wJnABzHG-Sc)|Dogeun Kim|
 |**Dec 5**|LLMs|[Prismatic Synthesis: Gradient-based Data Diversification Boosts Generalization in LLM Reasoning](https://youtu.be/liyZDEnlp5M)|Yejoon Lee|
 ||LLMs|[HiFC: High-efficiency Flash-based KV Cache Swapping for Scaling LLM Inference](https://youtu.be/wJnABzHG-Sc)|Dogeun Kim|
