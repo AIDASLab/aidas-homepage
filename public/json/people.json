@@ -232,6 +232,17 @@
     "experience": []
   },
   {
+    "name": "Hyojoong Kim",
+    "role": "UG",
+    "image": "/people/hyojoong_kim.jpg",
+    "education": [
+      "B.S. in Industrial Engineering, Seoul National University, S. Korea, 2020-Present"
+    ],
+    "research": ["Large Language Model","Data Management"],
+    "email": "esryoo68@snu.ac.kr",
+    "experience": []
+  },
+  {
     "name": "Jungwon Choi",
     "role": "Staff",
     "image": "/people/jungwon_choi.jpg",

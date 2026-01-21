@@ -10,12 +10,13 @@ thumbnail: "seminar/thumbnails/aidas_seminar.png"
 ## 26-1 Seminars
 |Date|Category|Topic|Presenter|
 |----|--------|-----|---------|
-|**Jan 2**|LLMs|[Artificial Hivemind: The Open-Ended Homogeneity of Language Models (and Beyond)](https://youtu.be/6M6TFagLvyE)|Woojin Kim|
-||Physical AI|[A Path Towards Autonomous Machine Intelligence](https://youtu.be/4mTzt-fQZMg)|Jihwan Hong|
-|**Jan 9**|LLMs|OntoTune: Ontology-Driven Self-training for Aligning LLMs|Minteak Lim|
-||Generative Models|AI models collapse when trained on recursively generated data|Jaeik Kim|
 |**Jan 16**|LLMs|K-Foundation Models|Jusang Oh|
 ||LLMs|Gated Attention for Large Language Models: Non-linearity, Sparsity, and Attention-Sink-Free|Jinhyeok Kim|
+|**Jan 9**|LLMs|OntoTune: Ontology-Driven Self-training for Aligning LLMs|Minteak Lim|
+||Generative Models|AI models collapse when trained on recursively generated data|Jaeik Kim|
+|**Jan 2**|LLMs|[Artificial Hivemind: The Open-Ended Homogeneity of Language Models (and Beyond)](https://youtu.be/6M6TFagLvyE)|Woojin Kim|
+||Physical AI|[A Path Towards Autonomous Machine Intelligence](https://youtu.be/4mTzt-fQZMg)|Jihwan Hong|
+
 
 ## 25-2 Seminars
 |Date|Category|Topic|Presenter|
