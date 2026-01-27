@@ -1,4 +1,12 @@
 [
+    {
+    "title": "RFEval: Benchmarking Reasoning Faithfulness under Counterfactual Reasoning Intervention in Large Reasoning Models",
+    "venue": "ICLR",
+    "venue_full": "The Fourteenth International Conference on Learning Representations",
+    "date": "2026-04-23",
+    "authors": ["Yoonsuk Han*", "Yejoon Kim", "Jaeyoung Do^"],
+    "abstract": "Large Reasoning Models (LRMs) exhibit strong performance, yet often produce rationales that sound plausible but fail to reflect their true decision process, undermining reliability and trust. We introduce a formal framework for reasoning faithfulness, defined by two testable conditions: stance consistency (a coherent stance linking reasoning to answer) and causal influence (the stated reasoning causally drives the answer under output-level interventions), explicitly decoupled from accuracy. To operationalize this, we present RFEval, a benchmark of 7,186 instances across seven tasks that probes faithfulness via controlled, output-level counterfactual interventions. Evaluating twelve open-source LRMs, we find unfaithfulness in 49.7% of outputs, predominantly from post-intervention stance inconsistency. Failures are concentrated in brittle, convergent domains such as math and code, and correlate more with post-training regimes than with scale: within-family ablations indicate that adding current RL-style objectives on top of supervised fine-tuning can reduce reasoning faithfulness, even when accuracy is maintained. Crucially, accuracy is neither a sufficient nor a reliable proxy for faithfulness: once controlling for model and task, the accuracy–faithfulness link is weak and statistically insignificant. Our work establishes a rigorous methodology for auditing LRM reliability and shows that trustworthy AI requires optimizing not only for correct outcomes but also for the structural integrity of the reasoning process."
+  },
   {
     "title": "MatKV: Trading Compute for Flash Storage in LLM Inference",
     "venue": "ICDE",
