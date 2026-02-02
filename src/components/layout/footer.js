@@ -34,7 +34,7 @@ export default function Footer() {
             {/* Left Side: Social */}
             <div className="flex justify-center md:justify-end items-center space-x-6 mt-4 text-white">
                 <SocialIcon property="github" href="https://github.com/AIDASLab" />
-                <SocialIcon property="huggingface" href="https://huggingface.co/AIDAS-Lab" />
+                <SocialIcon property="huggingface" href="https://huggingface.co/snu-aidas" />
                 <SocialIcon property="youtube" href="https://www.youtube.com/@AIDAS-Lab" />
             </div>
         </div>
