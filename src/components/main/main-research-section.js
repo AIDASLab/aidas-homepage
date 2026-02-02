@@ -5,27 +5,27 @@ const researchItems = [
   {
     title: "Core AI",
     subtitle: "Advance generative AI by developing state-of-the-art models such as large language models, vision-language models, and vision-language-action models. Drive innovation through novel model architectures and training methodologies, enabling the next generation of multi-modal AI systems.",
-    image: "/background/snu-night.jpg",
+    image: "/icons/core_ai.png",
   },
   {
     title: "System AI",
     subtitle: "Enhance the scalability and efficiency of AI systems through integrated software-hardware co-design. Facilitate large-scale data processing and AI workloads through high-performance inference, training, and deployment across heterogeneous computing environments.",
-    image: "/background/snu-night.jpg",
+    image: "/icons/system_ai.png",
   },
   {
     title: "Embodied AI",
     subtitle: "Develop intelligent agents capable of perceiving, reasoning, and acting autonomously in dynamic physical environments. Integrate multimodal perception, behavioral planning, and real-time control to empower autonomous systems with adaptive, goal-directed interaction.",
-    image: "/background/snu-night.jpg",
+    image: "/icons/embodied_ai.png",
   },
   {
     title: "Medical AI",
     subtitle: "Utilize AI to interpret complex medical data, including imaging, biosignals, and electronic health records. Improve clinical decision-making through accurate, interpretable, and deployable models for diagnosis, treatment planning, and outcome prediction.",
-    image: "/background/snu-night.jpg",
+    image: "/icons/medical_ai.png",
   },
   {
     title: "Industrial AI",
     subtitle: "Apply AI technologies to industrial and manufacturing domains, leveraging domain expertise to address challenges such as predictive maintenance, process optimization, and intelligent automation through robust algorithms and data-driven system integration.",
-    image: "/background/snu-night.jpg",
+    image: "/icons/industrial_ai.png",
   },
 ];
 
@@ -210,11 +210,11 @@ export default function ResearchSection() {
                       style={{ flexBasis: `${100 / itemsPerPage}%` }}
                     >
                       <div className="rounded-lg p-4 h-full">
-                        <div className="w-full h-[150px] mb-3 flex items-center justify-center overflow-hidden rounded-md">
+                        <div className="w-full h-[200px] mb-3 flex items-center justify-center overflow-hidden rounded-md">
                           <img
                             src={item.image}
                             alt={item.title}
-                            className="object-cover w-full h-full"
+                            className="object-cover w-full h-full scale-[0.9]"
                           />
                         </div>
                         <h3 className="text-xl mb-2">{item.title}</h3>
