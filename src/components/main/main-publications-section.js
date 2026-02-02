@@ -26,7 +26,7 @@ export default function PublicationsSection() {
         </div>
 
         {/* Paper List */}
-        <div className="space-y-12 md:ml-12 lg:ml-16 max-w-3xl">
+        <div className="space-y-4 md:ml-12 lg:ml-16 max-w-3xl">
           {publications.map((pub, idx) => (
             <div key={idx}>
               <h3 className="text-xl font-semibold">{pub.title}</h3>

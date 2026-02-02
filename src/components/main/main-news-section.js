@@ -42,7 +42,7 @@ export default async function NewsSection() {
         </div>
 
         {/* News List */}
-        <div className="space-y-12 md:ml-12 lg:ml-16 max-w-3xl">
+        <div className="space-y-4 md:ml-12 lg:ml-16 max-w-3xl">
           {sortedNews.map((news, idx) => (
             <div key={idx}>
               <div className="flex justify-between items-start">
