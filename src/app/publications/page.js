@@ -30,10 +30,10 @@ export default function Publications() {
         <PageLayout title="Publications">
 
             {sortedYears.map((year) => (
-                <div key={year} className="mb-16">
+                <div key={year} className="mb-10">
                     <h2 className="text-2xl sm:text-3xl font-bold mb-6">{year}</h2>
 
-                    <div className="space-y-10">
+                    <div className="space-y-4">
                         {grouped[year].map((paper, idx) => {
                             const extraLinks = Object.entries(paper)
                                 .filter(([key]) => !["title", "authors", "conference", "venue", "venue_full", "date", "highlight", "abstract"].includes(key))
@@ -84,7 +84,7 @@ export default function Publications() {
 
                                     {/* Divider */}
                                     {idx < grouped[year].length - 1 && (
-                                        <div className="mt-6 border-t border-gray-300" />
+                                        <div className="mt-4 border-t border-gray-300" />
                                     )}
                                 </div>
                             );
