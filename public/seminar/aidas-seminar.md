@@ -7,13 +7,20 @@ thumbnail: "seminar/thumbnails/aidas_seminar.png"
 
 # Contents
 
+<!-- |**Mon 30**|Topic|Title|Name| -->
+<!-- ||Topic|Title|Name| -->
+
 ## 26-1 Seminars
 |Date|Category|Topic|Presenter|
 |----|--------|-----|---------|
+|**Jan 30**|Generative Models|Beyond Autoregression: Discrete Diffusion for Complex Reasoning and Planning|Woohyeon Kim|
+||LLMs|Enhancing intention prediction and interpretability in service robots with LLM and KG|Minwoo Kim|
+|**Jan 23**|Medical AI|[Progressive Trajectory Matching for Dataset Distillation](https://youtu.be/5Jibd_YvswQ)|Steve Cho|
+||LLMs|[Reasoning Models Generate Societies of Thought](https://youtu.be/XX73spMVPiw)|Yongha Lee|
 |**Jan 16**|LLMs|K-Foundation Models|Jusang Oh|
-||LLMs|Gated Attention for Large Language Models: Non-linearity, Sparsity, and Attention-Sink-Free|Jinhyeok Kim|
-|**Jan 9**|LLMs|OntoTune: Ontology-Driven Self-training for Aligning LLMs|Minteak Lim|
-||Generative Models|AI models collapse when trained on recursively generated data|Jaeik Kim|
+||LLMs|[Gated Attention for Large Language Models: Non-linearity, Sparsity, and Attention-Sink-Free](https://youtu.be/pJKT5WTyZGs)|Jinhyeok Kim|
+|**Jan 9**|LLMs|[OntoTune: Ontology-Driven Self-training for Aligning LLMs](https://youtu.be/sEL0uQknz24)|Minteak Lim|
+||Generative Models|[AI models collapse when trained on recursively generated data](https://youtu.be/3Ua_EujuO2s)|Jaeik Kim|
 |**Jan 2**|LLMs|[Artificial Hivemind: The Open-Ended Homogeneity of Language Models (and Beyond)](https://youtu.be/6M6TFagLvyE)|Woojin Kim|
 ||Physical AI|[A Path Towards Autonomous Machine Intelligence](https://youtu.be/4mTzt-fQZMg)|Jihwan Hong|
 
