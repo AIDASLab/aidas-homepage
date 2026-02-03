@@ -243,6 +243,17 @@
     "experience": []
   },
   {
+    "name": "Seokjin Lee",
+    "role": "UG",
+    "image": "/people/seokjin_lee.jpg",
+    "education": [
+      "B.S. in Electrical and Computer Engineering & Computer Science, Sungkyunkwan University, S. Korea, 2016-2022"
+    ],
+    "research": ["World Model","Multimodal LLM"],
+    "experience": ["Search AI dev, Naver, 2021-Present"],
+    "linkedin": "www.linkedin.com/in/seokjin-lee"
+  },
+  {
     "name": "Jungwon Choi",
     "role": "Staff",
     "image": "/people/jungwon_choi.jpg",

@@ -29,7 +29,7 @@ export default function People() {
         "Ph.D. Students": people.filter(p => p.role === "PhD"),
         "M.S./Ph.D. Students": people.filter(p => p.role === "MP"),
         "M.S. Students": people.filter(p => p.role === "MS"),
-        "Undergraduate Interns": people.filter(p => p.role === "UG"),
+        "Interns": people.filter(p => p.role === "UG"),
         "Administrative Staff": people.filter(p => p.role === "Staff"),
     };
 
