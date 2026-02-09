@@ -36,7 +36,7 @@ export default function HeroSection() {
                   src={src}
                   alt={`Slide ${i}`}
                   fill
-                  className="object-cover"
+                  className="object-contain"
                   priority={i === 0}
                 />
               </div>
