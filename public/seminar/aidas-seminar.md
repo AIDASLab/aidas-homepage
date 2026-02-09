@@ -13,11 +13,13 @@ thumbnail: "seminar/thumbnails/aidas_seminar.png"
 ## 26-1 Seminars
 |Date|Category|Topic|Presenter|
 |----|--------|-----|---------|
+|**Feb 6**|LLMs|Latent Collaboration in Multi-Agent Systems|Sieun Hyeon|
+||Physical AI|Universal Manipulation Interface: In-The-Wild Robot Teaching Without In-The-Wild Robots|Hyeonggeun Kim|
 |**Jan 30**|Generative Models|Beyond Autoregression: Discrete Diffusion for Complex Reasoning and Planning|Woohyeon Kim|
 ||LLMs|Enhancing intention prediction and interpretability in service robots with LLM and KG|Minwoo Kim|
 |**Jan 23**|Medical AI|[Progressive Trajectory Matching for Dataset Distillation](https://youtu.be/5Jibd_YvswQ)|Steve Cho|
 ||LLMs|[Reasoning Models Generate Societies of Thought](https://youtu.be/XX73spMVPiw)|Yongha Lee|
-|**Jan 16**|LLMs|K-Foundation Models|Jusang Oh|
+|**Jan 16**|LLMs|[K-Foundation Models](https://youtu.be/matpvMe6ZYY)|Jusang Oh|
 ||LLMs|[Gated Attention for Large Language Models: Non-linearity, Sparsity, and Attention-Sink-Free](https://youtu.be/pJKT5WTyZGs)|Jinhyeok Kim|
 |**Jan 9**|LLMs|[OntoTune: Ontology-Driven Self-training for Aligning LLMs](https://youtu.be/sEL0uQknz24)|Minteak Lim|
 ||Generative Models|[AI models collapse when trained on recursively generated data](https://youtu.be/3Ua_EujuO2s)|Jaeik Kim|
@@ -36,7 +38,7 @@ thumbnail: "seminar/thumbnails/aidas_seminar.png"
 |**Dec 5**|LLMs|[Prismatic Synthesis: Gradient-based Data Diversification Boosts Generalization in LLM Reasoning](https://youtu.be/liyZDEnlp5M)|Yejoon Lee|
 ||LLMs|[HiFC: High-efficiency Flash-based KV Cache Swapping for Scaling LLM Inference](https://youtu.be/wJnABzHG-Sc)|Dogeun Kim|
 |**Nov 28**|LLMs|[MoBE: Mixture-of-Basis-Experts for Compressing MoE-based LLMs](https://youtu.be/1uO2fM51IFk)|Sieun Hyeon|
-||Robotics|Robot Learning: A Tutorial|Hyeonggeun Kim|
+||Robotics|[Robot Learning: A Tutorial](https://youtu.be/Y9RAy03HnCk)|Hyeonggeun Kim|
 |**Nov 21**|Reinforcement Learning|[Mastering the game of Go with deep neural networks and tree search](https://youtu.be/IV4_gNvDMdY)|Woohyeon Park|
 |**Nov 14**|LLMs|[ThinkMorph: Emergent Properties in Multimodal Interleaved Chain-of-Thought Reasoning](https://youtu.be/28qsnscO0Mk)|Yongha Lee|
 ||Representation Learning|[A Survey on Knowledge Graphs: Representation, Acquisition, and Applications](https://youtu.be/pZTLkm9Eg6Y)|Minwoo Kim|
