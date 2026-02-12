@@ -1,5 +1,14 @@
 [
-    {
+  {
+    "title": "VALUEFLOW: Toward Pluralistic and Steerable Value-based Alignment in Large Language Models",   
+    "venue": "2602.03160",
+    "venue_full": "arXiv preprint", 
+    "date": "2026-02-03",
+    "authors": ["Woojin Kim*", "Sieun Hyeon", "Jusang Oh", "Jaeyoung Do^"],
+    "abstract": "Aligning Large Language Models (LLMs) with the diverse spectrum of human values remains a central challenge: preference-based methods often fail to capture deeper motivational principles. Value-based approaches offer a more principled path, yet three gaps persist: extraction often ignores hierarchical structure, evaluation detects presence but not calibrated intensity, and the steerability of LLMs at controlled intensities remains insufficiently understood. To address these limitations, we introduce VALUEFLOW, the first unified framework that spans extraction, evaluation, and steering with calibrated intensity control. The framework integrates three components: (i) HIVES, a hierarchical value embedding space that captures intra- and cross-theory value structure; (ii) the Value Intensity DataBase (VIDB), a large-scale resource of value-labeled texts with intensity estimates derived from ranking-based aggregation; and (iii) an anchor-based evaluator that produces consistent intensity scores for model outputs by ranking them against VIDB panels. Using VALUEFLOW, we conduct a comprehensive large-scale study across ten models and four value theories, identifying asymmetries in steerability and composition laws for multi-value control. This paper establishes a scalable infrastructure for evaluating and controlling value intensity, advancing pluralistic alignment of LLMs.",
+    "arXiv": "https://arxiv.org/abs/2602.03160"
+  },
+  {
     "title": "RFEval: Benchmarking Reasoning Faithfulness under Counterfactual Reasoning Intervention in Large Reasoning Models",
     "venue": "ICLR",
     "venue_full": "The Fourteenth International Conference on Learning Representations",
