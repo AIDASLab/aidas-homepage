@@ -30,7 +30,6 @@ export default function Home() {
       <>
         <ResearchSection />
         <PublicationsSection />
-        <ProjectSection />
         <NewsSection />
       </>
     </Layout>
