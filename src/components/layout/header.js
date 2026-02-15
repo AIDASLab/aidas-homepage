@@ -13,7 +13,7 @@ export default function Header() {
     { name: 'Seminar', href: '/seminar' },
     /*{ name: 'Project', href: '/project' },*/
     { name: 'Contact', href: '/contact' },
-    { name: 'Join', href: '/join' },
+    /*{ name: 'Join', href: '/join' }, */
   ];
 
   return (
