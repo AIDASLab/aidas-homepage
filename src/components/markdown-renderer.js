@@ -27,6 +27,7 @@ export default function MarkdownRenderer({ content }) {
           padding: 6px 10px !important;
           border: 0 !important;
           vertical-align: top !important;
+          text-align: center !important;
         }
 
         /* Header line: slightly thicker */
@@ -49,6 +50,17 @@ export default function MarkdownRenderer({ content }) {
         .markdown :where(tbody td:first-child) {
           font-weight: 700 !important;
           text-align: center !important;
+          white-space: nowrap !important;
+        }
+
+        /* Topic column should stay left-aligned for readability */
+        .markdown :where(thead th:nth-child(3), tbody td:nth-child(3)) {
+          text-align: left !important;
+        }
+
+        /* Keep presenter names on one line and reserve enough width */
+        .markdown :where(thead th:nth-child(4), tbody td:nth-child(4)) {
+          min-width: 180px !important;
           white-space: nowrap !important;
         }
       `}</style>
