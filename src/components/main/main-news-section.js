@@ -33,16 +33,16 @@ export default async function NewsSection() {
 
   return (
     <section className="section-shell">
-      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-[200px_1fr] gap-x-8 gap-y-8 md:gap-y-12 items-start">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-[200px_1fr] gap-x-8 gap-y-6 md:gap-y-8 items-start">
 
         {/* Title & View More */}
         <div className="md:pl-2 lg:-ml-6 xl:-ml-12">
-          <h2 className="text-3xl sm:text-4xl font-semibold whitespace-nowrap mb-4">News</h2>
+          <h2 className="text-3xl sm:text-4xl font-semibold whitespace-nowrap mb-3">News</h2>
           <ViewMoreButton href="/news"/>
         </div>
 
         {/* News List */}
-        <div className="space-y-4 md:ml-12 lg:ml-16 max-w-3xl">
+        <div className="space-y-3 md:ml-12 lg:ml-16 max-w-3xl">
           {sortedNews.map((news, idx) => (
             <div key={idx}>
               <div className="flex justify-between items-start">
@@ -53,7 +53,7 @@ export default async function NewsSection() {
               </div>
 
               {news.summary && (
-                <p className="text-sm text-muted mt-2 leading-relaxed">
+                <p className="text-sm text-muted mt-1.5 leading-snug">
                   {news.summary.length > 300
                     ? `${news.summary.slice(0, 300)}... `
                     : news.summary}
@@ -65,7 +65,7 @@ export default async function NewsSection() {
 
               {/* Divider */}
               {idx !== sortedNews.length - 1 && (
-                <div className="border-t border-gray-300 mt-6" />
+                <div className="border-t border-gray-300 mt-4" />
               )}
             </div>
           ))}

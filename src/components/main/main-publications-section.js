@@ -25,7 +25,7 @@ export default function PublicationsSection() {
   return (
 
     <section className="section-shell">
-      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-[200px_1fr] gap-x-8 gap-y-6 md:gap-y-8 items-start">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-[200px_1fr] gap-x-8 gap-y-5 md:gap-y-7 items-start">
 
         {/* Title & View More */}
         <div className="md:pl-2 lg:-ml-6 xl:-ml-12">
@@ -34,7 +34,7 @@ export default function PublicationsSection() {
         </div>
 
         {/* Paper List */}
-        <div className="space-y-3 md:ml-12 lg:ml-16 max-w-3xl">
+        <div className="space-y-2.5 md:ml-12 lg:ml-16 max-w-3xl">
           {publications.map((pub, idx) => (
             <div key={idx}>
               <h3 className="text-lg sm:text-xl font-medium leading-snug">{pub.title}</h3>
@@ -42,7 +42,7 @@ export default function PublicationsSection() {
                 {Array.isArray(pub.authors) ? pub.authors.join(', ') : pub.authors} · {pub.venue} {pub.date.slice(0, 4)}
               </p>
               {pub.abstract && (
-                <p className="text-sm text-muted mt-1.5 leading-snug">
+                <p className="text-sm text-muted mt-1 leading-snug">
                   {pub.abstract.length > 300
                     ? `${pub.abstract.slice(0, 300)}... `
                     : pub.abstract}
@@ -53,7 +53,7 @@ export default function PublicationsSection() {
               )}
               {/* Divider */}
               {idx !== publications.length - 1 && (
-                <div className="border-t border-gray-300 mt-4" />
+                <div className="border-t border-gray-300 mt-3.5" />
               )}
             </div>
           ))}

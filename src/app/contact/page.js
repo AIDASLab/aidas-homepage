@@ -20,11 +20,11 @@ export default function Contact() {
                 </div>
 
                 {/* Contact Details */}
-                <div className="w-full p-6 mt-8 text-center">
-                    <h2 className="text-2xl font-semibold mb-4">Address</h2>
+                <div className="w-full p-5 mt-6 text-center">
+                    <h2 className="text-2xl font-semibold mb-3">Address</h2>
                     <p>1, Gwanak-ro, Gwanak-gu (building #301, office #808), Seoul, Republic of Korea, 08826</p>
 
-                    <h2 className="text-2xl font-semibold  mt-10 mb-4">Contact Information</h2>
+                    <h2 className="text-2xl font-semibold  mt-7 mb-3">Contact Information</h2>
                     <p>Email: jaeyoung.do at snu.ac.kr</p>
                 </div>
 

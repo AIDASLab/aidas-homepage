@@ -146,7 +146,7 @@ export default function ResearchSection() {
     -pageIndex * carouselWidth + (isDragging ? currentX - startX : 0);
 
   return (
-    <section className="py-10">
+    <section className="py-8">
       <div className="max-w-[1200px] mx-auto px-5 relative group">
         {/* Left Arrow Button */}
         <button
@@ -217,8 +217,8 @@ export default function ResearchSection() {
                             className="object-cover w-full h-full scale-[0.9]"
                           />
                         </div>
-                        <h3 className="text-lg sm:text-xl font-medium mb-2">{item.title}</h3>
-                        <p className="text-sm sm:text-base text-[#555555]">{item.subtitle}</p>
+                        <h3 className="text-lg sm:text-xl font-medium mb-1.5">{item.title}</h3>
+                        <p className="text-sm sm:text-base leading-snug text-[#555555]">{item.subtitle}</p>
                       </div>
                     </div>
                   ))}
@@ -232,7 +232,7 @@ export default function ResearchSection() {
         1. to remove latency, we used pages, not realPages
         2. check overflowing and underflowing scenario and color them too 
         */}
-        <div className="flex justify-center mt-5">
+        <div className="flex justify-center mt-4">
           {pages.slice(1, pages.length - 1).map((_, idx) => (
             <div
               key={idx}

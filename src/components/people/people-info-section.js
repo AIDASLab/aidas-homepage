@@ -13,8 +13,8 @@ export default function PeopleInfoSection({ person, property, title }) {
 
   return (
     <>
-      <h4 className="text-xl text-left font-semibold mt-6">{heading}</h4>
-      <ul className="list-disc list-inside text-gray-600 text-left mt-2">
+      <h4 className="text-xl text-left font-semibold mt-4">{heading}</h4>
+      <ul className="list-disc list-inside text-gray-600 text-left mt-1.5">
         {items.map((item, i) => (
           <li key={i}>{item}</li>
         ))}

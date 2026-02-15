@@ -44,7 +44,7 @@ export default async function NewsPage() {
                             />
                             {/* Divider */}
                             {idx < newsList.length - 1 && (
-                                <div className="mt-6 border-t border-gray-300" />
+                                <div className="mt-4 border-t border-gray-300" />
                             )}
                         </div>
                     ))}

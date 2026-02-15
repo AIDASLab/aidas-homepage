@@ -51,7 +51,7 @@ export default async function ArticlePage({ params }) {
 
         return (
             <PageLayout title={data.title}>
-                <div className="flex justify-end mb-4">
+                <div className="flex justify-end mb-3">
                     <DateDisplay date={data.date} className="text-sm text-muted" />
                 </div>
 

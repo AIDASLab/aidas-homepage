@@ -38,13 +38,13 @@ export default async function ProjectSection() {
     <section className="section-shell">
       <div className="max-w-6xl mx-auto">
         {/* Section Title & Button */}
-        <div className="flex items-center justify-between mb-10">
+        <div className="flex items-center justify-between mb-7">
           <h2 className="text-3xl sm:text-4xl font-semibold">Projects</h2>
           <ViewMoreButton href="/project" />
         </div>
 
         {/* Project Cards */}
-        <div className="grid gap-6 md:gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-5 md:gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
           {sortedProjects.map((project) => (
             <Link key={project.slug} href={`/project/${project.slug}`}>
               <div className="bg-white rounded-lg transition overflow-hidden flex flex-col h-full cursor-pointer">
@@ -59,13 +59,13 @@ export default async function ProjectSection() {
                     />
                   </div>
                 )}
-                <div className="p-4 flex flex-col justify-between flex-grow">
+                <div className="p-3.5 flex flex-col justify-between flex-grow">
                   <div>
-                    <h3 className="text-lg font-medium mb-1">
+                    <h3 className="text-lg font-medium leading-snug mb-1">
                       {project.title}
                     </h3>
-                    <DateDisplay date={project.date} className="text-sm text-muted mb-2"/>
-                    <p className="text-sm text-muted line-clamp-3">
+                    <DateDisplay date={project.date} className="text-sm text-muted mb-1.5"/>
+                    <p className="text-sm text-muted leading-snug line-clamp-3">
                       {project.summary}
                     </p>
                   </div>

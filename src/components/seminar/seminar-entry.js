@@ -11,11 +11,11 @@ export default function SeminarEntry({ title, date, slug, thumbnail, summary }) 
               <Image src={`/${thumbnail}`} alt={title} fill className="object-contain" />
             </div>
           )}
-          <div className="p-5">
-            <h2 className="text-xl font-medium mb-2 hover-link">{title}</h2>
-            <DateDisplay date={date} className="text-sm mb-2 text-muted"/>
+          <div className="p-4">
+            <h2 className="text-xl font-medium mb-1.5 leading-snug hover-link">{title}</h2>
+            <DateDisplay date={date} className="text-sm mb-1.5 text-muted"/>
             {summary && (
-              <p className="text-sm text-muted line-clamp-3">{summary}</p>
+              <p className="text-sm text-muted leading-snug line-clamp-3">{summary}</p>
             )}
           </div>
         </div>

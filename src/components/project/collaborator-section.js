@@ -18,11 +18,11 @@ export default function CollaboratorSection({ src = [] }) {
   }, []);
 
   return (
-    <section className="w-full px-4 sm:px-6 lg:px-16 mb-20">
+    <section className="w-full px-4 sm:px-6 lg:px-16 mb-14">
       <div className="max-w-6xl mx-auto text-center">
-        <h2 className="text-2xl sm:text-3xl text-muted mb-10">Collaborating organizations</h2>
+        <h2 className="text-2xl sm:text-3xl text-muted mb-7">Collaborating organizations</h2>
 
-        <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-6 items-center justify-center">
+        <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-5 items-center justify-center">
           {companies.map((org, idx) => (
             <Link
               key={idx}

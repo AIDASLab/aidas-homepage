@@ -10,13 +10,13 @@ export default function Join() {
 
       <section>
         {/* Highlighted Section */}
-        <div className="bg-[#eef3f9] px-6 py-14 md:px-16 md:py-20 lg:px-24 flex flex-col md:flex-row gap-12 lg:gap-20 items-center rounded-xl">
+        <div className="bg-[#eef3f9] px-6 py-10 md:px-14 md:py-12 lg:px-20 flex flex-col md:flex-row gap-8 lg:gap-12 items-center rounded-xl">
           {/* Left: Text */}
           <div className="md:w-1/2">
-            <h2 className="text-l sm:text-xl lg:text-2xl font-semibold mb-6 text-primary">
+            <h2 className="text-l sm:text-xl lg:text-2xl font-semibold mb-4 text-primary">
               Innovating the future of AI
             </h2>
-            <p className="text-lg sm:text-lg lg:text-l text-point leading-relaxed">
+            <p className="text-lg sm:text-lg lg:text-l text-point leading-snug">
               From advanced Generative AI models to AI-powered novel system architectures and healthcare breakthroughs
             </p>
           </div>
@@ -34,8 +34,8 @@ export default function Join() {
         </div>
 
         {/* Application Info Section */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mt-24 max-w-7xl mx-auto px-2 sm:px-4 text-primary">
-          <p className="text-lg sm:text-l lg:text-l leading-relaxed">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-14 max-w-7xl mx-auto px-2 sm:px-4 text-primary">
+          <p className="text-lg sm:text-l lg:text-l leading-snug">
             The AIDAS Lab is actively recruiting{" "}
             <span className="font-semibold">
               highly motivated undergraduate students, graduate students, and postdoctoral researchers
@@ -44,7 +44,7 @@ export default function Join() {
             Interested applicants should send an email to Prof. Do, briefly describing their background, research interests,
             and relevant experience.
           </p>
-          <p className="text-lg sm:text-l lg:text-l leading-relaxed">
+          <p className="text-lg sm:text-l lg:text-l leading-snug">
             Please ensure to include{" "}
             <span className="font-semibold">
               your CV, academic transcripts, and any other supporting documents

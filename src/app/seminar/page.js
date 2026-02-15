@@ -32,7 +32,7 @@ export default async function SeminarPage() {
     return (
         <PageLayout title="Seminar">
             {/* Seminar section */}
-            <section className="page-section grid grid-cols-1 sm:grid-cols-2 gap-8">
+            <section className="page-section grid grid-cols-1 sm:grid-cols-2 gap-6">
                 {seminars.map((seminar, idx) => (
                     <div key={idx}>
                         <SeminarEntry
