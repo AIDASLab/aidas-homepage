@@ -33,20 +33,22 @@ export default async function NewsPage() {
 
         return (
             <PageLayout title="News">
-                {newsList.map((news, idx) => (
-                    <div key={idx}>
-                        <NewsEntry
-                            title={news.title}
-                            date={news.date}
-                            summary={news.summary}
-                            slug={news.slug}
-                        />
-                        {/* Divider */}
-                        {idx < newsList.length - 1 && (
-                            <div className="mt-6 border-t border-gray-300" />
-                        )}
-                    </div>
-                ))}
+                <section className="page-section">
+                    {newsList.map((news, idx) => (
+                        <div key={idx}>
+                            <NewsEntry
+                                title={news.title}
+                                date={news.date}
+                                summary={news.summary}
+                                slug={news.slug}
+                            />
+                            {/* Divider */}
+                            {idx < newsList.length - 1 && (
+                                <div className="mt-6 border-t border-gray-300" />
+                            )}
+                        </div>
+                    ))}
+                </section>
             </PageLayout>
         );
 

@@ -151,7 +151,7 @@ export default function ResearchSection() {
         {/* Left Arrow Button */}
         <button
           onClick={() => changePage(pageIndex - 1)}
-          className="z-50 absolute -left-3 top-1/2 -translate-y-1/2 hidden group-hover:flex items-center justify-center bg-white text-[#333] border border-gray-300 px-3 py-1.5 sm:px-4 sm:py-2 rounded text-base sm:text-lg font-semibold transition"
+          className="z-50 absolute -left-3 top-1/2 -translate-y-1/2 hidden group-hover:flex items-center justify-center bg-white text-[#333] border border-gray-300 px-3 py-1.5 sm:px-4 sm:py-2 rounded text-base sm:text-lg font-medium transition"
           aria-label="Previous Slide"
         >
           &#8249;
@@ -160,7 +160,7 @@ export default function ResearchSection() {
         {/* Right Arrow Button */}
         <button
           onClick={() => changePage(pageIndex + 1)}
-          className="z-50 absolute -right-3 top-1/2 -translate-y-1/2 hidden group-hover:flex items-center justify-center bg-white text-[#333] border border-gray-300 px-3 py-1.5 sm:px-4 sm:py-2 rounded text-base sm:text-lg font-semibold transition"
+          className="z-50 absolute -right-3 top-1/2 -translate-y-1/2 hidden group-hover:flex items-center justify-center bg-white text-[#333] border border-gray-300 px-3 py-1.5 sm:px-4 sm:py-2 rounded text-base sm:text-lg font-medium transition"
           aria-label="Next Slide"
         >
           &#8250;
@@ -217,8 +217,8 @@ export default function ResearchSection() {
                             className="object-cover w-full h-full scale-[0.9]"
                           />
                         </div>
-                        <h3 className="text-xl mb-2">{item.title}</h3>
-                        <p className="text-l">{item.subtitle}</p>
+                        <h3 className="text-lg sm:text-xl font-medium mb-2">{item.title}</h3>
+                        <p className="text-sm sm:text-base text-[#555555]">{item.subtitle}</p>
                       </div>
                     </div>
                   ))}

@@ -3,23 +3,23 @@ import DateDisplay from "@/components/common/date-display";
 
 export default function NewsEntry({ title, date, summary, slug }) {
   return (
-    <div className="px-2 sm:px-4 my-6">
+    <div className="px-2 sm:px-4 my-8">
       {/* Title & Date Row */}
       <div className="flex flex-wrap items-center justify-between gap-2">
-        <Link href={`/news/${slug}`} className="hover:underline">
-          <h3 className="text-base sm:text-xl font-semibold">{title}</h3>
+        <Link href={`/news/${slug}`} className="hover-link">
+          <h3 className="text-base sm:text-xl font-medium">{title}</h3>
         </Link>
         {date && (
           <DateDisplay
             date={date}
-            className="text-sm text-[#666666]"
+            className="text-sm text-muted"
           />
         )}
       </div>
 
       {/* Summary */}
       {summary && (
-        <p className="mt-2 text-sm text-[#666666] leading-relaxed">
+        <p className="mt-2 text-sm text-muted leading-relaxed">
           {summary}
         </p>
       )}

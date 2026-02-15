@@ -26,7 +26,7 @@ export default async function ProjectCollaborator({ src }) {
     return (
       <section className="w-full mt-20 px-4 sm:px-6 lg:px-16 mb-20">
         <div className="max-w-6xl mx-auto text-center">
-          <h2 className="text-2xl sm:text-3xl text-[#666666] mb-10">
+          <h2 className="text-2xl sm:text-3xl text-muted mb-10">
             Collaborating organizations
           </h2>
           <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-6 items-center justify-center">
@@ -47,7 +47,7 @@ export default async function ProjectCollaborator({ src }) {
                     className="object-contain max-h-full max-w-full"
                   />
                 </div>
-                <span className="text-sm text-[#333333]">{org.name}</span>
+                <span className="text-sm text-[#4b5563]">{org.name}</span>
               </Link>
             ))}
           </div>

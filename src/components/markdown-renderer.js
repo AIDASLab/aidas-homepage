@@ -8,7 +8,7 @@ function Anchor({ node, ...props }) {
   return (
     <a
       {...props}
-      className="underline text-blue-600 hover:text-blue-800"
+      className="hover-link-accent"
     />
   );
 }

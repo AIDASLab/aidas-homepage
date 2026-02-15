@@ -56,7 +56,7 @@ export default function DesktopHeader({menuItems}) {
             <Image
                 src="/logo/aidas-logo-long.png"
                 alt="AIDAS Lab Logo"
-                width={atTop ? 350 : 200}
+                width={atTop ? 300 : 200}
                 height={0} 
                 className="transition-all duration-200 h-auto"
                 priority
@@ -67,24 +67,24 @@ export default function DesktopHeader({menuItems}) {
         <ul
             className={`
             transition-all duration-500
-            ${atTop ? 'mt-20' : 'mt-6'}
+            ${atTop ? 'mt-10' : 'mt-10'}
             flex flex-wrap justify-center sm:justify-end
             gap-x-6 sm:gap-x-8
-            text-md sm:text-lg md:text-xl
-            font-medium tracking-wide
+            text-sm sm:text-base md:text-lg
+            font-medium tracking-normal
         `}
         >
             {menuItems.map((item) => (
             <li key={item.href} className="relative group">
                 <Link
                 href={item.href}
-                className={`inline-block py-2 ${
-                    normalizedPathname === item.href ? 'text-[#333333]' : 'text-black'
-                } group-hover:text-[#333333]`}
+                className={`inline-block py-2 transition-colors duration-200 ease-out ${
+                    normalizedPathname === item.href ? 'text-[#2f3f55]' : 'text-[#4b5563]'
+                } group-hover:text-[#2f3f55]`}
                 >
                 {item.name}
                 <div
-                    className={`h-1 w-full bg-black transition-all duration-300 mt-3 ${
+                    className={`h-[1.5px] w-full bg-current transition-opacity duration-200 mt-2 ${
                     normalizedPathname === item.href
                         ? 'opacity-100'
                         : 'opacity-0 group-hover:opacity-100'

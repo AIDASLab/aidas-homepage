@@ -35,11 +35,11 @@ export default async function ProjectSection() {
     .slice(0, 3);
 
   return (
-    <section className="w-full px-4 sm:px-6 md:px-10 lg:px-16 xl:px-24 py-16">
+    <section className="section-shell">
       <div className="max-w-6xl mx-auto">
         {/* Section Title & Button */}
         <div className="flex items-center justify-between mb-10">
-          <h2 className="text-4xl font-bold">Projects</h2>
+          <h2 className="text-3xl sm:text-4xl font-semibold">Projects</h2>
           <ViewMoreButton href="/project" />
         </div>
 
@@ -61,11 +61,11 @@ export default async function ProjectSection() {
                 )}
                 <div className="p-4 flex flex-col justify-between flex-grow">
                   <div>
-                    <h3 className="text-lg font-semibold mb-1">
+                    <h3 className="text-lg font-medium mb-1">
                       {project.title}
                     </h3>
-                    <DateDisplay date={project.date} className="text-sm text-[#666666] mb-2"/>
-                    <p className="text-sm line-clamp-3">
+                    <DateDisplay date={project.date} className="text-sm text-muted mb-2"/>
+                    <p className="text-sm text-muted line-clamp-3">
                       {project.summary}
                     </p>
                   </div>

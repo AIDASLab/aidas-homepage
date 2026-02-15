@@ -2,7 +2,7 @@
 
 export default function DateDisplay({
   date,
-  className = "text-sm text-[#333333] whitespace-nowrap",
+  className = "text-sm text-muted whitespace-nowrap",
   locale = "en-US",
   formatOptions = {
     year: "numeric",

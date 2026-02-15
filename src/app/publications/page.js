@@ -28,70 +28,72 @@ export default function Publications() {
 
     return (
         <PageLayout title="Publications">
+            <section className="page-section">
+                {sortedYears.map((year) => (
+                    <div key={year} className="mb-12">
+                        <h2 className="text-2xl sm:text-3xl font-semibold mb-6">{year}</h2>
 
-            {sortedYears.map((year) => (
-                <div key={year} className="mb-10">
-                    <h2 className="text-2xl sm:text-3xl font-bold mb-6">{year}</h2>
+                        <div className="space-y-4">
+                            {grouped[year].map((paper, idx) => {
+                                const extraLinks = Object.entries(paper)
+                                    .filter(([key]) => !["title", "authors", "conference", "venue", "venue_full", "date", "highlight", "abstract"].includes(key))
+                                    .map(([key, value]) =>
+                                        typeof value === "string" ? (
+                                            <Link
+                                                key={key}
+                                                href={value}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className="hover-link-accent text-sm"
+                                            >
+                                                [{key}]
+                                            </Link>
+                                        ) : null
+                                    );
 
-                    <div className="space-y-4">
-                        {grouped[year].map((paper, idx) => {
-                            const extraLinks = Object.entries(paper)
-                                .filter(([key]) => !["title", "authors", "conference", "venue", "venue_full", "date", "highlight", "abstract"].includes(key))
-                                .map(([key, value]) =>
-                                    typeof value === "string" ? (
-                                        <Link
-                                            key={key}
-                                            href={value}
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                            className="hover:underline text-sm"
-                                        >
-                                            [{key}]
-                                        </Link>
-                                    ) : null
-                                );
+                                return (
+                                    <div key={idx}>
+                                        <div className="px-2 sm:px-4">
+                                            {/* Title & Highlight */}
+                                            <div className="flex flex-wrap items-center gap-2">
+                                                <h3 className="text-base sm:text-xl font-medium">{paper.title}</h3>
+                                                {paper.highlight && (
+                                                    <span className="text-muted text-sm font-medium">[{paper.highlight}]</span>
+                                                )}
+                                            </div>
 
-                            return (
-                                <div key={idx}>
-                                    <div className="px-2 sm:px-4">
-                                        {/* Title & Highlight */}
-                                        <div className="flex flex-wrap items-center gap-2">
-                                            <h3 className="text-base sm:text-xl font-semibold">{paper.title}</h3>
-                                            {paper.highlight && (
-                                                <span className="text-[#666666] text-sm font-medium">[{paper.highlight}]</span>
+                                            {/* Authors */}
+                                            {paper.authors && (
+                                                <p className="text-sm text-muted mt-1">
+                                                    {Array.isArray(paper.authors) ? paper.authors.join(", ") : paper.authors}
+                                                </p>
+                                            )}
+
+                                            {/* Venue + Year */}
+                                            <p className="text-sm text-muted mt-1">
+                                                {paper.venue_full} ({paper.venue}), {new Date(paper.date).getFullYear()}
+                                            </p>
+
+                                            {/* Extra Links */}
+                                            {extraLinks.length > 0 && (
+                                                <div className="mt-2 flex flex-wrap gap-x-4 gap-y-1 text-sm text-muted">
+                                                    {extraLinks}
+                                                </div>
                                             )}
                                         </div>
 
-                                        {/* Authors */}
-                                        {paper.authors && (
-                                            <p className="text-sm text-[#666666] mt-1">
-                                                {Array.isArray(paper.authors) ? paper.authors.join(", ") : paper.authors}
-                                            </p>
-                                        )}
-
-                                        {/* Venue + Year */}
-                                        <p className="text-sm text-[#666666] mt-1">
-                                            {paper.venue_full} ({paper.venue}), {new Date(paper.date).getFullYear()}
-                                        </p>
-
-                                        {/* Extra Links */}
-                                        {extraLinks.length > 0 && (
-                                            <div className="mt-2 flex flex-wrap gap-x-4 gap-y-1 text-sm text-[#666666]">
-                                                {extraLinks}
-                                            </div>
+                                        {/* Divider */}
+                                        {idx < grouped[year].length - 1 && (
+                                            <div className="mt-4 border-t border-gray-300" />
                                         )}
                                     </div>
-
-                                    {/* Divider */}
-                                    {idx < grouped[year].length - 1 && (
-                                        <div className="mt-4 border-t border-gray-300" />
-                                    )}
-                                </div>
-                            );
-                        })}
+                                );
+                            })}
+                        </div>
                     </div>
-                </div>
-            ))}
+                ))}
+            </section>
+
         </PageLayout>
     );
 }

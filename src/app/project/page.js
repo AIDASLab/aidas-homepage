@@ -45,7 +45,7 @@ export default async function projectPage() {
        <CollaboratorSection src={collaboratorList}/>
 
       {/* project section */}
-      <section className="grid grid-cols-1 sm:grid-cols-2 gap-8 mt-8 mb-8">
+      <section className="page-section grid grid-cols-1 sm:grid-cols-2 gap-8">
         {project.map((project, idx) => (
           <div key={idx}>
             <ProjectEntry
