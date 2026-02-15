@@ -20,7 +20,6 @@ export default async function NewsPage() {
                 return {
                     title: data.title || filename.replace(".md", ""),
                     date: data.date || "No date available", // Handle missing date
-                    summary: data.summary || "",
                     slug: filename.replace(".md", ""),
                 };
             })
@@ -33,19 +32,14 @@ export default async function NewsPage() {
 
         return (
             <PageLayout title="News">
-                <section className="page-section">
+                <section className="page-section space-y-2.5">
                     {newsList.map((news, idx) => (
                         <div key={idx}>
                             <NewsEntry
                                 title={news.title}
                                 date={news.date}
-                                summary={news.summary}
                                 slug={news.slug}
                             />
-                            {/* Divider */}
-                            {idx < newsList.length - 1 && (
-                                <div className="mt-4 border-t border-gray-300" />
-                            )}
                         </div>
                     ))}
                 </section>

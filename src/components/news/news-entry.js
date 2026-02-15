@@ -1,28 +1,20 @@
 import Link from "next/link";
 import DateDisplay from "@/components/common/date-display";
 
-export default function NewsEntry({ title, date, summary, slug }) {
+export default function NewsEntry({ title, date, slug }) {
   return (
-    <div className="px-2 sm:px-4 my-5">
-      {/* Title & Date Row */}
-      <div className="flex flex-wrap items-center justify-between gap-2">
+    <article className="rounded-xl border border-slate-200 bg-white px-4 py-3.5 sm:px-5 sm:py-4">
+      <div className="flex flex-wrap items-start justify-between gap-2">
         <Link href={`/news/${slug}`} className="hover-link">
-          <h3 className="text-base sm:text-xl font-medium leading-snug">{title}</h3>
+          <h3 className="text-base sm:text-lg font-semibold leading-snug text-slate-800">{title}</h3>
         </Link>
         {date && (
           <DateDisplay
             date={date}
-            className="text-sm text-muted"
+            className="rounded-full bg-slate-100 px-2.5 py-1 text-xs font-medium text-slate-600 whitespace-nowrap"
           />
         )}
       </div>
-
-      {/* Summary */}
-      {summary && (
-        <p className="mt-1.5 text-sm text-muted leading-snug">
-          {summary}
-        </p>
-      )}
-    </div>
+    </article>
   );
 }

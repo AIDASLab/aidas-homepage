@@ -4,7 +4,6 @@ import matter from "gray-matter";
 import Link from "next/link";
 import ViewMoreButton from "@/components/common/view-more-button";
 import DateDisplay from "@/components/common/date-display";
-import ReadMore from "../common/read-more";
 
 export default async function NewsSection() {
   const newsDirectory = path.join(process.cwd(), "public/news");
@@ -20,7 +19,6 @@ export default async function NewsSection() {
         title: data.title || filename.replace(".md", ""),
         date: data.date || "Unknown date",
         slug: filename.replace(".md", ""),
-        summary: data.summary || "",
       };
     })
   );
@@ -51,17 +49,6 @@ export default async function NewsSection() {
                 </h3>
                 <DateDisplay date={news.date} className="text-sm text-muted"/>
               </div>
-
-              {news.summary && (
-                <p className="text-sm text-muted mt-1.5 leading-snug">
-                  {news.summary.length > 300
-                    ? `${news.summary.slice(0, 300)}... `
-                    : news.summary}
-                  {news.summary.length > 300 && (
-                    <ReadMore href={`/news/${news.slug}`} />
-                  )}
-                </p>
-              )}
 
               {/* Divider */}
               {idx !== sortedNews.length - 1 && (
