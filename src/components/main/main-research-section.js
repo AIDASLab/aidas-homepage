@@ -148,6 +148,10 @@ export default function ResearchSection() {
   return (
     <section className="py-8">
       <div className="max-w-[1200px] mx-auto px-5 relative group">
+        <div className="mb-4">
+          <p className="text-xs font-semibold uppercase tracking-[0.14em] text-slate-500 mb-1">Research Areas</p>
+          <h2 className="text-3xl sm:text-4xl font-semibold text-slate-800">What We Study</h2>
+        </div>
         {/* Left Arrow Button */}
         <button
           onClick={() => changePage(pageIndex - 1)}
@@ -209,16 +213,16 @@ export default function ResearchSection() {
                       className="p-2.5"
                       style={{ flexBasis: `${100 / itemsPerPage}%` }}
                     >
-                      <div className="rounded-lg p-4 h-full">
-                        <div className="w-full h-[200px] mb-3 flex items-center justify-center overflow-hidden rounded-md">
+                      <div className="rounded-xl border border-slate-200 bg-white p-4 h-full transition hover:border-slate-300 hover:shadow-sm">
+                        <div className="w-full h-[190px] mb-3 flex items-center justify-center overflow-hidden rounded-md">
                           <img
                             src={item.image}
                             alt={item.title}
-                            className="object-cover w-full h-full scale-[0.9]"
+                            className="object-contain w-full h-full"
                           />
                         </div>
-                        <h3 className="text-lg sm:text-xl font-medium mb-1.5">{item.title}</h3>
-                        <p className="text-sm sm:text-base leading-snug text-[#555555]">{item.subtitle}</p>
+                        <h3 className="text-lg sm:text-xl font-semibold mb-1 text-slate-800">{item.title}</h3>
+                        <p className="text-sm leading-snug text-slate-600">{item.subtitle}</p>
                       </div>
                     </div>
                   ))}

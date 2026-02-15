@@ -35,26 +35,25 @@ export default async function NewsSection() {
 
         {/* Title & View More */}
         <div className="md:pl-2 lg:-ml-6 xl:-ml-12">
+          <p className="text-xs font-semibold uppercase tracking-[0.14em] text-slate-500 mb-1.5">Lab Updates</p>
           <h2 className="text-3xl sm:text-4xl font-semibold whitespace-nowrap mb-3">News</h2>
           <ViewMoreButton href="/news"/>
         </div>
 
         {/* News List */}
-        <div className="space-y-3 md:ml-12 lg:ml-16 max-w-3xl">
+        <div className="space-y-2.5 md:ml-12 lg:ml-16 max-w-3xl">
           {sortedNews.map((news, idx) => (
-            <div key={idx}>
-              <div className="flex justify-between items-start">
-                <h3 className="text-base sm:text-lg font-medium">
+            <article key={idx} className="rounded-xl border border-slate-200 bg-white px-4 py-3.5 sm:px-5 sm:py-4">
+              <div className="flex flex-wrap justify-between items-start gap-2">
+                <h3 className="text-base sm:text-lg font-semibold leading-snug text-slate-800">
                   <Link href={`/news/${news.slug}`} className="hover-link">{news.title}</Link>
                 </h3>
-                <DateDisplay date={news.date} className="text-sm text-muted"/>
+                <DateDisplay
+                  date={news.date}
+                  className="rounded-full bg-slate-100 px-2.5 py-1 text-xs font-medium text-slate-600 whitespace-nowrap"
+                />
               </div>
-
-              {/* Divider */}
-              {idx !== sortedNews.length - 1 && (
-                <div className="border-t border-gray-300 mt-4" />
-              )}
-            </div>
+            </article>
           ))}
         </div>
       </div>

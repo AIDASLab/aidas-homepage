@@ -46,6 +46,14 @@ function isArxivPreprint(paper) {
   return normalizeText(paper?.venue_full).trim() === "arxiv preprint";
 }
 
+function getPaperAnchor(paper) {
+  const titleSlug = String(paper?.title || "")
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
+  return `paper-${titleSlug}-${parseYear(paper?.date)}`;
+}
+
 export default function Publications() {
   const [publications, setPublications] = useState([]);
   const [query, setQuery] = useState("");
@@ -60,6 +68,22 @@ export default function Publications() {
       })
       .catch((err) => console.error("Error loading publications:", err));
   }, []);
+
+  useEffect(() => {
+    if (!publications.length || typeof window === "undefined") return;
+    const hash = decodeURIComponent(window.location.hash.replace("#", ""));
+    if (!hash) return;
+
+    const scrollToPaper = () => {
+      const target = document.getElementById(hash);
+      if (target) {
+        target.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    };
+
+    // Ensure the element exists after client render and data hydration.
+    setTimeout(scrollToPaper, 0);
+  }, [publications]);
 
   const years = useMemo(() => {
     const allYears = Array.from(new Set(publications.map((item) => parseYear(item.date))));
@@ -189,8 +213,9 @@ export default function Publications() {
 
                   return (
                     <article
+                      id={getPaperAnchor(paper)}
                       key={`${paper.title}-${idx}`}
-                      className="rounded-xl border border-slate-200 bg-white px-4 py-3 sm:px-5 sm:py-3.5"
+                      className="scroll-mt-44 sm:scroll-mt-52 rounded-xl border border-slate-200 bg-white px-4 py-3 sm:px-5 sm:py-3.5"
                     >
                       <div className="flex flex-wrap items-center gap-2">
                         <h3 className="text-base font-semibold leading-snug text-slate-800 sm:text-lg">{paper.title}</h3>
@@ -249,8 +274,9 @@ export default function Publications() {
 
                   return (
                     <article
+                      id={getPaperAnchor(paper)}
                       key={`${paper.title}-${idx}`}
-                      className="rounded-xl border border-slate-200 bg-white px-4 py-3 sm:px-5 sm:py-3.5"
+                      className="scroll-mt-44 sm:scroll-mt-52 rounded-xl border border-slate-200 bg-white px-4 py-3 sm:px-5 sm:py-3.5"
                     >
                       <div className="flex flex-wrap items-center gap-2">
                         <h3 className="text-base font-semibold leading-snug text-slate-800 sm:text-lg">{paper.title}</h3>
