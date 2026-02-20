@@ -1,6 +1,6 @@
 ---
 title: "AIDAS Seminar"
-date: "2026-02-06"
+date: "2026-02-13"
 summary: "AIDAS Seminar"
 thumbnail: "seminar/thumbnails/aidas_seminar.png"
 ---
@@ -15,6 +15,8 @@ Ongoing weekly reading seminars and technical presentations by AIDAS members.
 ### 2026 Spring (26-1)
 |Date|Category|Topic|Presenter|
 |:---:|:---:|:---:|:---:|
+|**Feb 13**|<span style="display:inline-block;padding:2px 8px;border-radius:9999px;font-size:12px;font-weight:600;line-height:1.2;background:#ecfdf5;color:#166534;border:1px solid #86efac;">Robotics</span>|Latent Action Pretraining from Videos|Hoeun Lee|
+||<span style="display:inline-block;padding:2px 8px;border-radius:9999px;font-size:12px;font-weight:600;line-height:1.2;background:#eff6ff;color:#1e40af;border:1px solid #bfdbfe;">LLMs</span>|Introduction to Linear Attention|Yejoon Lee|
 |**Feb 6**|<span style="display:inline-block;padding:2px 8px;border-radius:9999px;font-size:12px;font-weight:600;line-height:1.2;background:#ecfeff;color:#155e75;border:1px solid #a5f3fc;">Agent Systems</span>|Latent Collaboration in Multi-Agent Systems|Sieun Hyeon|
 ||<span style="display:inline-block;padding:2px 8px;border-radius:9999px;font-size:12px;font-weight:600;line-height:1.2;background:#ecfdf5;color:#166534;border:1px solid #86efac;">Robotics</span>|Universal Manipulation Interface: In-The-Wild Robot Teaching Without In-The-Wild Robots|Hyeonggeun Kim|
 |**Jan 30**|<span style="display:inline-block;padding:2px 8px;border-radius:9999px;font-size:12px;font-weight:600;line-height:1.2;background:#f5f3ff;color:#5b21b6;border:1px solid #ddd6fe;">Reasoning</span>|Beyond Autoregression: Discrete Diffusion for Complex Reasoning and Planning|Woohyeon Kim|
