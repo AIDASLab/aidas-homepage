@@ -42,7 +42,7 @@ export default function MobileHeader({ menuItems }) {
                 <Link
                   href={item.href}
                   onClick={() => setOpen(false)}
-                  className="block py-2 text-black"
+                  className="block py-2 text-sm font-normal text-[#4b5563] transition-colors duration-200 ease-out hover:text-[#2f3f55]"
                 >
                   {item.name}
                 </Link>

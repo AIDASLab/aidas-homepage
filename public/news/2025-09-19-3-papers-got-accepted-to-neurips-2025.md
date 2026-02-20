@@ -4,7 +4,9 @@ date: "2025-09-19"
 summary: "3 papers got accepted to NeurIPS 2025!"
 ---
 
-![NeurIPS](/conferences/neurips.png)
+<div style="text-align: center;">
+  <img src="https://upload.wikimedia.org/wikipedia/en/0/08/Logo_for_Conference_on_Neural_Information_Processing_Systems.svg" alt="NeurIPS" style="display: inline-block; width: 560px; height: 220px; max-width: 100%; object-fit: contain;" />
+</div>
 
 We are pleased to share that three papers from our lab have been accepted to the 39th Annual Conference on Neural Information Processing Systems (NeurIPS 2025):
 
