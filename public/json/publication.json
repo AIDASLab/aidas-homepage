@@ -1,5 +1,19 @@
 [
   {
+    "title": "Medic-AD: Towards Medical Vision-Language Model's Clinical Intelligence",
+    "venue": "CVPR",
+    "venue_full": "The IEEE/CVF Conference on Computer Vision and Pattern Recognition 2026",
+    "date": "2026-02-23",
+    "authors": ["Woohyeon Park*", "Jaeik Kim", "Steve Sunghwan Cho", "Jaeyoung Do^"]
+  },
+  {
+    "title": "VIRST: Video-Instructed Reasoning assistant for SpatioTemporal Segmentation",
+    "venue": "CVPR",
+    "venue_full": "The IEEE/CVF Conference on Computer Vision and Pattern Recognition 2026",
+    "date": "2026-02-23",
+    "authors": ["Jihwan Hong*", "Jaeyoung Do^"]
+  },
+  {
     "title": "VALUEFLOW: Toward Pluralistic and Steerable Value-based Alignment in Large Language Models",   
     "venue": "2602.03160",
     "venue_full": "arXiv preprint", 
