@@ -10,9 +10,9 @@ summary: "2 papers got accepted to CVPR 2026!"
 
 We are pleased to share that two papers from our lab have been accepted to The IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR 2026):
 
-- **Medic-AD: Towards Medical Vision-Language Model's Clinical Intelligence** — Woohyeon Park*, Jaeik Kim, Steve Sunghwan Cho, Jaeyoung Do^
+- **Medic-AD: Towards Medical Vision-Language Model's Clinical Intelligence** — Woohyeon Park*, Jaeik Kim, Sunghwan Steve Cho, Pa Hong, Woo Kyoung Jeong, Yoojin Nam, Nam-Joon Kim, Ginny Wong, Ka Chun Cheung, Jaeyoung Do^
 
-- **VIRST: Video-Instructed Reasoning Assitant for SpatioTemporal Segmentation** — Jihwan Hong*, Jaeyoung Do^
+- **VIRST: Video-Instructed Reasoning Assistant for SpatioTemporal Segmentation** — Jihwan Hong*, Jaeyoung Do^
 
 
 Congratulations to all the authors!
