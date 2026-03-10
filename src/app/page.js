@@ -5,6 +5,7 @@ import ResearchSection from '@/components/main/main-research-section';
 import PublicationsSection from '@/components/main/main-publications-section';
 import NewsSection from '@/components/main/main-news-section';
 import HeroSection from '@/components/main/main-hero-section';
+import FlagshipSection from '@/components/main/main-flagship-section';
 
 export default function Home() {
 
@@ -32,6 +33,7 @@ export default function Home() {
       </section>
       
       <>
+        <FlagshipSection />
         <ResearchSection />
         <PublicationsSection />
         <NewsSection />
