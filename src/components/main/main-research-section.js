@@ -6,26 +6,31 @@ const researchItems = [
     title: "Core AI",
     subtitle: "Advance generative AI by developing state-of-the-art models such as large language models, vision-language models, and vision-language-action models. Drive innovation through novel model architectures and training methodologies, enabling the next generation of multi-modal AI systems.",
     image: "/icons/core_ai.png",
+    group: "pillar",
   },
   {
     title: "System AI",
     subtitle: "Enhance the scalability and efficiency of AI systems through integrated software-hardware co-design. Facilitate large-scale data processing and AI workloads through high-performance inference, training, and deployment across heterogeneous computing environments.",
     image: "/icons/system_ai.png",
+    group: "pillar",
   },
   {
     title: "Embodied AI",
     subtitle: "Develop intelligent agents capable of perceiving, reasoning, and acting autonomously in dynamic physical environments. Integrate multimodal perception, behavioral planning, and real-time control to empower autonomous systems with adaptive, goal-directed interaction.",
     image: "/icons/embodied_ai.png",
+    group: "pillar",
   },
   {
-    title: "Medical AI",
+    title: "Medical",
     subtitle: "Utilize AI to interpret complex medical data, including imaging, biosignals, and electronic health records. Improve clinical decision-making through accurate, interpretable, and deployable models for diagnosis, treatment planning, and outcome prediction.",
     image: "/icons/medical_ai.png",
+    group: "application",
   },
   {
-    title: "Industrial AI",
+    title: "Industrial",
     subtitle: "Apply AI technologies to industrial and manufacturing domains, leveraging domain expertise to address challenges such as predictive maintenance, process optimization, and intelligent automation through robust algorithms and data-driven system integration.",
     image: "/icons/industrial_ai.png",
+    group: "application",
   },
 ];
 
@@ -151,6 +156,9 @@ export default function ResearchSection() {
         <div className="mb-4">
           <p className="text-xs font-semibold uppercase tracking-[0.14em] text-slate-500 mb-1">Research Areas</p>
           <h2 className="text-3xl sm:text-4xl font-semibold text-slate-800">What We Study</h2>
+          <p className="mt-2 text-sm text-slate-500 max-w-2xl">
+            We advance AI through three fundamental research pillars — <span className="font-medium text-slate-700">Core AI</span>, <span className="font-medium text-slate-700">System AI</span>, and <span className="font-medium text-slate-700">Embodied AI</span> — and apply them to high-impact areas, including <span className="font-medium text-slate-700">Medical</span> and <span className="font-medium text-slate-700">Industrial</span> domains.
+          </p>
         </div>
         {/* Left Arrow Button */}
         <button
@@ -213,15 +221,24 @@ export default function ResearchSection() {
                       className="p-2.5"
                       style={{ flexBasis: `${100 / itemsPerPage}%` }}
                     >
-                      <div className="rounded-xl border border-slate-200 bg-white p-4 h-full transition hover:border-slate-300 hover:shadow-sm">
-                        <div className="w-full h-[190px] mb-3 flex items-center justify-center overflow-hidden rounded-md">
+                      <div className="rounded-xl border border-slate-200 bg-white p-4 h-full transition hover:border-slate-300 hover:shadow-sm flex flex-col">
+                        <div className="w-full h-[180px] mb-3 flex items-center justify-center overflow-hidden rounded-md">
                           <img
                             src={item.image}
                             alt={item.title}
                             className="object-contain w-full h-full"
                           />
                         </div>
-                        <h3 className="text-lg sm:text-xl font-semibold mb-1 text-slate-800">{item.title}</h3>
+                        <div className="flex items-center justify-between mb-1.5 gap-2">
+                          <h3 className="text-lg sm:text-xl font-semibold text-slate-800">{item.title}</h3>
+                          <span className={`flex-shrink-0 text-[10px] font-semibold uppercase tracking-wider px-2 py-0.5 rounded-full ${
+                            item.group === "pillar"
+                              ? "bg-indigo-50 text-indigo-500 border border-indigo-200"
+                              : "bg-emerald-50 text-emerald-600 border border-emerald-200"
+                          }`}>
+                            {item.group === "pillar" ? "Research Pillar" : "Application"}
+                          </span>
+                        </div>
                         <p className="text-sm leading-snug text-slate-600">{item.subtitle}</p>
                       </div>
                     </div>
