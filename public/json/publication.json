@@ -1,5 +1,32 @@
 [
   {
+    "title": "3rd Place of MeViS-Audio Track of the 5th PVUW: VIRST-Audio",
+    "venue": "2603.23126",
+    "venue_full": "arXiv preprint",
+    "date": "2026-03-25",
+    "authors": ["Jihwan Hong*", "Jaeyoung Do^"],
+    "abstract": "Audio-based Referring Video Object Segmentation (ARVOS) requires grounding audio queries into pixel-level object masks over time, posing challenges in bridging acoustic signals with spatio-temporal visual representations. In this report, we present VIRST-Audio, a practical framework built upon a pretrained RVOS model integrated with a vision-language architecture. Instead of relying on audio-specific training, we convert input audio into text using an ASR module and perform segmentation using text-based supervision, enabling effective transfer from text-based reasoning to audio-driven scenarios. To improve robustness, we further incorporate an existence-aware gating mechanism that estimates whether the referred target object is present in the video and suppresses predictions when it is absent, reducing hallucinated masks and stabilizing segmentation behavior. We evaluate our approach on the MeViS-Audio track of the 5th PVUW Challenge, where VIRST-Audio achieves 3rd place, demonstrating strong generalization and reliable performance in audio-based referring video segmentation.",
+    "arXiv": "https://arxiv.org/abs/2603.23126"
+  },
+  {
+    "title": "Is Retraining-Free Enough? The Necessity of Router Calibration for Efficient MoE Compression",
+    "venue": "2603.02217",
+    "venue_full": "arXiv preprint",
+    "date": "2026-02-10",
+    "authors": ["Sieun Hyeon*", "Jaeyoung Do^"],
+    "abstract": "Mixture-of-Experts (MoE) models scale capacity efficiently, but their massive parameter footprint creates a deployment-time memory bottleneck. We organize retraining-free MoE compression into three paradigms - Expert Pruning, Expert Editing, and Expert Merging - and show that persistent post-compression degradation largely stems from a neglected factor: router-expert mismatch when experts are changed but the router is left untouched. We argue that effective retraining-free compression should avoid updating expert parameters while allowing lightweight router calibration. To this end, we propose Router Knowledge Distillation (Router KD), which updates only a tiny fraction of parameters (the router) by distilling the original model's next-token distribution on unlabeled calibration data. Experiments across representative methods in all three paradigms demonstrate consistent performance recovery, with substantially larger gains in fine-grained MoEs (many small experts) than in coarse-grained MoEs due to their more complex routing decision boundaries.",
+    "arXiv": "https://arxiv.org/abs/2603.02217"
+  },
+  {
+    "title": "MATA: Multi-Agent Framework for Reliable and Flexible Table Question Answering",
+    "venue": "2602.09642",
+    "venue_full": "arXiv preprint",
+    "date": "2026-02-10",
+    "authors": ["Sieun Hyeon*", "Jusang Oh", "Sunghwan Steve Cho", "Jaeyoung Do^"],
+    "abstract": "Recent advances in Large Language Models (LLMs) have significantly improved table understanding tasks such as Table Question Answering (TableQA), yet challenges remain in ensuring reliability, scalability, and efficiency, especially in resource-constrained or privacy-sensitive environments. In this paper, we introduce MATA, a multi-agent TableQA framework that leverages multiple complementary reasoning paths and a set of tools built with small language models. MATA generates candidate answers through diverse reasoning styles for a given table and question, then refines or selects the optimal answer with the help of these tools. Furthermore, it incorporates an algorithm designed to minimize expensive LLM agent calls, enhancing overall efficiency. MATA maintains strong performance with small, open-source models and adapts easily across various LLM types. Extensive experiments on two benchmarks of varying difficulty with ten different LLMs demonstrate that MATA achieves state-of-the-art accuracy and highly efficient reasoning while avoiding excessive LLM inference. Our results highlight that careful orchestration of multiple reasoning pathways yields scalable and reliable TableQA.",
+    "arXiv": "https://arxiv.org/abs/2602.09642"
+  },
+  {
     "title": "Medic-AD: Towards Medical Vision-Language Model's Clinical Intelligence",
     "venue": "CVPR",
     "venue_full": "The IEEE/CVF Conference on Computer Vision and Pattern Recognition",
