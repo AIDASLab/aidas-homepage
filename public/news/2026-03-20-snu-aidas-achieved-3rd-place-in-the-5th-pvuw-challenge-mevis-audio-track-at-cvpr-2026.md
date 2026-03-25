@@ -10,8 +10,8 @@ summary: "SNU_AIDAS achieved 3rd place in the PVUW MeViS-Audio Track at CVPR 202
 
 We are pleased to share that our team, **SNU_AIDAS**, achieved **3rd place** in the **5th PVUW Challenge MeViS-Audio Track at CVPR 2026**.
 
-Our submission, **VIRST-Audio**, was developed for the MeViS-Audio Track, which focuses on pixel-level video understanding with audio information. More details about our method will be available in the following technical report:
+Our submission, **VIRST-Audio**, was developed for the MeViS-Audio Track, which focuses on pixel-level video understanding with audio information. More details about our method is available in the following technical report:
 
-- **3rd Place of MeViS-Audio Track of the 5th PVUW: VIRST-Audio** — Jihwan Hong*, Jaeyoung Do^
+- [**3rd Place of MeViS-Audio Track of the 5th PVUW: VIRST-Audio** — Jihwan Hong*, Jaeyoung Do^](https://arxiv.org/abs/2603.23126)
 
 Congratulations to the team!
