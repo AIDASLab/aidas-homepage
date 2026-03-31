@@ -1,14 +1,5 @@
 [
   {
-    "title": "3rd Place of MeViS-Audio Track of the 5th PVUW: VIRST-Audio",
-    "venue": "2603.23126",
-    "venue_full": "arXiv preprint",
-    "date": "2026-03-25",
-    "authors": ["Jihwan Hong*", "Jaeyoung Do^"],
-    "abstract": "Audio-based Referring Video Object Segmentation (ARVOS) requires grounding audio queries into pixel-level object masks over time, posing challenges in bridging acoustic signals with spatio-temporal visual representations. In this report, we present VIRST-Audio, a practical framework built upon a pretrained RVOS model integrated with a vision-language architecture. Instead of relying on audio-specific training, we convert input audio into text using an ASR module and perform segmentation using text-based supervision, enabling effective transfer from text-based reasoning to audio-driven scenarios. To improve robustness, we further incorporate an existence-aware gating mechanism that estimates whether the referred target object is present in the video and suppresses predictions when it is absent, reducing hallucinated masks and stabilizing segmentation behavior. We evaluate our approach on the MeViS-Audio track of the 5th PVUW Challenge, where VIRST-Audio achieves 3rd place, demonstrating strong generalization and reliable performance in audio-based referring video segmentation.",
-    "arXiv": "https://arxiv.org/abs/2603.23126"
-  },
-  {
     "title": "Is Retraining-Free Enough? The Necessity of Router Calibration for Efficient MoE Compression",
     "venue": "2603.02217",
     "venue_full": "arXiv preprint",
@@ -31,14 +22,20 @@
     "venue": "CVPR",
     "venue_full": "The IEEE/CVF Conference on Computer Vision and Pattern Recognition",
     "date": "2026-02-23",
-    "authors": ["Woohyeon Park*", "Jaeik Kim", "Sunghwan Steve Cho", "Pa Hong", "Woo Kyoung Jeong", "Yoojin Nam", "Nam-Joon Kim", "Ginny Wong", "Ka Chun Cheung", "Jaeyoung Do^"]
+    "authors": ["Woohyeon Park*", "Jaeik Kim", "Sunghwan Steve Cho", "Pa Hong", "Woo Kyoung Jeong", "Yoojin Nam", "Nam-Joon Kim", "Ginny Wong", "Ka Chun Cheung", "Jaeyoung Do^"],
+    "abstract": "Lesion detection, symptom tracking, and visual explainability are central to real-world medical image analysis, yet current medical Vision-Language Models (VLMs) still lack mechanisms that translate their broad knowledge into clinically actionable outputs. To bridge this gap, we present MEDIC-AD, a clinically oriented VLM that strengthens these three capabilities through a stage-wise framework. First, learnable anomaly-aware tokens (<Ano>) encourage the model to focus on abnormal regions and build more discriminative lesion centered representations. Second, inter image difference tokens (<Diff>) explicitly encode temporal changes between studies, allowing the model to distinguish worsening, improvement, and stability in disease burden. Finally, a dedicated explainability stage trains the model to generate heatmaps that highlight lesion-related regions, offering clear visual evidence that is consistent with the model's reasoning. Through our staged design, MEDIC-AD steadily boosts performance across anomaly detection, symptom tracking, and anomaly segmentation, achieving state-of-the-art results compared with both closed source and medical-specialized baselines. Evaluations on real longitudinal clinical data collected from real hospital workflows further show that MEDIC-AD delivers stable predictions and clinically faithful explanations in practical patient-monitoring and decision-support workflows",
+    "arXiv": "https://arxiv.org/abs/2603.27176",
+    "code": "https://github.com/AIDASLab/Medic-AD"
   },
   {
     "title": "VIRST: Video-Instructed Reasoning Assistant for SpatioTemporal Segmentation",
     "venue": "CVPR",
     "venue_full": "The IEEE/CVF Conference on Computer Vision and Pattern Recognition",
     "date": "2026-02-23",
-    "authors": ["Jihwan Hong*", "Jaeyoung Do^"]
+    "authors": ["Jihwan Hong*", "Jaeyoung Do^"],
+    "abstract": "Referring Video Object Segmentation (RVOS) aims to segment target objects in videos based on natural language descriptions. However, fixed keyframe-based approaches that couple a vision language model with a separate propagation module often fail to capture rapidly changing spatiotemporal dynamics and to handle queries requiring multi-step reasoning, leading to sharp performance drops on motion-intensive and reasoning-oriented videos beyond static RVOS benchmarks. To address these limitations, we propose VIRST (Video-Instructed Reasoning Assistant for Spatio-Temporal Segmentation), an end-to-end framework that unifies global video reasoning and pixel-level mask prediction within a single model. VIRST bridges semantic and segmentation representations through the Spatio-Temporal Fusion (STF), which fuses segmentation-aware video features into the vision-language backbone, and employs the Temporal Dynamic Anchor Updater to maintain temporally adjacent anchor frames that provide stable temporal cues under large motion, occlusion, and reappearance. This unified design achieves state-of-the-art results across diverse RVOS benchmarks under realistic and challenging conditions, demonstrating strong generalization to both referring and reasoning oriented settings.",
+    "arXiv": "https://arxiv.org/abs/2603.27060",
+    "code": "https://github.com/AIDASLab/VIRST"
   },
   {
     "title": "VALUEFLOW: Toward Pluralistic and Steerable Value-based Alignment in Large Language Models",   
