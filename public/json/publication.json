@@ -11,7 +11,7 @@
     "code": "https://github.com/AIDASLab/Dynin-Omni",
     "demo": "https://huggingface.co/spaces/AIDAS-Lab/Dynin-Omni",
     "model": "https://huggingface.co/snu-aidas/Dynin-Omni"
-  }
+  },
   {
     "title": "Is Retraining-Free Enough? The Necessity of Router Calibration for Efficient MoE Compression",
     "venue": "2603.02217",
