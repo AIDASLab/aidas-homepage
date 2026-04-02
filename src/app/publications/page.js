@@ -22,6 +22,7 @@ const LINK_LABEL_MAP = {
   paper: "Paper",
   poster: "Poster",
   demo: "Demo",
+  model: "Model",
   dataset: "Dataset",
   slides: "Slides",
   video: "Video",
