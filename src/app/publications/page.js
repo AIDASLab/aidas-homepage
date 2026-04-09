@@ -6,6 +6,7 @@ import PageLayout from "@/components/layout/page-layout";
 
 const HIDDEN_FIELDS = new Set([
   "title",
+  "titleSuffix",
   "authors",
   "conference",
   "venue",
@@ -237,6 +238,11 @@ export default function Publications() {
                         {paper.venue_full || "Venue TBD"}
                         {paper.venue ? ` (${paper.venue})` : ""}
                         {paper.date ? `, ${parseYear(paper.date)}` : ""}
+                        {paper.titleSuffix ? (
+                          <span className="ml-1 inline-flex rounded-full border border-red-200 bg-red-50 px-2 py-0.5 text-[11px] font-semibold uppercase tracking-[0.08em] text-red-700 align-middle">
+                            {paper.titleSuffix.replace(/[()]/g, "")}
+                          </span>
+                        ) : null}
                       </p>
 
                       {extraLinks.length > 0 && <div className="mt-2 flex flex-wrap gap-1.5">{extraLinks}</div>}
@@ -298,6 +304,11 @@ export default function Publications() {
                         {paper.venue_full || "Venue TBD"}
                         {paper.venue ? ` (${paper.venue})` : ""}
                         {paper.date ? `, ${parseYear(paper.date)}` : ""}
+                        {paper.titleSuffix ? (
+                          <span className="ml-1 inline-flex rounded-full border border-red-200 bg-red-50 px-2 py-0.5 text-[11px] font-semibold uppercase tracking-[0.08em] text-red-700 align-middle">
+                            {paper.titleSuffix.replace(/[()]/g, "")}
+                          </span>
+                        ) : null}
                       </p>
 
                       {extraLinks.length > 0 && <div className="mt-2 flex flex-wrap gap-1.5">{extraLinks}</div>}

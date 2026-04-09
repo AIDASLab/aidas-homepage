@@ -7,10 +7,13 @@ import DateDisplay from "@/components/common/date-display";
 
 export default async function NewsSection() {
   const newsDirectory = path.join(process.cwd(), "public/news");
-  const files = await fs.readdir(newsDirectory);
+  const files = await fs.readdir(newsDirectory, { withFileTypes: true });
+  const markdownFiles = files
+    .filter((entry) => entry.isFile() && entry.name.endsWith(".md"))
+    .map((entry) => entry.name);
 
   const newsList = await Promise.all(
-    files.map(async (filename) => {
+    markdownFiles.map(async (filename) => {
       const filePath = path.join(newsDirectory, filename);
       const fileContent = await fs.readFile(filePath, "utf-8");
       const { data } = matter(fileContent);

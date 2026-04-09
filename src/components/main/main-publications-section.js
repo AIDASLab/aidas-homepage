@@ -70,6 +70,11 @@ export default function PublicationsSection() {
                     {pub.date.slice(0, 4)}
                   </span>
                 )}
+                {pub.titleSuffix && (
+                  <span className="rounded-full border border-red-200 bg-red-50 px-2 py-0.5 text-[11px] font-semibold uppercase tracking-[0.08em] text-red-700">
+                    {pub.titleSuffix.replace(/[()]/g, '')}
+                  </span>
+                )}
               </div>
             </article>
           ))}
