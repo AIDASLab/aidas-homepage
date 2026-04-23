@@ -5,6 +5,7 @@ import Image from 'next/image';
 import { useEffect, useState } from 'react';
 
 const images = [
+    '/hero/260417.jpg',
     '/hero/img1.jpg',
     '/hero/2025teachers_day.jpeg'
   ];
