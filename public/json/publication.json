@@ -22,6 +22,16 @@
     "arXiv": "https://arxiv.org/abs/2603.02217"
   },
   {
+    "title": "VALUEFLOW: Toward Pluralistic and Steerable Value-based Alignment in Large Language Models",   
+    "titleSuffix": "(Spotlight)",
+    "venue": "ICML",
+    "venue_full": "Forty-Third International Conference on Machine Learning", 
+    "date": "2026-05-01",
+    "authors": ["Woojin Kim*", "Sieun Hyeon", "Jusang Oh", "Jaeyoung Do^"],
+    "abstract": "Aligning Large Language Models (LLMs) with the diverse spectrum of human values remains a central challenge: preference-based methods often fail to capture deeper motivational principles. Value-based approaches offer a more principled path, yet three gaps persist: extraction often ignores hierarchical structure, evaluation detects presence but not calibrated intensity, and the steerability of LLMs at controlled intensities remains insufficiently understood. To address these limitations, we introduce VALUEFLOW, the first unified framework that spans extraction, evaluation, and steering with calibrated intensity control. The framework integrates three components: (i) HIVES, a hierarchical value embedding space that captures intra- and cross-theory value structure; (ii) the Value Intensity DataBase (VIDB), a large-scale resource of value-labeled texts with intensity estimates derived from ranking-based aggregation; and (iii) an anchor-based evaluator that produces consistent intensity scores for model outputs by ranking them against VIDB panels. Using VALUEFLOW, we conduct a comprehensive large-scale study across ten models and four value theories, identifying asymmetries in steerability and composition laws for multi-value control. This paper establishes a scalable infrastructure for evaluating and controlling value intensity, advancing pluralistic alignment of LLMs.",
+    "arXiv": "https://arxiv.org/abs/2602.03160"
+  },
+  {
     "title": "MATA: Multi-Agent Framework for Reliable and Flexible Table Question Answering",
     "venue": "ACL Findings",
     "venue_full": "Findings of the 64th Annual Meeting of the Association for Computational Linguistics",
@@ -57,15 +67,6 @@
     "abstract": "Referring Video Object Segmentation (RVOS) aims to segment target objects in videos based on natural language descriptions. However, fixed keyframe-based approaches that couple a vision language model with a separate propagation module often fail to capture rapidly changing spatiotemporal dynamics and to handle queries requiring multi-step reasoning, leading to sharp performance drops on motion-intensive and reasoning-oriented videos beyond static RVOS benchmarks. To address these limitations, we propose VIRST (Video-Instructed Reasoning Assistant for Spatio-Temporal Segmentation), an end-to-end framework that unifies global video reasoning and pixel-level mask prediction within a single model. VIRST bridges semantic and segmentation representations through the Spatio-Temporal Fusion (STF), which fuses segmentation-aware video features into the vision-language backbone, and employs the Temporal Dynamic Anchor Updater to maintain temporally adjacent anchor frames that provide stable temporal cues under large motion, occlusion, and reappearance. This unified design achieves state-of-the-art results across diverse RVOS benchmarks under realistic and challenging conditions, demonstrating strong generalization to both referring and reasoning oriented settings.",
     "arXiv": "https://arxiv.org/abs/2603.27060",
     "code": "https://github.com/AIDASLab/VIRST"
-  },
-  {
-    "title": "VALUEFLOW: Toward Pluralistic and Steerable Value-based Alignment in Large Language Models",   
-    "venue": "2602.03160",
-    "venue_full": "arXiv preprint", 
-    "date": "2026-02-03",
-    "authors": ["Woojin Kim*", "Sieun Hyeon", "Jusang Oh", "Jaeyoung Do^"],
-    "abstract": "Aligning Large Language Models (LLMs) with the diverse spectrum of human values remains a central challenge: preference-based methods often fail to capture deeper motivational principles. Value-based approaches offer a more principled path, yet three gaps persist: extraction often ignores hierarchical structure, evaluation detects presence but not calibrated intensity, and the steerability of LLMs at controlled intensities remains insufficiently understood. To address these limitations, we introduce VALUEFLOW, the first unified framework that spans extraction, evaluation, and steering with calibrated intensity control. The framework integrates three components: (i) HIVES, a hierarchical value embedding space that captures intra- and cross-theory value structure; (ii) the Value Intensity DataBase (VIDB), a large-scale resource of value-labeled texts with intensity estimates derived from ranking-based aggregation; and (iii) an anchor-based evaluator that produces consistent intensity scores for model outputs by ranking them against VIDB panels. Using VALUEFLOW, we conduct a comprehensive large-scale study across ten models and four value theories, identifying asymmetries in steerability and composition laws for multi-value control. This paper establishes a scalable infrastructure for evaluating and controlling value intensity, advancing pluralistic alignment of LLMs.",
-    "arXiv": "https://arxiv.org/abs/2602.03160"
   },
   {
     "title": "RFEval: Benchmarking Reasoning Faithfulness under Counterfactual Reasoning Intervention in Large Reasoning Models",
@@ -138,7 +139,7 @@
   {
     "title": "SECOND: Mitigating Perceptual Hallucination in Vision-Language Models via Selective and Contrastive Decoding",
     "venue": "ICML",
-    "venue_full": "The International Conference on Machine Learning",
+    "venue_full": "Forty-Second International Conference on Machine Learning",
     "date": "2025-07-01",
     "authors": ["Woohyeon Park*", "Woojin Kim", "Jaeik Kim", "Jaeyoung Do^"],
     "abstract": "Despite significant advancements in Vision-Language Models (VLMs), the performance of existing VLMs remains hindered by object hallucination, a critical challenge to achieving accurate visual understanding. To address this issue, we propose SECOND: Selective and Contrastive Decoding, a novel approach that enables VLMs to effectively leverage multi-scale visual information with an object-centric manner, closely aligning with human visual perception. SECOND progressively selects and integrates multi-scale visual information, facilitating a more precise interpretation of images. By contrasting these visual information iteratively, SECOND significantly reduces perceptual hallucinations and outperforms a wide range of benchmarks. Our theoretical analysis and experiments highlight the largely unexplored potential of multi-scale application in VLMs, showing that prioritizing and contrasting across scales outperforms existing methods.",
