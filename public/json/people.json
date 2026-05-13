@@ -232,6 +232,17 @@
     "experience": []
   },
   {
+    "name": "Phan Tri Nguyen",
+    "role": "MS",
+    "image": "/people/phantri_nguyen.jpg",
+    "education": [
+      "B.S. in Computer Vision, Ho Chi Minh City University of Science, Vietnam, 2020-2024"
+    ],
+    "research": ["Language Model"],
+    "homepage": "https://github.com/phantringuyen",
+    "linkedin": "https://www.linkedin.com/in/phantringuyen2002/"
+  },
+  {
     "name": "Hyojoong Kim",
     "role": "UG",
     "image": "/people/hyojoong_kim.jpg",
