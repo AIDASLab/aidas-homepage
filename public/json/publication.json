@@ -23,7 +23,8 @@
   },
   {
     "title": "VALUEFLOW: Toward Pluralistic and Steerable Value-based Alignment in Large Language Models",   
-    "titleSuffix": "(Spotlight)",
+    "showOnMainPage": true,
+    "badges": ["Oral"],
     "venue": "ICML",
     "venue_full": "Forty-Third International Conference on Machine Learning", 
     "date": "2026-05-01",
@@ -33,6 +34,7 @@
   },
   {
     "title": "MATA: Multi-Agent Framework for Reliable and Flexible Table Question Answering",
+    "showOnMainPage": true,
     "venue": "ACL Findings",
     "venue_full": "Findings of the 64th Annual Meeting of the Association for Computational Linguistics",
     "date": "2026-04-07",
@@ -52,7 +54,8 @@
   },
   {
     "title": "Medic-AD: Towards Medical Vision-Language Model's Clinical Intelligence",
-    "titleSuffix": "(Oral)",
+    "showOnMainPage": true,
+    "badges": ["Oral", "Award Candidate"],
     "venue": "CVPR",
     "venue_full": "The IEEE/CVF Conference on Computer Vision and Pattern Recognition",
     "date": "2026-02-23",

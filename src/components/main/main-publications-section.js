@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import ViewMoreButton from '../common/view-more-button';
+import PublicationBadges from '../publication/publication-badges';
 
 function isArxivPreprint(pub) {
   return String(pub?.venue_full || '').toLowerCase().trim() === 'arxiv preprint';
@@ -21,6 +22,26 @@ function getPaperAnchor(pub) {
   return `paper-${titleSlug}-${parseYear(pub?.date)}`;
 }
 
+function getPublicationBadges(pub) {
+  if (Array.isArray(pub?.badges)) {
+    return pub.badges;
+  }
+
+  if (pub?.titleSuffix) {
+    return [String(pub.titleSuffix).replace(/[()]/g, '')];
+  }
+
+  return [];
+}
+
+function selectHomepagePublications(publications, limit = 3) {
+  const featured = publications.filter((pub) => pub.showOnMainPage);
+  const featuredTitles = new Set(featured.map((pub) => pub.title));
+  const remaining = publications.filter((pub) => !featuredTitles.has(pub.title));
+
+  return [...featured, ...remaining].slice(0, limit);
+}
+
 export default function PublicationsSection() {
   const [publications, setPublications] = useState([]);
 
@@ -30,7 +51,7 @@ export default function PublicationsSection() {
       .then((data) => {
         const sorted = [...data].sort((a, b) => new Date(b.date) - new Date(a.date));
         const nonArxiv = sorted.filter((pub) => !isArxivPreprint(pub));
-        setPublications(nonArxiv.slice(0, 3));
+        setPublications(selectHomepagePublications(nonArxiv));
       })
       .catch((err) => console.error('Failed to load publications:', err));
   }, []);
@@ -51,11 +72,13 @@ export default function PublicationsSection() {
         <div className="space-y-2.5 md:ml-12 lg:ml-16 max-w-3xl">
           {publications.map((pub, idx) => (
             <article key={idx} className="rounded-xl border border-slate-200 bg-white px-4 py-3.5 sm:px-5 sm:py-4">
-              <h3 className="text-base sm:text-lg font-semibold leading-snug text-slate-800">
-                <Link href={`/publications#${getPaperAnchor(pub)}`} className="hover-link">
-                  {pub.title}
-                </Link>
-              </h3>
+              <div className="flex flex-wrap items-center gap-2">
+                <h3 className="text-base sm:text-lg font-semibold leading-snug text-slate-800">
+                  <Link href={`/publications#${getPaperAnchor(pub)}`} className="hover-link">
+                    {pub.title}
+                  </Link>
+                </h3>
+              </div>
               <p className="mt-1 text-sm text-slate-600 leading-snug">
                 {Array.isArray(pub.authors) ? pub.authors.join(', ') : pub.authors}
               </p>
@@ -70,11 +93,7 @@ export default function PublicationsSection() {
                     {pub.date.slice(0, 4)}
                   </span>
                 )}
-                {pub.titleSuffix && (
-                  <span className="rounded-full border border-red-200 bg-red-50 px-2 py-0.5 text-[11px] font-semibold uppercase tracking-[0.08em] text-red-700">
-                    {pub.titleSuffix.replace(/[()]/g, '')}
-                  </span>
-                )}
+                <PublicationBadges badges={getPublicationBadges(pub)} />
               </div>
             </article>
           ))}

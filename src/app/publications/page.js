@@ -3,9 +3,11 @@
 import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import PageLayout from "@/components/layout/page-layout";
+import PublicationBadges from "@/components/publication/publication-badges";
 
 const HIDDEN_FIELDS = new Set([
   "title",
+  "badges",
   "titleSuffix",
   "authors",
   "conference",
@@ -54,6 +56,18 @@ function getPaperAnchor(paper) {
     .replace(/[^a-z0-9]+/g, "-")
     .replace(/^-+|-+$/g, "");
   return `paper-${titleSlug}-${parseYear(paper?.date)}`;
+}
+
+function getPublicationBadges(paper) {
+  if (Array.isArray(paper?.badges)) {
+    return paper.badges;
+  }
+
+  if (paper?.titleSuffix) {
+    return [String(paper.titleSuffix).replace(/[()]/g, "")];
+  }
+
+  return [];
 }
 
 export default function Publications() {
@@ -221,6 +235,7 @@ export default function Publications() {
                     >
                       <div className="flex flex-wrap items-center gap-2">
                         <h3 className="text-base font-semibold leading-snug text-slate-800 sm:text-lg">{paper.title}</h3>
+                        <PublicationBadges badges={getPublicationBadges(paper)} />
                         {paper.highlight && (
                           <span className="rounded-full bg-amber-100 px-2 py-0.5 text-xs font-semibold text-amber-700">
                             {paper.highlight}
@@ -238,11 +253,6 @@ export default function Publications() {
                         {paper.venue_full || "Venue TBD"}
                         {paper.venue ? ` (${paper.venue})` : ""}
                         {paper.date ? `, ${parseYear(paper.date)}` : ""}
-                        {paper.titleSuffix ? (
-                          <span className="ml-1 inline-flex rounded-full border border-red-200 bg-red-50 px-2 py-0.5 text-[11px] font-semibold uppercase tracking-[0.08em] text-red-700 align-middle">
-                            {paper.titleSuffix.replace(/[()]/g, "")}
-                          </span>
-                        ) : null}
                       </p>
 
                       {extraLinks.length > 0 && <div className="mt-2 flex flex-wrap gap-1.5">{extraLinks}</div>}
@@ -287,6 +297,7 @@ export default function Publications() {
                     >
                       <div className="flex flex-wrap items-center gap-2">
                         <h3 className="text-base font-semibold leading-snug text-slate-800 sm:text-lg">{paper.title}</h3>
+                        <PublicationBadges badges={getPublicationBadges(paper)} />
                         {paper.highlight && (
                           <span className="rounded-full bg-amber-100 px-2 py-0.5 text-xs font-semibold text-amber-700">
                             {paper.highlight}
@@ -304,11 +315,6 @@ export default function Publications() {
                         {paper.venue_full || "Venue TBD"}
                         {paper.venue ? ` (${paper.venue})` : ""}
                         {paper.date ? `, ${parseYear(paper.date)}` : ""}
-                        {paper.titleSuffix ? (
-                          <span className="ml-1 inline-flex rounded-full border border-red-200 bg-red-50 px-2 py-0.5 text-[11px] font-semibold uppercase tracking-[0.08em] text-red-700 align-middle">
-                            {paper.titleSuffix.replace(/[()]/g, "")}
-                          </span>
-                        ) : null}
                       </p>
 
                       {extraLinks.length > 0 && <div className="mt-2 flex flex-wrap gap-1.5">{extraLinks}</div>}
