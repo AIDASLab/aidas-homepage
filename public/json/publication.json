@@ -1,5 +1,13 @@
 [
   {
+    "title": "Revisiting Filtered ANN Benchmarks: A Hardness-Controlled Benchmark Generator for Realistic Evaluation",
+    "venue": "VLDB",
+    "venue_full": "Proceedings of the VLDB Volume 19",
+    "date": "2026-06-01",
+    "authors": ["Mintaek Lim*", "Dogeun Kim", "Minwoo Kim", "Jaeyoung Do^"],
+    "abstract": "Filtered approximate nearest neighbor (FANN) search must satisfy both vector similarity and structured predicates, yet evaluations remain brittle because real hybrid workloads are rarely shareable and existing benchmarks rely on ad-hoc synthetic or semi-real constructions. We argue that realism hinges on execution-driven query difficulty: failures in early filtering trigger over-fetching of additional candidates, shaping latency, throughput, and recall. Building on this insight, we propose Hardness, a query-level hardness metric that models the conditional execution chain via the over-fetch factor and extends naturally to strategy-conditioned settings. Across diverse datasets and hybrid strategies, 𝛼-Hardness exhibits strong monotonic alignment with empirical performance, while common proxies such as selectivity or attribute–vector correlation are frequently unstable or strategy-inconsistent. We further introduce HCBGen, a hardness-controlled benchmark generator that uses 𝛼-Hardness as an explicit control signal to synthesize workloads under coarse bias modes or to match a target hardness profile. Our experiments show that widely used benchmarks occupy a narrow, relatively easy portion of the hardness spectrum, masking robustness gaps that emerge under harder queries. Finally, we demonstrate that matching hardness distributions enables privacy-preserving proxy workloads that closely reproduce performance trends, bridging research benchmarks and real evaluation.",
+  },
+  {
     "title": "Dynin-Omni: Omnimodal Unified Large Diffusion Language Model",
     "venue": "2604.00007",
     "venue_full": "arXiv preprint",
