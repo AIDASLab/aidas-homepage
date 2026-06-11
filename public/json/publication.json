@@ -11,7 +11,7 @@
   {
     "title": "Revisiting Filtered ANN Benchmarks: A Hardness-Controlled Benchmark Generator for Realistic Evaluation",
     "venue": "VLDB",
-    "venue_full": "Proceedings of the 52nd International Conference on Very Large Data Bases (VLDB)",
+    "venue_full": "Proceedings of the 52nd International Conference on Very Large Data Bases",
     "date": "2026-06-01",
     "showOnMainPage": true,
     "authors": ["Mintaek Lim*", "Dogeun Kim", "Minwoo Kim", "Jaeyoung Do^"],
@@ -82,7 +82,7 @@
     "paper": "https://cvpr.thecvf.com/virtual/2026/oral/40369",
     "arXiv": "https://arxiv.org/abs/2603.27176",
     "code": "https://github.com/AIDASLab/Medic-AD",
-    "presentation": "https://www.youtube.com/watch?v=OMB4pYja1Yw"
+    "Presentation": "https://www.youtube.com/watch?v=OMB4pYja1Yw"
   },
   {
     "title": "VIRST: Video-Instructed Reasoning Assistant for SpatioTemporal Segmentation",
@@ -94,7 +94,7 @@
     "paper": "https://cvpr.thecvf.com/virtual/2026/poster/37856",
     "arXiv": "https://arxiv.org/abs/2603.27060",
     "code": "https://github.com/AIDASLab/VIRST",
-    "presentation": "https://www.youtube.com/watch?v=-PMtkIppJZI"
+    "Presentation": "https://www.youtube.com/watch?v=-PMtkIppJZI"
   },
   {
     "title": "RFEval: Benchmarking Reasoning Faithfulness under Counterfactual Reasoning Intervention in Large Reasoning Models",
