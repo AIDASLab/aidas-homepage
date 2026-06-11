@@ -11,7 +11,7 @@
   {
     "title": "Revisiting Filtered ANN Benchmarks: A Hardness-Controlled Benchmark Generator for Realistic Evaluation",
     "venue": "VLDB",
-    "venue_full": "Proceedings of the VLDB Volume 19",
+    "venue_full": "Proceedings of the 52nd International Conference on Very Large Data Bases (VLDB)",
     "date": "2026-06-01",
     "showOnMainPage": true,
     "authors": ["Mintaek Lim*", "Dogeun Kim", "Minwoo Kim", "Jaeyoung Do^"],
