@@ -10,6 +10,7 @@
   },
   {
     "title": "Revisiting Filtered ANN Benchmarks: A Hardness-Controlled Benchmark Generator for Realistic Evaluation",
+    "badges": ["Oral"],
     "venue": "VLDB",
     "venue_full": "Proceedings of the 52nd International Conference on Very Large Data Bases",
     "date": "2026-06-01",
@@ -111,6 +112,7 @@
   },
   {
     "title": "MatKV: Trading Compute for Flash Storage in LLM Inference",
+    "badges": ["Oral"],
     "venue": "ICDE",
     "venue_full": "42nd IEEE International Conference on Data Engineering",
     "date": "2026-01-04",
@@ -157,6 +159,7 @@
   },
   {
     "title": "Turbocharging Vector Databases using Modern SSDs",
+    "badges": ["Oral"],
     "venue": "VLDB",
     "venue_full": "Proceedings of the 51st International Conference on Very Large Data Bases",
     "date": "2025-08-01",
