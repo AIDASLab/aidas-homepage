@@ -78,7 +78,10 @@
     "venue_full": "Findings of the 64th Annual Meeting of the Association for Computational Linguistics",
     "date": "2026-04-07",
     "authors": ["Sunghwan Steve Cho*", "Yunseok Han", "Jaeyoung Do^"],
-    "arXiv": "https://arxiv.org/abs/2605.15574"
+    "page": "https://steve97snu.github.io/micxr/",
+    "arXiv": "https://arxiv.org/abs/2605.15574",
+    "code": "https://github.com/AIDASLab/MI-CXR",
+    "dataset": "https://huggingface.co/datasets/snu-aidas/MI-CXR"
   },
   {
     "title": "Medic-AD: Towards Medical Vision-Language Model's Clinical Intelligence",
@@ -100,6 +103,7 @@
     "date": "2026-02-23",
     "authors": ["Jihwan Hong*", "Jaeyoung Do^"],
     "abstract": "Referring Video Object Segmentation (RVOS) aims to segment target objects in videos based on natural language descriptions. However, fixed keyframe-based approaches that couple a vision language model with a separate propagation module often fail to capture rapidly changing spatiotemporal dynamics and to handle queries requiring multi-step reasoning, leading to sharp performance drops on motion-intensive and reasoning-oriented videos beyond static RVOS benchmarks. To address these limitations, we propose VIRST (Video-Instructed Reasoning Assistant for Spatio-Temporal Segmentation), an end-to-end framework that unifies global video reasoning and pixel-level mask prediction within a single model. VIRST bridges semantic and segmentation representations through the Spatio-Temporal Fusion (STF), which fuses segmentation-aware video features into the vision-language backbone, and employs the Temporal Dynamic Anchor Updater to maintain temporally adjacent anchor frames that provide stable temporal cues under large motion, occlusion, and reappearance. This unified design achieves state-of-the-art results across diverse RVOS benchmarks under realistic and challenging conditions, demonstrating strong generalization to both referring and reasoning oriented settings.",
+    "page": "https://aidaslab.github.io/VIRST/",
     "paper": "https://cvpr.thecvf.com/virtual/2026/poster/37856",
     "arXiv": "https://arxiv.org/abs/2603.27060",
     "code": "https://github.com/AIDASLab/VIRST",
