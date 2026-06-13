@@ -5,6 +5,7 @@
     "venue": "SIGMOD",
     "venue_full": "ACM SIGMOD/PODS International Conference on Management of Data",
     "date": "2027-06-13",
+    "showOnMainPage": true,
     "authors": ["Geon Choi*", "Hoeun Lee", "Jaeyoung Do^"]
   },
   {
@@ -85,7 +86,6 @@
     "venue": "CVPR",
     "venue_full": "The IEEE/CVF Conference on Computer Vision and Pattern Recognition",
     "date": "2026-02-23",
-    "showOnMainPage": true,
     "authors": ["Woohyeon Park*", "Jaeik Kim", "Sunghwan Steve Cho", "Pa Hong", "Woo Kyoung Jeong", "Yoojin Nam", "Nam-Joon Kim", "Ginny Wong", "Ka Chun Cheung", "Jaeyoung Do^"],
     "abstract": "Lesion detection, symptom tracking, and visual explainability are central to real-world medical image analysis, yet current medical Vision-Language Models (VLMs) still lack mechanisms that translate their broad knowledge into clinically actionable outputs. To bridge this gap, we present MEDIC-AD, a clinically oriented VLM that strengthens these three capabilities through a stage-wise framework. First, learnable anomaly-aware tokens (<Ano>) encourage the model to focus on abnormal regions and build more discriminative lesion centered representations. Second, inter image difference tokens (<Diff>) explicitly encode temporal changes between studies, allowing the model to distinguish worsening, improvement, and stability in disease burden. Finally, a dedicated explainability stage trains the model to generate heatmaps that highlight lesion-related regions, offering clear visual evidence that is consistent with the model's reasoning. Through our staged design, MEDIC-AD steadily boosts performance across anomaly detection, symptom tracking, and anomaly segmentation, achieving state-of-the-art results compared with both closed source and medical-specialized baselines. Evaluations on real longitudinal clinical data collected from real hospital workflows further show that MEDIC-AD delivers stable predictions and clinically faithful explanations in practical patient-monitoring and decision-support workflows",
     "paper": "https://cvpr.thecvf.com/virtual/2026/oral/40369",
