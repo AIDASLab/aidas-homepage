@@ -1,5 +1,13 @@
 [
   {
+    "title": "Exploiting Structural Properties for Efficient Constraint-Aware HNSW Hyperparameter Tuning",
+    "badges": ["Oral"],
+    "venue": "SIGMOD",
+    "venue_full": "ACM SIGMOD/PODS International Conference on Management of Data",
+    "date": "2027-06-13",
+    "authors": ["Geon Choi*", "Hoeun Lee", "Jaeyoung Do^"]
+  },
+  {
     "title": "Report of the 5th PVUW Challenge: Towards More Diverse Modalities in Pixel-Level Understanding",
     "venue": "CVPRW",
     "venue_full": "CVPR 2026 Workshop on Pixel-level Video Understanding in the Wild (PVUW)",
