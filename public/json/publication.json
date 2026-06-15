@@ -5,6 +5,7 @@
     "venue": "SIGMOD",
     "venue_full": "ACM SIGMOD/PODS International Conference on Management of Data",
     "date": "2027-06-13",
+    "page": "https://aidaslab.github.io/CHAT/",
     "showOnMainPage": true,
     "authors": ["Geon Choi*", "Hoeun Lee", "Jaeyoung Do^"]
   },
@@ -193,6 +194,7 @@
   },
   {
     "title": "MathReader: Text-to-Speech for Mathematical Documents",
+    "badges": ["Oral"],
     "venue": "ICASSP",
     "venue_full": "IEEE International Conference on Acoustics, Speech, and Signal Processing",
     "date": "2025-04-01",
