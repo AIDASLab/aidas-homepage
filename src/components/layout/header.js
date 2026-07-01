@@ -10,8 +10,8 @@ export default function Header() {
     { name: 'Publications', href: '/publications' },
     { name: 'People', href: '/people' },
     { name: 'News', href: '/news' },
-    { name: 'Seminar', href: '/seminar' },
     { name: 'Robots', href: '/hardware' },
+    { name: 'Seminar', href: '/seminar' },
     /*{ name: 'Project', href: '/project' },*/
     { name: 'Contact', href: '/contact' },
     /*{ name: 'Join', href: '/join' }, */
