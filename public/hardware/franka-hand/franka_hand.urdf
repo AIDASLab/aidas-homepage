@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<robot name="franka_hand">
+  <link name="robot_hand">
+    <visual>
+      <geometry>
+        <mesh filename="package://franka_hand_description/meshes/robot_ee/franka_hand_white/visual/hand.dae"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://franka_hand_description/meshes/robot_ee/franka_hand_white/collision/hand.stl"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="robot_leftfinger">
+    <visual>
+      <geometry>
+        <mesh filename="package://franka_hand_description/meshes/robot_ee/franka_hand_white/visual/finger.dae"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0.00758 0.04525" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.0175 0.0152 0.0185"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="robot_rightfinger">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://franka_hand_description/meshes/robot_ee/franka_hand_white/visual/finger.dae"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0.00758 0.04525" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.0175 0.0152 0.0185"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="robot_finger_joint1" type="prismatic">
+    <parent link="robot_hand"/>
+    <child link="robot_leftfinger"/>
+    <origin xyz="0 0 0.0584" rpy="0 0 0"/>
+    <axis xyz="0 1 0"/>
+    <limit effort="100" lower="0.0" upper="0.04" velocity="0.2"/>
+  </joint>
+
+  <joint name="robot_finger_joint2" type="prismatic">
+    <parent link="robot_hand"/>
+    <child link="robot_rightfinger"/>
+    <origin xyz="0 0 0.0584" rpy="0 0 3.141592653589793"/>
+    <axis xyz="0 1 0"/>
+    <limit effort="100" lower="0.0" upper="0.04" velocity="0.2"/>
+    <mimic joint="robot_finger_joint1"/>
+  </joint>
+</robot>
