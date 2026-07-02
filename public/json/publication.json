@@ -1,5 +1,14 @@
 [
   {
+    "title": "Unified Static–Dynamic Pruning for Efficient LLM Inference",
+    "badges": ["Oral"],
+    "venue": "VLDB",
+    "venue_full": "Proceedings of the 52nd International Conference on Very Large Data Bases",
+    "date": "2026-08-31",
+    "showOnMainPage": true,
+    "authors": ["Jinhyeok Kim*", "Yejoon Lee", "Jaeyoung Do^"]
+  },
+  {
     "title": "SUM: Unified Geometric Surgery on Spatio-Temporal Adaptation Vectors for Federated Class Incremental Learning",
     "venue": "ECCV",
     "venue_full": "The 19th European Conference on Computer Vision",
@@ -32,8 +41,7 @@
     "badges": ["Oral"],
     "venue": "VLDB",
     "venue_full": "Proceedings of the 52nd International Conference on Very Large Data Bases",
-    "date": "2026-06-01",
-    "showOnMainPage": true,
+    "date": "2026-08-31",
     "authors": ["Mintaek Lim*", "Dogeun Kim", "Minwoo Kim", "Jaeyoung Do^"],
     "abstract": "Filtered approximate nearest neighbor (FANN) search must satisfy both vector similarity and structured predicates, yet evaluations remain brittle because real hybrid workloads are rarely shareable and existing benchmarks rely on ad-hoc synthetic or semi-real constructions. We argue that realism hinges on execution-driven query difficulty: failures in early filtering trigger over-fetching of additional candidates, shaping latency, throughput, and recall. Building on this insight, we propose Hardness, a query-level hardness metric that models the conditional execution chain via the over-fetch factor and extends naturally to strategy-conditioned settings. Across diverse datasets and hybrid strategies, 𝛼-Hardness exhibits strong monotonic alignment with empirical performance, while common proxies such as selectivity or attribute–vector correlation are frequently unstable or strategy-inconsistent. We further introduce HCBGen, a hardness-controlled benchmark generator that uses 𝛼-Hardness as an explicit control signal to synthesize workloads under coarse bias modes or to match a target hardness profile. Our experiments show that widely used benchmarks occupy a narrow, relatively easy portion of the hardness spectrum, masking robustness gaps that emerge under harder queries. Finally, we demonstrate that matching hardness distributions enables privacy-preserving proxy workloads that closely reproduce performance trends, bridging research benchmarks and real evaluation.",
     "page": "https://aidas-lab.github.io/FANN_Benchmark/",
