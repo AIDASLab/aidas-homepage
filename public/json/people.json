@@ -211,14 +211,37 @@
     "linkedin": "https://www.linkedin.com/in/jihwan-hong-17b1bb293/"
   },
   {
+    "name": "Seokjin Lee",
+    "role": "MP",
+    "image": "/people/seokjin_lee.jpg",
+    "education": [
+      "B.S. in Electrical and Computer Engineering & Computer Science, Sungkyunkwan University, S. Korea, 2016-2022"
+    ],
+    "research": ["World Model","Multimodal LLM"],
+    "experience": ["Search AI dev, Naver, 2021-2026"],
+    "linkedin": "www.linkedin.com/in/seokjin-lee"
+  },
+  {
     "name": "Minwoo Kim",
-    "role": "UG",
+    "role": "MP",
     "image": "/people/minwoo_kim.png",
     "education": [
-      "B.S. in Electrical and Computer Engineering, Seoul National University, S. Korea, 2020-Present"
+      "B.S. in Electrical and Computer Engineering, Seoul National University, S. Korea, 2020-2026"
     ],
-    "research": ["Machine Learning for DB","Efficient LLM"],
+    "research": ["Data Analytics","Machine Learning for Systems"],
     "experience": []
+  },
+  {
+    "name": "Jihoon Kwon",
+    "role": "MP",
+    "image": "/people/jihoon_kwon.png",
+    "education": [
+      "B.S. in Industrial Engineering, Seoul National University, S. Korea, 2019-2025"
+    ],
+    "research": ["Representation Learning", "Multimodal Agent", "Education"],
+    "experience": [],
+    "homepage": "https://resume.jihoonkwon.info/",
+    "linkedin": "https://www.linkedin.com/in/jihoon-kwon-127312240/"
   },
   {
     "name": "Yongha Lee",
@@ -243,15 +266,15 @@
     "linkedin": "https://www.linkedin.com/in/phantringuyen2002/"
   },
   {
-    "name": "Seokjin Lee",
+    "name": "Yuchan Lee",
     "role": "UG",
-    "image": "/people/seokjin_lee.jpg",
+    "image": "/people/yuchan_lee.jpg",
     "education": [
-      "B.S. in Electrical and Computer Engineering & Computer Science, Sungkyunkwan University, S. Korea, 2016-2022"
+      "B.S. in Electrical and Computer Engineering, Seoul National University, S. Korea, 2023-Present"
     ],
-    "research": ["World Model","Multimodal LLM"],
-    "experience": ["Search AI dev, Naver, 2021-Present"],
-    "linkedin": "www.linkedin.com/in/seokjin-lee"
+    "research": ["Efficient AI Systems", "Multimodal AI"],
+    "experience": [],
+    "email": "yuchan0321@snu.ac.kr"
   },
   {
     "name": "Jungwon Choi",

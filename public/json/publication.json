@@ -1,4 +1,5 @@
 [
+    
   {
     "title": "Unified Static–Dynamic Pruning for Efficient LLM Inference",
     "badges": ["Oral"],
@@ -13,8 +14,15 @@
     "venue": "ECCV",
     "venue_full": "The 19th European Conference on Computer Vision",
     "date": "2026-09-10",
-      "showOnMainPage": true,
+    "showOnMainPage": true,
     "authors": ["Jaeik Kim*", "Jaeyoung Do^"]
+  },
+  {
+    "title": "Dual Path Semantic Segmentation with Locality Guidance Tokens",
+    "venue": "Q1",
+    "venue_full": "Neurocomputing",
+    "date": "2026-08-04",
+    "authors": ["Jaeik Kim*", "Yoonjae Baek", "Aecheon Jung", "Hongyeob Kim", "Soyun Choi", "Youngeun Kim", "Jaeyoung Do", "Sungeun Hong^"]
   },
   {
     "title": "Exploiting Structural Properties for Efficient Constraint-Aware HNSW Hyperparameter Tuning",
