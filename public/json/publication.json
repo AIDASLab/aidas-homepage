@@ -69,13 +69,12 @@
     "model": "https://huggingface.co/snu-aidas/Dynin-Omni"
   },
   {
-    "title": "Is Retraining-Free Enough? The Necessity of Router Calibration for Efficient MoE Compression",
-    "venue": "2603.02217",
-    "venue_full": "arXiv preprint",
-    "date": "2026-02-10",
-    "authors": ["Sieun Hyeon*", "Jaeyoung Do^"],
-    "abstract": "Mixture-of-Experts (MoE) models scale capacity efficiently, but their massive parameter footprint creates a deployment-time memory bottleneck. We organize retraining-free MoE compression into three paradigms - Expert Pruning, Expert Editing, and Expert Merging - and show that persistent post-compression degradation largely stems from a neglected factor: router-expert mismatch when experts are changed but the router is left untouched. We argue that effective retraining-free compression should avoid updating expert parameters while allowing lightweight router calibration. To this end, we propose Router Knowledge Distillation (Router KD), which updates only a tiny fraction of parameters (the router) by distilling the original model's next-token distribution on unlabeled calibration data. Experiments across representative methods in all three paradigms demonstrate consistent performance recovery, with substantially larger gains in fine-grained MoEs (many small experts) than in coarse-grained MoEs due to their more complex routing decision boundaries.",
-    "arXiv": "https://arxiv.org/abs/2603.02217"
+    "title": "Beyond Retraining-Free MoE Compression: A Cost-Normalized Study of Post-Compression Adjustment",
+    "venue": "EMNLP",
+    "venue_full": "The 2026 Conference on Empirical Methods in Natural Language Processing",
+    "date": "2026-10-24",
+    "showOnMainPage": true,
+    "authors": ["Sieun Hyeon*", "Jaeyoung Do^"]
   },
   {
     "title": "VALUEFLOW: Toward Pluralistic and Steerable Value-based Alignment in Large Language Models",   
