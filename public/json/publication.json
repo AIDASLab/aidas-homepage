@@ -1,5 +1,12 @@
 [
-    
+  {
+    "title": "Machine Learning-Based Prediction Model for Early Pulmonary Hypertension in Very Preterm Infants",
+    "badges": ["Oral"],
+    "venue": "ASPR",
+    "venue_full": "The 19th Congress of the Asian Society for Pediatric Research",
+    "date": "2026-10-21",
+    "authors": ["Baek Sup Shin*", "Ju Sun Heo", "Yongha Lee", "Sunghwan Steve Cho", "Seh Hyun Kim", "Seung Han Shin", "Ee-Kyung Kim", "Jaeyoung Do", "Han-Suk Kim"]
+  },
   {
     "title": "Unified Static–Dynamic Pruning for Efficient LLM Inference",
     "badges": ["Oral"],
