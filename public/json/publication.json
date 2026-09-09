@@ -81,7 +81,10 @@
     "venue_full": "The 2026 Conference on Empirical Methods in Natural Language Processing",
     "date": "2026-10-24",
     "showOnMainPage": true,
-    "authors": ["Sieun Hyeon*", "Jaeyoung Do^"]
+    "authors": ["Sieun Hyeon*", "Jaeyoung Do^"],
+    "arXiv": "https://arxiv.org/abs/2609.06076",
+    "page": "https://aidaslab.github.io/Post-Compression-Adjustment/",
+    "code": "https://github.com/AIDASLab/Post-Compression-Adjustment"
   },
   {
     "title": "VALUEFLOW: Toward Pluralistic and Steerable Value-based Alignment in Large Language Models",   
