@@ -63,6 +63,17 @@
     "arXiv": "https://arxiv.org/abs/2606.14193"
   },
   {
+    "title": "Dynin-Robotics: Omnimodal Unified Diffusion Vision-Language-Action Model",
+    "venue": "2609.13053",
+    "venue_full": "arXiv preprint",
+    "date": "2026-09-11",
+    "authors": ["Hoeun Lee*", "Jaeik Kim", "Jusang Oh", "Jinhyeok Kim", "Geon Choi", "Hyeonggeun Kim", "Jaeyoung Do^"],
+    "page": "https://dynin.ai/robotics/",
+    "arXiv": "https://arxiv.org/abs/2609.13053",
+    "code": "https://github.com/AIDASLab/Dynin-Robotics",
+    "model": "https://huggingface.co/snu-aidas/Dynin-Robotics"
+  },
+  {
     "title": "Dynin-Omni: Omnimodal Unified Large Diffusion Language Model",
     "venue": "2604.00007",
     "venue_full": "arXiv preprint",
