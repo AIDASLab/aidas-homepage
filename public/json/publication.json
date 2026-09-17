@@ -39,7 +39,9 @@
     "date": "2027-06-13",
     "page": "https://aidaslab.github.io/CHAT/",
     "showOnMainPage": true,
-    "authors": ["Geon Choi*", "Hoeun Lee", "Jaeyoung Do^"]
+    "authors": ["Geon Choi*", "Hoeun Lee", "Jaeyoung Do^"],
+    "code": "https://github.com/AIDASLab/CHAT",
+    "arXiv": "https://arxiv.org/pdf/2607.04630"
   },
   {
     "title": "Report of the 5th PVUW Challenge: Towards More Diverse Modalities in Pixel-Level Understanding",
