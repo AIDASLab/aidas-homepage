@@ -41,7 +41,7 @@
     "showOnMainPage": true,
     "authors": ["Geon Choi*", "Hoeun Lee", "Jaeyoung Do^"],
     "code": "https://github.com/AIDASLab/CHAT",
-    "arXiv": "https://arxiv.org/pdf/2607.04630"
+    "arXiv": "https://arxiv.org/abs/2607.04630"
   },
   {
     "title": "Report of the 5th PVUW Challenge: Towards More Diverse Modalities in Pixel-Level Understanding",
