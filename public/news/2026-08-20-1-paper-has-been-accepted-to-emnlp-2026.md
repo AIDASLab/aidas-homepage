@@ -1,6 +1,6 @@
 ---
 title: "1 paper has been accepted to EMNLP 2026!"
-date: "2026-10-24"
+date: "2026-08-20"
 summary: "Beyond Retraining-Free MoE Compression has been accepted to EMNLP 2026."
 ---
 

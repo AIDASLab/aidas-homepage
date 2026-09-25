@@ -1,6 +1,6 @@
 ---
 title: "3 papers have been accepted to NeurIPS 2026!"
-date: "2026-09-25"
+date: "2026-09-24"
 summary: "3 papers have been accepted to NeurIPS 2026!"
 ---
 

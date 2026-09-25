@@ -3,14 +3,16 @@
     "title": "Values Are Not Single Labels: Distributional Value Profiling Across Groups and Contexts",
     "venue": "NeurIPS",
     "venue_full": "40th Annual Conference on Neural Information Processing Systems",
-    "date": "2026-09-25",
+    "date": "2026-12-06",
+    "showOnMainPage": true,
     "authors": ["Woojin Kim*", "Jaeyoung Do^"]
   },
   {
     "title": "Predicting Nothing Beats SAM 3: Revisiting Evaluation in Video Object Segmentation",
     "venue": "NeurIPS",
     "venue_full": "40th Annual Conference on Neural Information Processing Systems",
-    "date": "2026-09-25",
+    "date": "2026-12-06",
+    "showOnMainPage": true,
     "authors": ["Jihwan Hong*", "Woohyeon Park", "Jaeik Kim", "Jaeyoung Do^"]
   },
   {
@@ -27,7 +29,6 @@
     "venue": "VLDB",
     "venue_full": "Proceedings of the 52nd International Conference on Very Large Data Bases",
     "date": "2026-08-31",
-    "showOnMainPage": true,
     "authors": ["Jinhyeok Kim*", "Yejoon Lee", "Jaeyoung Do^"]
   },
   {
@@ -35,7 +36,6 @@
     "venue": "ECCV",
     "venue_full": "The 19th European Conference on Computer Vision",
     "date": "2026-09-10",
-    "showOnMainPage": true,
     "authors": ["Jaeik Kim*", "Jaeyoung Do^"]
   },
   {
@@ -52,7 +52,6 @@
     "venue_full": "ACM SIGMOD/PODS International Conference on Management of Data",
     "date": "2027-06-13",
     "page": "https://aidaslab.github.io/CHAT/",
-    "showOnMainPage": true,
     "authors": ["Geon Choi*", "Hoeun Lee", "Jaeyoung Do^"],
     "code": "https://github.com/AIDASLab/CHAT",
     "arXiv": "https://arxiv.org/abs/2607.04630"
@@ -82,7 +81,8 @@
     "title": "Dynin-Robotics: Omnimodal Unified Diffusion Vision-Language-Action Model",
     "venue": "NeurIPS",
     "venue_full": "40th Annual Conference on Neural Information Processing Systems",
-    "date": "2026-09-25",
+    "date": "2026-12-06",
+    "showOnMainPage": true,
     "authors": ["Hoeun Lee*", "Jaeik Kim", "Jusang Oh", "Jinhyeok Kim", "Geon Choi", "Hyeonggeun Kim", "Jaeyoung Do^"],
     "page": "https://dynin.ai/robotics/",
     "arXiv": "https://arxiv.org/abs/2609.13053",
@@ -107,7 +107,6 @@
     "venue": "EMNLP",
     "venue_full": "The 2026 Conference on Empirical Methods in Natural Language Processing",
     "date": "2026-10-24",
-    "showOnMainPage": true,
     "authors": ["Sieun Hyeon*", "Jaeyoung Do^"],
     "arXiv": "https://arxiv.org/abs/2609.06076",
     "page": "https://aidaslab.github.io/Post-Compression-Adjustment/",
