@@ -1,5 +1,19 @@
 [
   {
+    "title": "Values Are Not Single Labels: Distributional Value Profiling Across Groups and Contexts",
+    "venue": "NeurIPS",
+    "venue_full": "40th Annual Conference on Neural Information Processing Systems",
+    "date": "2026-09-25",
+    "authors": ["Woojin Kim*", "Jaeyoung Do^"]
+  },
+  {
+    "title": "Predicting Nothing Beats SAM 3: Revisiting Evaluation in Video Object Segmentation",
+    "venue": "NeurIPS",
+    "venue_full": "40th Annual Conference on Neural Information Processing Systems",
+    "date": "2026-09-25",
+    "authors": ["Jihwan Hong*", "Woohyeon Park", "Jaeik Kim", "Jaeyoung Do^"]
+  },
+  {
     "title": "Machine Learning-Based Prediction Model for Early Pulmonary Hypertension in Very Preterm Infants",
     "badges": ["Oral"],
     "venue": "ASPR",
@@ -66,9 +80,9 @@
   },
   {
     "title": "Dynin-Robotics: Omnimodal Unified Diffusion Vision-Language-Action Model",
-    "venue": "2609.13053",
-    "venue_full": "arXiv preprint",
-    "date": "2026-09-11",
+    "venue": "NeurIPS",
+    "venue_full": "40th Annual Conference on Neural Information Processing Systems",
+    "date": "2026-09-25",
     "authors": ["Hoeun Lee*", "Jaeik Kim", "Jusang Oh", "Jinhyeok Kim", "Geon Choi", "Hyeonggeun Kim", "Jaeyoung Do^"],
     "page": "https://dynin.ai/robotics/",
     "arXiv": "https://arxiv.org/abs/2609.13053",
