@@ -8,14 +8,6 @@
     "authors": ["Woojin Kim*", "Jaeyoung Do^"]
   },
   {
-    "title": "Predicting Nothing Beats SAM 3: Revisiting Evaluation in Video Object Segmentation",
-    "venue": "NeurIPS",
-    "venue_full": "40th Annual Conference on Neural Information Processing Systems",
-    "date": "2026-12-06",
-    "showOnMainPage": true,
-    "authors": ["Jihwan Hong*", "Woohyeon Park", "Jaeik Kim", "Jaeyoung Do^"]
-  },
-  {
     "title": "Machine Learning-Based Prediction Model for Early Pulmonary Hypertension in Very Preterm Infants",
     "badges": ["Oral"],
     "venue": "ASPR",
@@ -88,6 +80,15 @@
     "arXiv": "https://arxiv.org/abs/2609.13053",
     "code": "https://github.com/AIDASLab/Dynin-Robotics",
     "model": "https://huggingface.co/snu-aidas/Dynin-Robotics"
+  },
+  {
+    "title": "When Predicting Nothing Beats SAM 3: Revisiting Evaluation in Video Object Segmentation",
+    "venue": "NeurIPS",
+    "track": "Evaluations and Datasets Track (E&D)",
+    "venue_full": "40th Annual Conference on Neural Information Processing Systems",
+    "date": "2026-12-06",
+    "showOnMainPage": true,
+    "authors": ["Jihwan Hong*", "Woohyeon Park", "Jaeik Kim", "Jaeyoung Do^"]
   },
   {
     "title": "Dynin-Omni: Omnimodal Unified Large Diffusion Language Model",
@@ -219,6 +220,7 @@
   },
   {
     "title": "MMPB: It’s Time for Multi-Modal Personalization",
+    "track": "Datasets and Benchmarks Track (D&B)",
     "venue": "NeurIPS",
     "venue_full": "39th Annual Conference on Neural Information Processing Systems",
     "date": "2025-09-19",

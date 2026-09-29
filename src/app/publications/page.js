@@ -13,6 +13,7 @@ const HIDDEN_FIELDS = new Set([
   "conference",
   "venue",
   "venue_full",
+  "track",
   "date",
   "highlight",
   "abstract",
@@ -124,6 +125,7 @@ export default function Publications() {
         Array.isArray(paper.authors) ? paper.authors.join(" ") : paper.authors,
         paper.venue,
         paper.venue_full,
+        paper.track,
       ]
         .map((value) => normalizeText(value))
         .join(" ");
@@ -252,6 +254,7 @@ export default function Publications() {
                       <p className="mt-0.5 text-sm leading-tight text-slate-500">
                         {paper.venue_full || "Venue TBD"}
                         {paper.venue ? ` (${paper.venue})` : ""}
+                        {paper.track ? `, ${paper.track}` : ""}
                         {paper.date ? `, ${parseYear(paper.date)}` : ""}
                       </p>
 
@@ -314,6 +317,7 @@ export default function Publications() {
                       <p className="mt-0.5 text-sm leading-tight text-slate-500">
                         {paper.venue_full || "Venue TBD"}
                         {paper.venue ? ` (${paper.venue})` : ""}
+                        {paper.track ? `, ${paper.track}` : ""}
                         {paper.date ? `, ${parseYear(paper.date)}` : ""}
                       </p>
 

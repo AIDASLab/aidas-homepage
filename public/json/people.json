@@ -277,6 +277,18 @@
     "email": "yuchan0321@snu.ac.kr"
   },
   {
+    "name": "Jihwan Gong",
+    "role": "UG",
+    "image": "/people/jihwan_gong.png",
+    "education": [
+      "B.S. in Electrical and Computer Engineering, Seoul National University, 2021–Present"
+    ],
+    "research": ["Physical AI"],
+    "experience": [],
+    "email": "gjh020717@snu.ac.kr",
+    "linkedin": "https://www.linkedin.com/in/jihwangong/"
+  },
+  {
     "name": "Jungwon Choi",
     "role": "Staff",
     "image": "/people/jungwon_choi.jpg",
