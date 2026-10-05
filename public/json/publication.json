@@ -46,6 +46,7 @@
     "page": "https://aidaslab.github.io/CHAT/",
     "authors": ["Geon Choi*", "Hoeun Lee", "Jaeyoung Do^"],
     "code": "https://github.com/AIDASLab/CHAT",
+    "paper": "https://dl.acm.org/doi/10.1145/3837111",
     "arXiv": "https://arxiv.org/abs/2607.04630"
   },
   {
