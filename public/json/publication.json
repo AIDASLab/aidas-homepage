@@ -83,6 +83,8 @@
   },
   {
     "title": "When Predicting Nothing Beats SAM 3: Revisiting Evaluation in Video Object Segmentation",
+    "page": "https://aidaslab.github.io/FaVOS/",
+    "arXiv": "https://arxiv.org/abs/2610.02946",
     "venue": "NeurIPS",
     "track": "Evaluations and Datasets Track (E&D)",
     "venue_full": "40th Annual Conference on Neural Information Processing Systems",
