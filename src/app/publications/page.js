@@ -5,6 +5,9 @@ import Link from "next/link";
 import PageLayout from "@/components/layout/page-layout";
 import PublicationBadges from "@/components/publication/publication-badges";
 
+// Dynin-Robotics: restore this field in public/json/publication.json when the NeurIPS page is public.
+// "paper": "https://neurips.cc/virtual/2026/loc/sydney/poster/148952",
+
 const HIDDEN_FIELDS = new Set([
   "title",
   "badges",

@@ -1,6 +1,19 @@
 [
   {
+    "title": "What Comes Next? Omni-StoryBench for Evaluating Story-Grounded Omnimodal Generation",
+    "venue": "2609.37317",
+    "venue_full": "arXiv preprint",
+    "date": "2026-09-29",
+    "authors": ["Sieun Hyeon*", "Yejoon Lee*", "Mintaek Lim", "Woojin Kim", "Jaeik Kim", "Jaeyoung Do^"],
+    "page": "https://aidaslab.github.io/Omni-Storybench/",
+    "arXiv": "https://arxiv.org/abs/2609.37317",
+    "code": "https://github.com/AIDASLab/Omni-Storybench",
+    "dataset": "https://huggingface.co/datasets/snu-aidas/Omni-StoryBench",
+    "Dataset Viewer": "https://aidaslab.github.io/Omni-Storybench/viewer"
+  },
+  {
     "title": "Values Are Not Single Labels: Distributional Value Profiling Across Groups and Contexts",
+    "paper": "https://neurips.cc/virtual/2026/loc/sydney/poster/154170",
     "venue": "NeurIPS",
     "venue_full": "40th Annual Conference on Neural Information Processing Systems",
     "date": "2026-12-06",
@@ -17,6 +30,9 @@
   },
   {
     "title": "Unified Static–Dynamic Pruning for Efficient LLM Inference",
+    "page": "https://aidaslab.github.io/SPDP/",
+    "paper": "https://dl.acm.org/doi/10.14778/3836663.3836665",
+    "arXiv": "https://arxiv.org/abs/2607.21985",
     "badges": ["Oral"],
     "venue": "VLDB",
     "venue_full": "Proceedings of the 52nd International Conference on Very Large Data Bases",
@@ -25,6 +41,9 @@
   },
   {
     "title": "SUM: Unified Geometric Surgery on Spatio-Temporal Adaptation Vectors for Federated Class Incremental Learning",
+    "page": "https://aidaslab.github.io/SUrgery-and-Merge/",
+    "paper": "https://eccv.ecva.net/virtual/2026/poster/4372",
+    "arXiv": "https://arxiv.org/abs/2607.19384",
     "venue": "ECCV",
     "venue_full": "The 19th European Conference on Computer Vision",
     "date": "2026-09-10",
@@ -85,6 +104,7 @@
   {
     "title": "When Predicting Nothing Beats SAM 3: Revisiting Evaluation in Video Object Segmentation",
     "page": "https://aidaslab.github.io/FaVOS/",
+    "paper": "https://neurips.cc/virtual/2026/loc/sydney/poster/139254",
     "arXiv": "https://arxiv.org/abs/2610.02946",
     "venue": "NeurIPS",
     "track": "Evaluations and Datasets Track (E&D)",
