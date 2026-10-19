@@ -211,7 +211,7 @@ export default function Publications() {
               <div className="flex items-center gap-3">
                 <h2 className="text-2xl font-semibold text-slate-800 sm:text-3xl">arXiv</h2>
                 <span className="h-px flex-1 bg-slate-200" />
-                <span className="rounded-full bg-slate-100 px-2.5 py-1 text-xs text-slate-600">{arxivPapers.length} papers</span>
+                <span className="rounded-full bg-slate-100 px-2.5 py-1 text-xs text-slate-600">{arxivPapers.length} {arxivPapers.length === 1 ? "paper" : "papers"}</span>
               </div>
 
               <div className="space-y-2">
@@ -274,7 +274,7 @@ export default function Publications() {
               <div className="flex items-center gap-3">
                 <h2 className="text-2xl font-semibold text-slate-800 sm:text-3xl">{year}</h2>
                 <span className="h-px flex-1 bg-slate-200" />
-                <span className="rounded-full bg-slate-100 px-2.5 py-1 text-xs text-slate-600">{grouped[year].length} papers</span>
+                <span className="rounded-full bg-slate-100 px-2.5 py-1 text-xs text-slate-600">{grouped[year].length} {grouped[year].length === 1 ? "paper" : "papers"}</span>
               </div>
 
               <div className="space-y-2">
