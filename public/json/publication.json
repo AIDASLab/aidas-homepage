@@ -1,6 +1,8 @@
 [
   {
     "title": "Federated Vector Retrieval across Heterogeneous VectorDBs",
+    "badges": ["Oral"],
+    "showOnMainPage": true,
     "venue": "VLDB",
     "venue_full": "Proceedings of the 53rd International Conference on Very Large Data Bases",
     "date": "2027-08-23",
