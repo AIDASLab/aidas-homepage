@@ -212,6 +212,7 @@
   },
   {
     "name": "Seokjin Lee",
+    "email": "skjin.lee@snu.ac.kr",
     "role": "MP",
     "image": "/people/seokjin_lee.jpg",
     "education": [
@@ -223,6 +224,7 @@
   },
   {
     "name": "Minwoo Kim",
+    "email": "danny5969@snu.ac.kr",
     "role": "MP",
     "image": "/people/minwoo_kim.png",
     "education": [
@@ -244,6 +246,7 @@
   },
   {
     "name": "Phan Tri Nguyen",
+    "email": "tringuyenphan2k2@snu.ac.kr",
     "role": "MS",
     "image": "/people/phantri_nguyen.jpg",
     "education": [
@@ -255,6 +258,7 @@
   },
   {
     "name": "Jihoon Kwon",
+    "email": "kog0712@snu.ac.kr",
     "role": "MS",
     "image": "/people/jihoon_kwon.png",
     "education": [

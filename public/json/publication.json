@@ -119,6 +119,8 @@
     "page": "https://aidaslab.github.io/FaVOS/",
     "paper": "https://neurips.cc/virtual/2026/loc/sydney/poster/139254",
     "arXiv": "https://arxiv.org/abs/2610.02946",
+    "code": "https://github.com/AIDASLab/FaVOS",
+    "dataset": "https://huggingface.co/datasets/snu-aidas/FaVOS",
     "venue": "NeurIPS",
     "track": "Evaluations and Datasets Track (E&D)",
     "venue_full": "40th Annual Conference on Neural Information Processing Systems",
